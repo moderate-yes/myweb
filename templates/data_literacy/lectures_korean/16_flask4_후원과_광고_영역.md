@@ -1,0 +1,119 @@
+# Flask로 수익형 강의 웹사이트 만들기 4: 후원과 광고 영역
+
+콘텐츠가 준비되었다면 수익 영역을 설계할 차례다. 중요한 원칙은 광고가 본문보다 먼저 보이거나 학습 흐름을 끊지 않게 하는 것이다.
+
+이 글에서는 오른쪽 사이드바를 **직접 후원 안내**와 **광고 슬롯** 두 부분으로 나눈다.
+
+## 수익 사이드바 구조
+
+```html
+<aside class="revenue-sidebar">
+  <section class="support-card" aria-labelledby="support-title">
+    <span class="card-label">support</span>
+    <h2 id="support-title">후원 안내</h2>
+    <p>후원은 이 사이트를 살아 숨 쉬게 하는 힘이 됩니다.</p>
+    <a href="mailto:hello@example.com">
+      후원 문의<br>
+      <strong>hello@example.com</strong>
+    </a>
+  </section>
+
+  <section class="ad-card" aria-label="광고 영역">
+    <span class="card-label">advertisement</span>
+    <div class="ad-slot">
+      Google AdSense 또는 쿠팡 파트너스
+    </div>
+  </section>
+</aside>
+```
+
+`mailto:` 링크를 사용하면 방문자가 이메일 주소를 복사하지 않고 바로 문의할 수 있다. 공개 사이트에 개인 이메일을 노출할 때는 스팸 메일 가능성도 고려한다.
+
+## 두 카드의 디자인
+
+```css
+.revenue-sidebar {
+  width: 265px;
+  padding: 1.5rem 1rem;
+}
+
+.support-card,
+.ad-card {
+  padding: 1.1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.support-card {
+  margin-bottom: 1rem;
+}
+
+.card-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #aaa;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ad-slot {
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  border: 1px dashed #ddd;
+  color: #999;
+  text-align: center;
+}
+```
+
+광고 플랫폼의 실제 코드를 발급받기 전에는 크기만 확인할 수 있는 빈 슬롯을 사용한다. 발급받지 않은 광고처럼 보이게 가짜 배너를 만들 필요는 없다.
+
+## 모바일에서는 본문을 우선하기
+
+화면이 좁을 때 세 개의 열을 유지하면 본문이 읽기 어려워진다. 모바일에서는 사이드바를 본문 아래로 옮기거나 광고 영역을 숨기는 편이 낫다.
+
+```css
+@media (max-width: 992px) {
+  .lecture-layout {
+    display: block;
+  }
+
+  .revenue-sidebar {
+    display: none;
+  }
+}
+```
+
+## 제휴 링크를 사용할 때의 원칙
+
+쿠팡 파트너스와 같은 제휴 프로그램을 사용할 때는 다음 기준을 지킨다.
+
+- 강의 내용과 실제로 관련 있는 상품만 소개한다.
+- 링크를 클릭하거나 구매하면 운영자에게 수익이 발생할 수 있음을 알린다.
+- 광고처럼 보이지 않게 숨기거나 과도한 클릭을 유도하지 않는다.
+- 상품 가격과 혜택을 고정된 사실처럼 직접 적기 전에 최신 정보를 확인한다.
+- 각 플랫폼의 최신 정책과 표시 의무를 확인한다.
+
+## Google 광고를 넣기 전 준비
+
+광고 코드를 먼저 붙인다고 바로 좋은 수익형 사이트가 되는 것은 아니다. 신청 전에는 다음을 점검한다.
+
+- 사이트의 목적과 대상 독자가 분명한가?
+- 직접 작성한 충분한 콘텐츠가 있는가?
+- 메뉴와 페이지 이동이 정상적으로 동작하는가?
+- 개인정보처리방침 등 필요한 안내 페이지가 있는가?
+- 모바일에서 콘텐츠를 편하게 읽을 수 있는가?
+
+플랫폼 정책은 바뀔 수 있으므로 실제 신청 시점에 공식 문서를 다시 확인한다.
+
+## 이번 글의 실습
+
+1. 후원 카드와 광고 카드를 각각 만든다.
+2. 후원 문의 이메일 링크를 자신의 주소로 변경한다.
+3. 광고 코드를 넣기 전 빈 슬롯의 크기를 테스트한다.
+4. 모바일 크기에서 본문이 먼저 보이는지 확인한다.
+5. 광고·제휴 사실을 알리는 문구 초안을 작성한다.
+
+다음 글에서는 공개 전에 필요한 환경변수, 세션 보안, 테스트와 배포 준비를 다룬다.

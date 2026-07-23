@@ -1,0 +1,137 @@
+# Flask로 수익형 강의 웹사이트 만들기 2: 라우팅과 템플릿
+
+첫 글에서는 가장 작은 Flask 앱을 실행했다. 이제 메인, 강의, 포트폴리오 페이지를 만들고 공통 내비게이션을 구성한다.
+
+## 라우팅으로 페이지 나누기
+
+라우팅은 URL과 실행할 Python 함수를 연결한다.
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def main():
+    return render_template('main.html')
+
+
+@app.route('/lecture')
+def lecture():
+    return render_template('lecture_main.html')
+
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+```
+
+`render_template()`은 `templates` 폴더의 HTML을 읽어 브라우저에 전달한다. URL 이름은 짧고 의미가 분명하게 정한다.
+
+## 공통 레이아웃 만들기
+
+모든 HTML에 내비게이션을 복사하면 메뉴를 수정할 때 여러 파일을 함께 고쳐야 한다. Jinja의 템플릿 상속을 사용하면 공통 구조를 한 곳에서 관리할 수 있다.
+
+`templates/base.html`을 만든다.
+
+```html
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}나의 강의 사이트{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    {% include 'main_nav.html' %}
+    {% block body %}{% endblock %}
+  </body>
+</html>
+```
+
+`block`은 페이지마다 바뀌는 자리이고, `include`는 다른 템플릿 조각을 가져오는 기능이다.
+
+## 내비게이션 만들기
+
+`templates/main_nav.html`을 작성한다.
+
+```html
+<nav class="top-nav" aria-label="주요 메뉴">
+  <a href="/lecture">lecture</a>
+  <a href="/">contact</a>
+  <a href="/portfolio">portfolio</a>
+</nav>
+```
+
+실제 서비스에서는 현재 페이지를 표시해 주는 것이 좋다. Flask가 제공하는 `request.endpoint`를 이용하면 현재 실행 중인 함수를 확인할 수 있다.
+
+```html
+<a class="{% if request.endpoint == 'lecture' %}active{% endif %}"
+   href="/lecture">lecture</a>
+```
+
+## 개별 페이지에서 상속하기
+
+`templates/main.html`은 공통 레이아웃을 상속하고 필요한 본문만 작성한다.
+
+```html
+{% extends 'base.html' %}
+
+{% block title %}contact · 나의 강의 사이트{% endblock %}
+
+{% block body %}
+  <main class="contact-main">
+    <h1>안녕하세요</h1>
+    <a href="mailto:hello@example.com">hello@example.com</a>
+  </main>
+{% endblock %}
+```
+
+## 정적 파일 연결하기
+
+CSS, 이미지와 JavaScript는 `static` 폴더에 둔다. 경로를 직접 적는 대신 `url_for()`를 사용하면 배포 환경에서도 안전하게 주소를 만들 수 있다.
+
+```html
+<img src="{{ url_for('static', filename='image/main.png') }}"
+     alt="사이트 캐릭터">
+```
+
+## 기본 레이아웃 CSS
+
+```css
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.top-nav a {
+  color: #666;
+  text-decoration: none;
+}
+
+.top-nav a.active {
+  color: #111;
+  font-weight: 700;
+}
+```
+
+## 이번 글의 실습
+
+1. 메인, 강의, 포트폴리오 라우트를 만든다.
+2. 공통 `base.html`과 내비게이션을 만든다.
+3. 현재 페이지의 메뉴를 굵게 표시한다.
+4. CSS와 캐릭터 이미지를 `static` 폴더에서 불러온다.
+5. 임의의 주소로 접속했을 때 어떤 응답이 나오는지 확인한다.
+
+다음 글에서는 마크다운 파일을 읽어 자동으로 강의 메뉴와 본문을 만드는 작은 콘텐츠 시스템을 구현한다.

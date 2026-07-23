@@ -1,0 +1,52 @@
+<div class="lecture-lang-switch btn-group w-100 mb-3" role="group" aria-label="lecture language switch">
+    <input type="radio" class="btn-check" name="lecture-lang" id="lang-english" autocomplete="off"
+           {% if lang != 'korean' %}checked{% endif %}
+           onchange="location.href='/lecture/{{ current }}?subject={{ subject }}&lang=english'">
+    <label class="btn btn-outline-primary btn-sm" for="lang-english">English</label>
+
+    <input type="radio" class="btn-check" name="lecture-lang" id="lang-korean" autocomplete="off"
+           {% if lang == 'korean' %}checked{% endif %}
+           onchange="location.href='/lecture/{{ current }}?subject={{ subject }}&lang=korean'">
+    <label class="btn btn-outline-primary btn-sm" for="lang-korean">한국어</label>
+</div>
+
+<div class="lecture-subject-list">
+    {% for s in subjects %}
+    <div class="lecture-subject">
+        <button class="lecture-subject-toggle" type="button"
+                data-bs-toggle="collapse" data-bs-target="#lecture-subject-{{ s.key }}"
+                aria-expanded="{{ 'true' if s.key == subject else 'false' }}"
+                aria-controls="lecture-subject-{{ s.key }}">
+            <span>{{ s.label }}</span>
+            <span class="lecture-subject-caret" aria-hidden="true"></span>
+        </button>
+        <div class="collapse {% if s.key == subject %}show{% endif %}" id="lecture-subject-{{ s.key }}">
+            <ul class="nav flex-column">
+                {% for item in s.nav_items %}
+                <li class="nav-item">
+                    <a class="nav-link {% if subject == s.key and current == item.name %}fw-bold text-primary{% else %}text-secondary{% endif %}"
+                       title="{{ item.title }}"
+                       href="/lecture/{{ item.name }}?subject={{ s.key }}&lang={{ lang }}">
+                        {{ item.title }}
+                    </a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <span class="nav-link text-muted" style="font-size:0.85rem;">
+                        {% if lang == 'korean' %}
+                        lectures_korean/ 폴더에 마크다운 파일을 추가하세요
+                        {% else %}
+                        Add markdown files to the lectures_english/ folder
+                        {% endif %}
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% else %}
+    <span class="nav-link text-muted" style="font-size:0.85rem;">
+        templates/ 아래에 과목 폴더가 없습니다.
+    </span>
+    {% endfor %}
+</div>
