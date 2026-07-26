@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="No More Overfitting — lectures, notes, and portfolio.">
+    <title>No More Overfitting</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+          processEscapes: true
+        },
+        options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.5/dist/purify.min.js"></script>
+    <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="site-config.js"></script>
+    <script defer src="content-index.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to content</a>
+    <header class="site-header">
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#/lecture" data-route="lecture">Lecture</a>
+        <a href="#/contact" data-route="contact">Contact</a>
+        <a href="#/portfolio/login" data-route="portfolio">Portfolio</a>
+      </nav>
+    </header>
+    <main id="app" tabindex="-1">
+      <div class="loading-view" role="status">
+        <span class="loading-dot"></span>
+        <p>Opening the site…</p>
+      </div>
+    </main>
+    <noscript>This site needs JavaScript to load its Markdown lectures.</noscript>
+  </body>
+</html>
