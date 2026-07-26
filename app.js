@@ -39,8 +39,9 @@
   }
 
   function inferBucketUrl() {
-    if (config.s3BucketUrl) return config.s3BucketUrl.replace(/\/+$/, "");
     const host = location.hostname;
+    if (["localhost", "127.0.0.1", "::1"].includes(host)) return "";
+    if (config.s3BucketUrl) return config.s3BucketUrl.replace(/\/+$/, "");
     let match = host.match(/^(.+)\.s3-website[.-]([a-z0-9-]+)\.amazonaws\.com$/i);
     if (match) return `https://${match[1]}.s3.${match[2]}.amazonaws.com`;
     match = host.match(/^(.+)\.s3\.([a-z0-9-]+)\.amazonaws\.com$/i);
@@ -88,7 +89,9 @@
     } catch (error) {
       console.info("Live S3 listing is unavailable; using the bundled content index.", error);
     }
-    if (!contentKeys.length) contentKeys = Array.isArray(window.CONTENT_INDEX) ? window.CONTENT_INDEX : [];
+    if (!contentKeys.length) {
+      contentKeys = Array.isArray(window.CONTENT_INDEX) ? [...window.CONTENT_INDEX] : [];
+    }
     contentKeys.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
     catalog = buildCatalog(contentKeys);
   }
@@ -150,7 +153,7 @@
             <img src="static/image/main.png" alt="">
           </div>
         </div>
-        <div class="contact-email"><h2>janyty@proton.me</h2></div>
+        <div class="contact-email"><h2>on the construction</h2></div>
       </section>`;
     animateMouth();
   }
@@ -217,7 +220,7 @@
             <span class="rail-label">Support</span>
             <h2>Keep this library alive.</h2>
             <p>Your support makes room for more open lessons and practical notes.</p>
-            <a href="mailto:janyty@proton.me">janyty@proton.me ↗</a>
+            <a href="mailto:janyty@proton.me">on the construction ↗</a>
           </section>
           <section class="rail-card">
             <span class="rail-label">Advertisement</span>
