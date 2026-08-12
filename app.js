@@ -97,7 +97,7 @@
   }
 
   function subjectLabel(subject) {
-    return subject.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+    return subject.replaceAll(/[_-]/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
   }
 
   function documentLabel(filename) {

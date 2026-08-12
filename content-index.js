@@ -1,5 +1,13 @@
 // Offline/local fallback. S3 object listing replaces this automatically when available.
 window.CONTENT_INDEX = [
+  "templates/ai-basic/lectures_korean/01_ch1_AI의_학습과_Loss.md",
+  "templates/ai-basic/lectures_korean/02_ch2_최적의_W와_Closed-form_Solution.md",
+  "templates/ai-basic/lectures_korean/03_ch3_왜_W를_항상_계산할_수_없는가.md",
+  "templates/ai-basic/lectures_korean/04_ch4_Gradient_Descent와_Optimizer.md",
+  "templates/ai-basic/lectures_korean/05_ch5_Neural_Network의_학습_Cycle.md",
+  "templates/ai-basic/lectures_korean/06_ch6_Embedding에서_Transformer까지.md",
+  "templates/ai-basic/lectures_korean/07_ch7_AI의_평가와_일반화.md",
+  "templates/ai-basic/lectures_korean/08_ch8_AI_수학_통합_복습.md",
   "templates/consumer_data_utilization/lectures_english/01_ch1_온라인_소비자_행동_데이터.md",
   "templates/consumer_data_utilization/lectures_english/02_ch2_데이터_직무와_분석_워크플로우.md",
   "templates/consumer_data_utilization/lectures_english/03_ch3_데이터의_속성과_표현.md",

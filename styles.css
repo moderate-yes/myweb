@@ -168,6 +168,7 @@ a { color: inherit; }
 .md-content li { margin-bottom: .3em; }
 .md-content hr { margin: 2em 0; border: 0; border-top: 1px solid #e0e0e0; }
 .md-content img { max-width: 100%; margin: 1em 0; border-radius: 4px; }
+.md-content mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
 
 /* Consumer-data learning components */
 .learning-path, .comparison-cards, .tool-cards, .purpose-flow {
