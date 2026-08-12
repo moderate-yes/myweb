@@ -64,6 +64,17 @@ jobs:
           --content-type "text/markdown; charset=utf-8"
           --cache-control "no-cache"
 
+      - name: Synchronize lecture images
+        run: >-
+          aws s3 sync templates s3://ppujju/templates
+          --exclude "*"
+          --include "*/images/*.png"
+          --include "*/images/*.jpg"
+          --include "*/images/*.jpeg"
+          --include "*/images/*.webp"
+          --include "*/images/*.svg"
+          --cache-control "max-age=86400"
+
       - name: Refresh and verify the live website
         shell: bash
         run: |
