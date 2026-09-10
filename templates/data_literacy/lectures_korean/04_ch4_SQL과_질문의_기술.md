@@ -2,6 +2,12 @@
 
 데이터가 아무리 잘 쌓여 있어도 원하는 답을 꺼내지 못하면 소용이 없다. 이 장에서는 “잘 나가는 스타일이 뭘까?”라는 막연한 궁금증을 컴퓨터가 실제로 답할 수 있는 정확한 질문으로 바꾸는 방법을 다룬다. 그 도구가 바로 **SQL(Structured Query Language)**이다.
 
+## 학습 목표
+
+- 모호한 질문을 기간·분석 단위·지표·비교 기준으로 구체화한다.
+- SELECT, FROM, WHERE, GROUP BY의 역할을 설명한다.
+- 쿼리 결과가 답하지 못하는 범위를 함께 기록한다.
+
 ## 실무자가 SQL을 알아야 하는 이유
 
 SQL을 배운다고 해서 개발자가 될 필요는 없다. 기획, 마케팅, MD 업무에서 SQL이 중요한 이유는 코드를 짜는 기술 자체보다 **자신의 가설을 정확한 데이터 요청으로 번역하는 능력** 때문이다.
@@ -61,8 +67,12 @@ ORDER BY total_sold DESC;
 | 플리츠 미디 원피스 | 2,100 | 21% |
 | 그 외 8개 스타일 합계 | 4,700 | 47% |
 
-*그림: 질문 → SQL 쿼리 → 결과 표로 이어지는 데이터 추출 파이프라인 흐름도*
-![SQL 질문-쿼리-결과 흐름도](/static/image/lectures/ch4_query_pipeline.png)
+<div class="operations-flow" role="img" aria-label="비즈니스 질문을 데이터 조건과 SQL 결과 및 판단으로 바꾸는 흐름">
+  <div><strong>Business Question</strong><span>기간·지표·비교 집단</span></div>
+  <b>→</b><div><strong>SQL</strong><span>SELECT·FROM·WHERE·GROUP BY</span></div>
+  <b>→</b><div class="flow-highlight"><strong>Result Table</strong><span>단위·분모·누락 확인</span></div>
+  <b>→</b><div><strong>Decision</strong><span>결과가 답하는 범위 안에서 판단</span></div>
+</div>
 
 ## 이 장의 핵심
 
@@ -78,3 +88,13 @@ ORDER BY total_sold DESC;
 2. **모호한 요청 구체화 연습**: 생성형 AI에게 “‘잘 나가는 스타일이 뭐야?’라는 모호한 질문을 데이터로 답할 수 있는 구체적인 질문 3가지로 바꿔줘”라고 요청하고, 각 질문에 필요한 기간·지표·비교 집단이 명확한지 점검한다.
 3. **쿼리 결과 해석 검증**: 생성형 AI가 만들어준 베스트셀러 추출 쿼리 결과(가상 데이터로 실행하거나 AI가 만든 예시 결과)를 놓고, “이 결과에서 특정 스타일에 매출이 지나치게 쏠려 있는지 판단해줘”라고 요청한 뒤, AI의 해석 근거가 타당한지 직접 계산해 검증한다.
 
+## 학습 점검
+
+1. “요즘 잘 팔리는 상품”에 최소한 추가해야 할 조건을 세 가지 쓰시오.
+2. WHERE와 HAVING이 각각 거르는 대상은 무엇인가?
+3. 매출 상위 상품 표만으로 수요가 증가한 원인을 알 수 없는 이유는 무엇인가?
+
+## 참고문헌과 공식 자료
+
+- [SQLite, SELECT documentation](https://www.sqlite.org/lang_select.html)
+- [PostgreSQL, Queries](https://www.postgresql.org/docs/current/queries.html)

@@ -1,5 +1,11 @@
 # Embedding에서 Attention과 Transformer까지
 
+## 학습 목표
+
+- Token, Embedding과 Position information의 역할을 구분한다.
+- Q·K·V와 scaled dot-product attention의 Shape를 추적한다.
+- Causal mask와 next-token objective가 생성형 언어모델 학습에 하는 역할을 설명한다.
+
 > **중심 질문**<br>
 > 문장 속 단어들은 서로의 관계를 어떻게 계산하고 학습할까?
 
@@ -44,6 +50,16 @@ $$
 
 서로 다른 관계를 동시에 보기 위해 여러 Attention을 병렬로 수행하는 것이 <strong>Multi-Head Attention</strong>이다. 여기에 Feed Forward Network, Residual Connection, Layer Normalization을 결합하면 Transformer block이 된다.
 
+### 순서 정보와 Mask
+
+Self-attention만으로는 Token의 원래 순서를 자동으로 알 수 없으므로 Position embedding 또는 rotary position encoding 같은 순서 정보를 결합한다. 생성형 언어모델은 미래 Token을 미리 보지 못하도록 Causal mask를 적용하고, 앞선 Token들로 다음 Token을 맞히는 Cross Entropy loss를 줄이도록 학습할 수 있다.
+
+| 장치 | 해결하는 문제 | 주의점 |
+| --- | --- | --- |
+| Position information | Token 순서 표현 | 구현 방식은 모델마다 다름 |
+| Causal mask | 미래 Token 누설 방지 | Encoder형 모델에는 다른 Mask를 쓸 수 있음 |
+| Attention weight | 정보 혼합 비중 | 인간의 설명이나 원인과 동일하지 않음 |
+
 $$
 \text{Embedding}
 \rightarrow\text{Multi-Head Attention}
@@ -70,3 +86,17 @@ Transformer도 특별한 학습 법칙을 쓰는 것은 아니다. Prediction으
 - Attention은 $QK^T$로 관계를 계산하고 $V$의 정보를 가중합한다.
 - $W_Q,W_K,W_V$도 Loss를 줄이도록 학습되는 Parameter다.
 - Transformer 역시 Matrix Multiplication + Loss + Backpropagation + Optimizer로 학습한다.
+
+## 짧은 활동
+
+세 Token 문장을 정하고 $QK^T$를 3×3 표로 그린다. 마지막 Token을 예측하는 행에서 미래 위치가 가려져야 하는 칸을 표시한다.
+
+## 학습 점검
+
+1. Embedding만 있고 Position information이 없으면 어떤 정보가 약해지는가?
+2. Attention weight가 높다는 사실을 곧바로 인간이 납득할 인과 설명으로 볼 수 없는 이유는 무엇인가?
+
+## 참고문헌과 공식 자료
+
+- [Vaswani et al., Attention Is All You Need](https://papers.nips.cc/paper/7181-attention-is-all-you-need)
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) — 수식과 함께 읽는 보조 시각 자료

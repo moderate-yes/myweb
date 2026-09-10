@@ -1,5 +1,13 @@
 # 최적의 W를 한 번에 찾을 수 있을까
 
+## 학습 목표
+
+- 여러 관측치를 $\hat Y=XW$로 표현한다.
+- 최소제곱의 목적과 정규방정식이 나오는 흐름을 설명한다.
+- closed-form solution이 성립하는 조건을 말한다.
+
+> **수식 선택 학습**: 유도 과정보다 의미가 중요하다. 행렬곱과 역행렬 계산은 AI Math 3–4장에서 천천히 연습할 수 있다.
+
 > **중심 질문**<br>
 > 반복해서 값을 바꾸지 않고 Loss가 가장 작은 $W$를 직접 계산할 수 있을까?
 
@@ -82,3 +90,17 @@ $$
 - 선형 모델과 제곱오차의 조합은 최적 $W$의 closed-form solution을 허용한다.
 - $W=(X^TX)^{-1}X^TY$는 $X^TX$가 invertible일 때 사용할 수 있다.
 - 단순한 모델에서는 Loss가 가장 작은 $W$를 직접 계산할 수도 있다.
+
+## 짧은 활동
+
+$X$의 행·열과 $W,Y$의 Shape를 적고, $XW$가 가능한지 확인한다. 특성 두 개가 완전히 같은 경우 $X^TX$에 어떤 문제가 생길지 말해 본다.
+
+## 학습 점검
+
+1. $X^TX$가 invertible이어야 하는 이유는 무엇인가?
+2. 정규방정식의 해가 ‘모든 AI의 공식’이 아닌 이유는 무엇인가?
+
+## 참고문헌과 공식 자료
+
+- [Stanford CS229, Linear Regression](https://cs229.stanford.edu/notes2022fall/cs229-notes1.pdf)
+- [NumPy, numpy.linalg.lstsq](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html)

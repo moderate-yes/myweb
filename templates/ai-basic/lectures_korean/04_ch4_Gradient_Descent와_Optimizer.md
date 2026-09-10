@@ -1,5 +1,11 @@
 # Gradient Descent와 Optimizer
 
+## 학습 목표
+
+- Gradient의 부호와 크기를 update 방향과 연결한다.
+- Learning rate가 너무 크거나 작을 때를 비교한다.
+- Backpropagation과 Optimizer의 역할을 구분한다.
+
 > **중심 질문**<br>
 > 정답 $W$를 모르는 상태에서 Loss가 작은 $W$를 어떻게 찾아갈까?
 
@@ -79,3 +85,17 @@ $\eta$는 <strong>learning rate</strong>다. 너무 크면 최솟값을 지나�
 - Gradient Descent는 그 반대 방향으로 이동한다.
 - Optimizer는 계산된 Gradient를 이용해 Parameter를 업데이트한다.
 - Backpropagation은 Optimizer가 아니라 Gradient를 효율적으로 계산하는 방법이다.
+
+## 짧은 활동
+
+$L(W)=(W-3)^2$에서 $W=0$일 때 Gradient를 구하고, 학습률 0.1과 1.2로 한 번 업데이트한다. 어느 이동이 안정적인지 비교한다.
+
+## 학습 점검
+
+1. Gradient가 양수일 때 Gradient Descent는 W를 어느 방향으로 바꾸는가?
+2. Adam과 SGD는 Gradient를 계산하는가, 계산된 Gradient로 Parameter를 바꾸는가?
+
+## 참고문헌과 공식 자료
+
+- [Ruder, An Overview of Gradient Descent Optimization Algorithms](https://arxiv.org/abs/1609.04747)
+- [PyTorch, Optimizing Model Parameters](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html)

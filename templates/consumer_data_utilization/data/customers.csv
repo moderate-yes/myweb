@@ -1,0 +1,9 @@
+customer_id,signup_date,acquisition_channel,marketing_consent
+C001,2026-01-03,organic,true
+C002,2026-01-08,paid_search,true
+C003,2026-01-15,social,false
+C004,2026-02-02,referral,true
+C005,2026-02-11,organic,true
+C006,2026-03-07,email,true
+C007,2026-03-18,social,false
+C008,2026-04-01,paid_search,true

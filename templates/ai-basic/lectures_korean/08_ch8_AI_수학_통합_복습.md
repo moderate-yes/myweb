@@ -1,5 +1,11 @@
 # AI를 이해하는 수학: 통합 복습
 
+## 학습 목표
+
+- Vector·Matrix·Tensor의 Shape를 학습 Cycle과 연결한다.
+- MatMul·Transpose·Dot product·Rank·Gradient의 역할을 한 흐름으로 설명한다.
+- 작은 AI 프로젝트의 문제 정의부터 평가까지 설계한다.
+
 > **중심 질문**<br>
 > 회귀분석부터 Transformer까지 우리는 어떤 수학을, 왜 사용했을까?
 
@@ -120,6 +126,24 @@ $$
 | 신경망 학습 | Forward → Loss → Backward → Update | Tensor, Chain Rule |
 | Attention | $\operatorname{softmax}(QK^T/\sqrt{d_k})V$ | Dot Product, Transpose, MatMul |
 
+## 통합 미니 프로젝트: P501 반품 위험 예측
+
+> 이 프로젝트가 **AI Basic 과정의 최종 산출물(캡스톤)**이다. 작성 기준은 [과정 안내](templates/ai-basic/lectures_korean/00_ch0_과정_안내.md)의 "과정 완료 기준"을 따른다.
+
+`P501 남색 오버사이즈 코트`의 주문이 반품될 가능성을 예측한다고 하자. 이 프로젝트는 계산보다 **누수 없는 학습 설계**를 완성하는 것이 목표다.
+
+| 단계 | 작성할 것 | 점검 질문 |
+| --- | --- | --- |
+| 질문 | 발송 시점에 반품 가능성을 예측 | 예측을 어떤 결정에 쓸 것인가? |
+| Input $X$ | 주문 시점의 사이즈·가격·고객 이력 | 반품 후에 생긴 정보가 섞이지 않았는가? |
+| Target $Y$ | 정해진 기간 안의 반품 여부 | 라벨 기준이 일관적인가? |
+| Model | 작은 Logistic regression 또는 MLP | 기준선보다 복잡할 이유가 있는가? |
+| Loss | Binary Cross Entropy | 학습 가능한 신호인가? |
+| Metric | PR-AUC, Recall, calibration과 운영 비용 | 클래스 불균형과 임계값을 반영하는가? |
+| Split | 시간 순서 Train/Validation/Test | 미래 정보가 과거 학습에 들어오지 않았는가? |
+
+최종 산출물은 코드가 아니라 한 장짜리 Model card다. 데이터 범위, Shape, Loss, Metric, 실패 가능성이 큰 하위 집단과 사람이 최종 확인할 지점을 적는다.
+
 ## 5. 다음 학습으로 연결
 
 이제 새로운 모델을 만났을 때 이름부터 외우기보다 다음 질문을 던질 수 있다.
@@ -140,3 +164,14 @@ $$
 - Loss는 Prediction과 Target의 차이를 학습 가능한 신호로 만든다.
 - Backpropagation은 Gradient를 계산하고 Optimizer는 $W$를 업데이트한다.
 - 좋은 AI는 Training Loss만 낮은 모델이 아니라 새로운 데이터에 일반화하는 모델이다.
+
+## 학습 점검
+
+1. 반품 완료 후에만 알 수 있는 정보를 Input으로 쓰면 어떤 문제가 생기는가?
+2. 불균형한 반품 데이터에서 Accuracy만 쓰기 어려운 이유는 무엇인가?
+3. 이 프로젝트에서 $W$는 무엇을 학습하고, Metric은 무엇을 판단하는가?
+
+## 참고문헌과 공식 자료
+
+- [Mitchell et al., Model Cards for Model Reporting](https://doi.org/10.1145/3287560.3287596)
+- [scikit-learn, Precision-Recall](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)

@@ -1,5 +1,11 @@
 # AI의 학습이란 무엇인가
 
+## 학습 목표
+
+- Input, Target, Prediction과 Parameter를 구분한다.
+- 여러 Error를 하나의 Loss로 모으는 이유를 설명한다.
+- 이 과정에서 다루는 학습의 핵심 문장을 자신의 말로 표현한다.
+
 > **이 강의의 중심 문장**<br>
 > 학습은 <strong>Loss를 줄이는 Parameter $W$를 찾는 과정</strong>이다.
 
@@ -59,3 +65,26 @@ $w$와 $b$를 임의로 계속 대입해 볼 수도 있지만 가능한 값은 �
 - Prediction과 Target $Y$의 차이를 Loss로 측정한다.
 - 학습되는 것은 규칙 문장이 아니라 Parameter $W$와 $b$다.
 - <strong>학습 = Loss를 줄이는 Parameter $W$를 찾는 과정</strong>이다.
+
+> 이 문장은 지도학습과 신경망을 이해하기 위한 중심축이다. 규칙 기반 시스템, 검색 시스템이나 모든 AI를 이 문장 하나로 정의하는 것은 아니다.
+
+## 짧은 활동
+
+세 개의 키–몸무게 쌍을 만들고 서로 다른 $w,b$ 두 쌍으로 예측한다. 각 예측의 제곱오차를 직접 더해 어느 Parameter가 더 나은지 판단한다.
+
+## 학습 점검
+
+1. Error와 Loss는 어떻게 다른가?
+2. 데이터가 고정돼 있을 때 학습 과정에서 바뀌는 것은 무엇인가?
+
+<details><summary>정답과 해설 보기</summary>
+
+1. Error는 개별 예측의 차이이고, Loss는 학습을 위해 여러 Error를 하나의 값으로 요약한다.
+2. 모델의 Parameter $W,b$가 바뀐다.
+
+</details>
+
+## 참고문헌과 공식 자료
+
+- [Deep Learning, Chapter 5: Machine Learning Basics](https://www.deeplearningbook.org/contents/ml.html)
+- [scikit-learn, Mean squared error](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html)

@@ -1,5 +1,11 @@
 # Neural Network는 어떻게 학습하는가
 
+## 학습 목표
+
+- Activation이 없는 여러 Linear Layer가 하나로 합쳐지는 이유를 설명한다.
+- Forward, Loss, Backward, Update의 순서를 말한다.
+- Chain rule이 여러 Parameter의 Gradient를 연결하는 방식을 직관적으로 설명한다.
+
 > **중심 질문**<br>
 > 여러 Layer와 수많은 Parameter를 가진 신경망은 어떻게 Loss를 줄일까?
 
@@ -91,3 +97,17 @@ $$
 - Activation은 신경망에 비선형성을 더한다.
 - Forward는 예측, Loss는 비교, Backward는 Gradient 계산, Optimizer는 $W$ 업데이트다.
 - <strong>Forward → Loss → Backward → Update</strong>가 신경망 학습의 기본 cycle이다.
+
+## 짧은 활동
+
+입력 하나, Linear Layer 하나, ReLU 하나, 출력 하나인 작은 신경망을 상자로 그린다. Forward 값과 Backward Gradient가 이동하는 방향을 서로 다른 화살표로 표시한다.
+
+## 학습 점검
+
+1. Linear Layer 사이에 Activation이 필요한 이유는 무엇인가?
+2. Backward가 끝난 뒤에도 Optimizer step이 필요한 이유는 무엇인가?
+
+## 참고문헌과 공식 자료
+
+- [Rumelhart, Hinton & Williams, Learning representations by back-propagating errors](https://doi.org/10.1038/323533a0)
+- [PyTorch, Build the Neural Network](https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html)

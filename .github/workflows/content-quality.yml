@@ -1,0 +1,16 @@
+name: Content quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-korean-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate content structure and links
+        run: python scripts/validate_content.py

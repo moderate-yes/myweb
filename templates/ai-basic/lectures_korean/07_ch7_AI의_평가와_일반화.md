@@ -1,5 +1,11 @@
 # 학습한 AI는 정말 좋은가
 
+## 학습 목표
+
+- Train·Validation·Test의 역할을 구분한다.
+- Loss와 Metric을 목적에 맞게 선택한다.
+- 데이터 누설, 분포 변화와 subgroup 성능을 점검한다.
+
 > **중심 질문**<br>
 > Training Loss가 낮으면 좋은 AI라고 말할 수 있을까?
 
@@ -62,3 +68,17 @@ Train Loss는 내려가는데 Validation Loss가 올라가면 모델이 학습 �
 - Loss는 학습 방향을 만들고 Metric은 원하는 성능을 해석한다.
 - 낮은 Training Loss만으로 좋은 AI라고 할 수 없다.
 - 최종 목표는 보지 못한 데이터에서도 잘 작동하는 Generalization이다.
+
+## 짧은 활동
+
+같은 모델의 `Train loss↓ / Validation loss↑` 그래프를 그리고 원인을 추정한다. 전체 정확도가 같아도 사이즈·카테고리별 성능이 다른 두 모델 중 무엇을 배포할지 기준을 정한다.
+
+## 학습 점검
+
+1. Test set을 반복해서 보며 모델을 고르면 왜 Test가 Validation처럼 변하는가?
+2. Cross Entropy loss가 낮아졌어도 실제 서비스 지표가 나빠질 수 있는 이유는 무엇인가?
+
+## 참고문헌과 공식 자료
+
+- [scikit-learn, Cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html)
+- [Google, Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
