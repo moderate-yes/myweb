@@ -4,6 +4,7 @@
   const app = document.querySelector("#app");
   const config = window.SITE_CONFIG || {};
   const titleCache = new Map();
+  const hiddenSubjects = new Set(["consumer_data_utilization", "data_literacy"]);
   let contentKeys = [];
   let catalog = {};
 
@@ -77,6 +78,7 @@
       const match = key.match(/^templates\/([^/]+)\/lectures_(english|korean)\/([^/]+\.md)$/);
       if (!match) return result;
       const [, subject, language, filename] = match;
+      if (hiddenSubjects.has(subject)) return result;
       result[subject] ||= { english: [], korean: [] };
       result[subject][language].push({ filename, key });
       return result;
@@ -97,6 +99,11 @@
   }
 
   function subjectLabel(subject) {
+    const labels = {
+      fashion_bigdata_1: "패션 빅데이터 1",
+      fashion_bigdata_2: "패션 빅데이터 2",
+    };
+    if (labels[subject]) return labels[subject];
     return subject.replaceAll(/[_-]/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
   }
 
@@ -142,6 +149,35 @@
       iframe.allowFullscreen = true;
       placeholder.append(iframe);
     });
+  }
+
+  function hydrateAnimatedLectureImages(container) {
+    container.animatedImageObserver?.disconnect();
+    const images = container.querySelectorAll('img[src*="video-shape-time-axis.gif"]');
+    if (!images.length || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const image = entry.target;
+        if (!entry.isIntersecting) {
+          image.dataset.animationVisible = "false";
+          return;
+        }
+        if (image.dataset.animationVisible === "true") return;
+
+        image.dataset.animationVisible = "true";
+        const source = image.dataset.animationSource || image.getAttribute("src");
+        if (!source) return;
+        image.dataset.animationSource = source;
+
+        const replayUrl = new URL(source, document.baseURI);
+        replayUrl.searchParams.set("play", Date.now().toString());
+        image.src = replayUrl.href;
+      });
+    }, { threshold: 0.2 });
+
+    container.animatedImageObserver = observer;
+    images.forEach((image) => observer.observe(image));
   }
 
   async function hydrateTitles(subject, language) {
@@ -190,7 +226,14 @@
     let language = currentRoute.params.get("lang") || config.defaultLanguage || "english";
     if (!["english", "korean"].includes(language)) language = "english";
     let subject = currentRoute.params.get("subject") || config.defaultSubject || subjects[0];
-    if (!catalog[subject]) subject = subjects[0];
+    const migratedSubjects = {
+      data_literacy: "fashion_bigdata_1",
+      consumer_data_utilization: "fashion_bigdata_2",
+    };
+    if (!catalog[subject]) subject = migratedSubjects[subject] || subjects[0];
+    if (!(catalog[subject]?.[language] || []).length) {
+      language = (catalog[subject]?.korean || []).length ? "korean" : "english";
+    }
     const documents = catalog[subject][language] || [];
     let filename = currentRoute.params.get("doc") || documents[0]?.filename || "";
     if (!documents.some((item) => item.filename === filename)) filename = documents[0]?.filename || "";
@@ -296,6 +339,7 @@
         }
       });
       hydrateYouTubeEmbeds(container);
+      hydrateAnimatedLectureImages(container);
       window.MathJax?.typesetPromise?.([container]).catch(() => {});
     } catch (error) {
       container.innerHTML = `<div class="document-state"><h2>Document unavailable</h2><p>${escapeHtml(error.message)}</p></div>`;

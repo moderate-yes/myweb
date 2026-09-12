@@ -129,7 +129,7 @@ AI 학습은 $L$이 작아지도록 $\mathbf{w}$와 $b$를 바꾸는 과정이�
 1. Goodfellow, I., Bengio, Y., & Courville, A. (2016). [Deep Learning: Part I, Applied Math and Machine Learning Basics](https://www.deeplearningbook.org/contents/TOC.html). MIT Press.
 2. MIT OpenCourseWare. [18.06SC Linear Algebra](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/).
 
-## 다음 단원
+## 다음 장
 
 > 데이터가 Vector라면, 두 데이터가 비슷하다는 것은 정확히 무엇을 뜻할까?
 

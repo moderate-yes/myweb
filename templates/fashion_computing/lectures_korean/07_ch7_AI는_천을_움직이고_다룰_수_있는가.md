@@ -1,4 +1,4 @@
-# AI는 천을 움직이고 다룰 수 있는가?
+# 선택 심화: AI는 천을 움직이고 다룰 수 있는가?
 
 > **중심 질문:** AI는 코트가 몸 위에서 어떻게 움직일지 예측하고, 로봇이 구겨진 코트를 실제로 펼치도록 만들 수 있을까?
 
@@ -190,7 +190,7 @@ $$
 4. Grigorev, A., Thomaszewski, B., Black, M. J., & Hilliges, O. (2023). [HOOD: Hierarchical Graphs for Generalized Modelling of Clothing Dynamics](https://openaccess.thecvf.com/content/CVPR2023/papers/Grigorev_HOOD_Hierarchical_Graphs_for_Generalized_Modelling_of_Clothing_Dynamics_CVPR_2023_paper.pdf). CVPR.
 5. Sunil, N., Wang, S., She, Y., Adelson, E., & Rodriguez, A. (2023). [Visuotactile Affordances for Cloth Manipulation with Local Control](https://proceedings.mlr.press/v205/sunil23a.html). Proceedings of Machine Learning Research 205.
 
-## 다음 단원
+## 다음 장
 
 천을 예측하고 움직이는 시스템도 결국 특정 데이터와 지표 안에서 평가된다.
 8장에서는 패션 AI의 정확도를 과제별로 해석하고, 몸 데이터·창작물·실물 안전에 대한 책임을 최종 프로젝트 기준으로 통합한다.

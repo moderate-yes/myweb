@@ -5,7 +5,7 @@
 
 ## 학습 목표
 
-이 단원을 마치면 다음을 할 수 있다.
+이 장을 마치면 다음을 할 수 있다.
 
 - Image-based Virtual Try-On의 입력과 출력을 설명할 수 있다.
 - 사람의 정체성·자세와 상품의 무늬를 보존해야 하는 이유를 설명할 수 있다.
@@ -167,6 +167,6 @@ P501 가상착용 결과를 평가한다고 가정하고 다음 항목을 세 �
 3. Morelli, D. et al. (2022). [Dress Code: High-Resolution Multi-Category Virtual Try-On](https://openaccess.thecvf.com/content/CVPR2022W/CVFAD/html/Morelli_Dress_Code_High-Resolution_Multi-Category_Virtual_Try-On_CVPRW_2022_paper.html). *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)*.
 4. Kim, J. et al. (2024). [StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_StableVITON_Learning_Semantic_Correspondence_with_Latent_Diffusion_Model_for_Virtual_CVPR_2024_paper.html). *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*.
 
-## 다음 단원
+## 다음 장
 
-이번 단원에서는 옷을 입은 것처럼 보이는 2D 이미지를 만들었다. 다음 단원에서는 카메라에 보이지 않는 뒷면과 몸 안쪽까지 추론하며 사람과 옷을 3D 구조로 복원할 수 있는지 살펴본다.
+이번 장에서는 옷을 입은 것처럼 보이는 2D 이미지를 만들었다. 다음 장에서는 카메라에 보이지 않는 뒷면과 몸 안쪽까지 추론하며 사람과 옷을 3D 구조로 복원할 수 있는지 살펴본다.

@@ -151,7 +151,7 @@ $L(w)=(2w-6)^2$에 대해 답하자.
 1. Goodfellow, I., Bengio, Y., & Courville, A. [Numerical Computation](https://www.deeplearningbook.org/contents/numerical.html). *Deep Learning*, Chapter 4.
 2. Stanford CS229. [Course Materials: Linear Algebra, Multivariable Calculus, and Backpropagation](https://cs229.stanford.edu/syllabus-spring2021.html).
 
-## 다음 단원
+## 다음 장
 
 > Gradient를 알았다면, 얼마나 크게 움직이고 어떤 제약을 지켜야 할까?
 

@@ -58,9 +58,9 @@ Train Loss는 내려가는데 Validation Loss가 올라가면 모델이 학습 �
 
 ## 5. 다음 장 연결
 
-> **회귀분석부터 Transformer와 평가까지 실제로 사용한 수학은 어떻게 연결될까?**
+> **학습 원리를 실제 사용 전 검증과 책임 있는 의사결정으로 어떻게 연결할까?**
 
-마지막 장에서는 Vector·Matrix·Tensor, Shape, MatMul, Transpose, Dot Product, Inverse·Rank, Gradient를 전체 학습 cycle 안에서 다시 묶는다.
+마지막 장에서는 수학을 짧게 복습한 뒤 목적·데이터·기준선·평가셋·하위 집단·사람 승인·배포 중단 조건을 하나의 Model Audit으로 묶는다.
 
 ## 핵심 정리
 

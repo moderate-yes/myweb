@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="455" viewBox="0 0 1200 455" role="img" aria-labelledby="title desc">
+  <title id="title">RGB 이미지와 이미지 배치의 Shape 큐브</title>
+  <desc id="desc">RGB 채널 세 장이 겹친 단일 이미지와 이미지 여러 장이 쌓인 배치를 입체 블록으로 표현하고 높이, 너비, 채널, 배치 축을 표시한 그림</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="grid-red" width="50" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.48" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid-green" width="50" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.42" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid-blue" width="50" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.42" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+    <style>
+      .title { font: 700 30px system-ui, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 17px system-ui, sans-serif; fill: #475569; }
+      .panel-title { font: 700 22px system-ui, sans-serif; fill: #0f172a; }
+      .label { font: 700 17px system-ui, sans-serif; fill: #0f172a; }
+      .small { font: 500 15px system-ui, sans-serif; fill: #475569; }
+      .shape { font: 700 20px ui-monospace, SFMono-Regular, Consolas, monospace; fill: #1d4ed8; }
+      .axis { stroke: #475569; stroke-width: 2.2; marker-end: url(#arrow); }
+      .guide { stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 5 5; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="455" rx="28" fill="#f8fafc"/>
+
+  <g transform="translate(48 30)">
+    <rect width="515" height="395" rx="22" fill="#ffffff" stroke="#dbe4f0" filter="url(#shadow)"/>
+    <text x="24" y="38" class="panel-title">이미지 한 장</text>
+    <text x="24" y="68" class="shape">shape = (H, W, C)</text>
+
+    <g transform="translate(105 103)">
+      <rect x="44" y="-44" width="270" height="216" rx="8" fill="#2563eb" fill-opacity="0.72" stroke="#1d4ed8" stroke-width="2"/>
+      <rect x="44" y="-44" width="270" height="216" rx="8" fill="url(#grid-blue)"/>
+      <text x="326" y="-19" class="label" fill="#1d4ed8">B</text>
+
+      <rect x="22" y="-22" width="270" height="216" rx="8" fill="#22c55e" fill-opacity="0.68" stroke="#16a34a" stroke-width="2"/>
+      <rect x="22" y="-22" width="270" height="216" rx="8" fill="url(#grid-green)"/>
+      <text x="304" y="6" class="label" fill="#15803d">G</text>
+
+      <rect width="270" height="216" rx="8" fill="#ef4444" fill-opacity="0.58" stroke="#dc2626" stroke-width="2.5"/>
+      <rect width="270" height="216" rx="8" fill="url(#grid-red)"/>
+      <text x="282" y="31" class="label" fill="#b91c1c">R</text>
+
+      <line x1="-24" y1="0" x2="-24" y2="216" class="axis"/>
+      <text x="-57" y="114" class="label" transform="rotate(-90 -57 114)">H = 높이</text>
+
+      <line x1="0" y1="246" x2="270" y2="246" class="axis"/>
+      <text x="91" y="278" class="label">W = 너비</text>
+
+      <line x1="285" y1="205" x2="344" y2="146" class="axis"/>
+      <text x="328" y="119" class="label">C = 3</text>
+      <text x="321" y="141" class="small">RGB 채널</text>
+    </g>
+  </g>
+
+  <g transform="translate(592 30)">
+    <rect width="560" height="395" rx="22" fill="#ffffff" stroke="#dbe4f0" filter="url(#shadow)"/>
+    <text x="24" y="38" class="panel-title">이미지 여러 장</text>
+    <text x="24" y="68" class="shape">shape = (N, H, W, C)</text>
+
+    <g transform="translate(128 126)">
+      <g opacity="0.38" transform="translate(72 -54)">
+        <polygon points="0,35 225,35 275,0 50,0" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+        <polygon points="225,35 275,0 275,165 225,200" fill="#60a5fa" stroke="#3b82f6" stroke-width="2"/>
+        <rect y="35" width="225" height="165" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+      </g>
+      <g opacity="0.55" transform="translate(48 -36)">
+        <polygon points="0,35 225,35 275,0 50,0" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+        <polygon points="225,35 275,0 275,165 225,200" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+        <rect y="35" width="225" height="165" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+      </g>
+      <g opacity="0.72" transform="translate(24 -18)">
+        <polygon points="0,35 225,35 275,0 50,0" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+        <polygon points="225,35 275,0 275,165 225,200" fill="#60a5fa" stroke="#1d4ed8" stroke-width="2"/>
+        <rect y="35" width="225" height="165" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+      </g>
+      <g>
+        <polygon points="0,35 225,35 275,0 50,0" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2.5"/>
+        <polygon points="225,35 275,0 275,165 225,200" fill="#60a5fa" stroke="#1d4ed8" stroke-width="2.5"/>
+        <rect y="35" width="225" height="165" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+        <line x1="75" y1="35" x2="75" y2="200" class="guide"/>
+        <line x1="150" y1="35" x2="150" y2="200" class="guide"/>
+        <line x1="0" y1="90" x2="225" y2="90" class="guide"/>
+        <line x1="0" y1="145" x2="225" y2="145" class="guide"/>
+      </g>
+
+      <line x1="-25" y1="35" x2="-25" y2="200" class="axis"/>
+      <text x="-58" y="132" class="label" transform="rotate(-90 -58 132)">H</text>
+      <line x1="0" y1="228" x2="225" y2="228" class="axis"/>
+      <text x="106" y="258" class="label">W</text>
+      <line x1="285" y1="175" x2="326" y2="142" class="axis"/>
+      <text x="330" y="142" class="label">C</text>
+      <line x1="92" y1="-43" x2="330" y2="-67" class="axis"/>
+      <text x="340" y="-70" class="label">N = 32장</text>
+      <text x="340" y="-48" class="small">배치축</text>
+    </g>
+  </g>
+
+</svg>

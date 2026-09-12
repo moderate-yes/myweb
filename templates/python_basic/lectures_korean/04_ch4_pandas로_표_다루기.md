@@ -95,7 +95,7 @@ orders.groupby("product_id").agg(
 )
 ```
 
-`groupby`는 "같은 값을 가진 행끼리 묶어 각 묶음을 하나의 숫자로 요약"한다. SQL의 `GROUP BY`, 4장 Consumer Data에서 배운 집계와 같은 개념이다.
+`groupby`는 "같은 값을 가진 행끼리 묶어 각 묶음을 하나의 숫자로 요약"한다. SQL의 `GROUP BY`, 패션 빅데이터 1의 질문·분석 워크플로우 장에서 배운 집계와 같은 개념이다.
 
 ## 7. merge: 두 표 연결하기
 
@@ -136,6 +136,19 @@ coats["on_sale"] = True
 
 2장의 "리스트는 복사되지 않는다"와 같은 원리다.
 
+## 9. AI가 만든 pandas 코드 검수표
+
+| 확인 | 최소 검사 |
+|---|---|
+| 입력 | `shape`, 컬럼, dtype, 날짜 범위 |
+| 필터 | 포함·제외된 실제 행을 각각 확인 |
+| `groupby` | 분모와 집계 단위, 합계의 보존 |
+| `merge` | 키 중복, 미매칭, 조인 전후 행 수 |
+| 결측 | 0·빈 문자열·`NaN`의 구분 |
+| 출력 | 손으로 계산한 3~5행 예제와 일치 |
+
+AI에게 “분석해 줘”라고만 요청하지 않는다. 분석 단위, 기간, 취소·반품 규칙과 기대 출력 컬럼을 먼저 제공하고, 생성된 코드의 각 변환 뒤 행 수를 출력하도록 한다.
+
 ## 짧은 활동
 
 공통 실습 데이터로 코랩에서 수행한다.
@@ -173,7 +186,7 @@ coats["on_sale"] = True
 - [pandas 공식: 10분 만에 배우는 pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
 - [pandas 공식: merge, join, concatenate](https://pandas.pydata.org/docs/user_guide/merging.html)
 
-## 다음 단원
+## 다음 장
 
 이번 장에서는 표를 다뤘다. 다음 장에서는 표 아래에 있는 숫자 배열 자체를 NumPy로 계산하고, 결과를 그래프로 그린다.
 

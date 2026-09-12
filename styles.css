@@ -155,6 +155,15 @@ a { color: inherit; }
   border: 1px solid #cfcfcf; border-radius: 6px; background: #f7f7f7; line-height: 1.5;
 }
 .md-content pre code { padding: 0; border: 0; color: inherit; background: none; font-size: .9em; }
+.md-content pre:has(> code.language-output) {
+  border-color: #9bc8ae; border-left: 5px solid #3b8f65; color: #174b32; background: #eef8f2;
+}
+.md-content pre:has(> code.language-output)::before {
+  display: block; margin-bottom: .55em; color: #2f7654;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: .72rem; font-weight: 700; letter-spacing: .05em; content: "실행 결과";
+}
+.md-content code.language-output { color: #174b32; }
 .md-content blockquote {
   margin: 1.2em 0; padding: .5em 1.2em; border-left: 4px solid #4a6fa5;
   border-radius: 0 4px 4px 0; color: #555; background: #f8f9fc;

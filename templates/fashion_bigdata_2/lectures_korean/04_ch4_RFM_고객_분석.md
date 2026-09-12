@@ -1,10 +1,9 @@
-# 누가 최근에, 자주, 많이 샀는가: RFM 고객 세분화
+# RFM으로 고객 분석 기준선 만들기
+
+> **학습 우선순위**
+> RFM은 최신 개인화 모델을 대신하는 정답이 아니라 적은 데이터로 빠르게 설명 가능한 기준선을 만드는 방법이다. 점수표 자체보다 기준 기간·환불 처리·집단 안정성·후속 실험을 이해하는 것이 핵심이며, 상세 점수 계산과 k-평균은 선택 실습으로 읽어도 된다.
 
 모든 고객에게 같은 메시지를 보내기보다 최근 구매 고객, 반복 구매 고객, 고액 구매 고객을 구분하면 목적에 맞는 전략을 세울 수 있다. 이 장에서는 거래 기록을 고객별 **Recency·Frequency·Monetary**로 요약하고, 규칙 기반 점수와 k-평균 군집화를 구분해 사용한다.
-
-<div class="learning-path" aria-label="RFM 고객 세분화 흐름">
-  <span>거래 정제</span><b>→</b><span>R·F·M 계산</span><b>→</b><span>점수화·스케일링</span><b>→</b><span>고객군 생성</span><b>→</b><span>프로필·행동</span><b>→</b><span>실험·평가</span>
-</div>
 
 ## 생각해 보기: 어떤 고객이 더 중요한가?
 
@@ -94,7 +93,7 @@ rfm = valid.groupby("customer_id").agg(
 
 고객 ID가 없는 비회원 주문, 취소·부분 반품, 통화와 중복 주문을 어떻게 처리했는지 기록한다. 세분화 결과는 이 정의에 따라 달라진다.
 
-## 3. 점수 방향을 ‘5점=좋음’으로 통일하기
+## 3. 선택 실습: 점수 방향을 ‘5점=좋음’으로 통일하기
 
 원시 Recency는 **작을수록** 좋지만, R 점수는 최근 고객일수록 높게 만든다. F와 M은 원시값이 클수록 점수도 높다.
 
@@ -177,7 +176,7 @@ FM만 보는 것은 계산 비용을 줄이기 위한 필수 절차가 아니라
 
 이 규칙은 예시다. 점수 경계에 있는 두 고객의 실제 차이는 작을 수 있다.
 
-## 6. k-평균을 사용할 때의 전처리와 검증
+## 6. 선택 실습: k-평균을 사용할 때의 전처리와 검증
 
 k-means는 유클리드 거리를 사용한다. 구매액의 숫자 범위가 구매 횟수보다 훨씬 크면 M이 거리를 지배한다. RFM은 보통 오른쪽으로 긴 분포이므로 로그 변환과 [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)를 검토한다.
 
@@ -245,7 +244,7 @@ VVIP가 산 상품을 VIP에게 추천하면 VIP가 VVIP로 성장할 수 있다
 
 기준일은 8월 1일이고, 모두 최근 3개월의 **고유 완료 주문 수와 순구매액**이다. 기존 FM 활동에 Recency를 복원한다. `5점=좋음`을 지킨다.
 
-| 고객 | 마지막 구매 후 일수(R) | 주문 수(F) | 순구매액(M) | R 점수 | F 점수 | M 점수 |
+| 고객 | R(최근성) | F(빈도) | M(금액) | R 점수 | F 점수 | M 점수 |
 |---|---:|---:|---:|---:|---:|---:|
 | A | 4 | 12 | 850,000 |  |  |  |
 | B | 42 | 3 | 1,200,000 |  |  |  |
@@ -258,6 +257,10 @@ VVIP가 산 상품을 VIP에게 추천하면 VIP가 VVIP로 성장할 수 있다
 1. 최근 핵심 고객에 가장 가까운 고객은 누구인가?
 2. 저빈도·고금액 고객은 누구이며, 어떤 추가 정보를 확인할 것인가?
 3. 고빈도·저금액 고객에게 고가 상품을 무조건 추천하면 어떤 문제가 생길까?
+
+## 9. 생성형 AI 시대에 RFM을 사용하는 위치
+
+생성형 AI는 고객군 이름과 메시지 초안을 빠르게 만들 수 있지만, 고객의 의도·민감한 특성·미래 구매를 자동으로 확정하지 못한다. RFM 결과는 `설명 가능한 기준선 → 소규모 메시지 또는 서비스 실험 → 전환·피로·수익·공정성 확인`의 출발점으로 사용한다. 개인화 모델과 비교할 때는 같은 평가 기간과 고객군에서 단순 RFM 기준선을 실제로 이기는지 확인한다.
 
 ## 이 장의 핵심
 
@@ -307,6 +310,6 @@ VVIP가 산 상품을 VIP에게 추천하면 VIP가 VVIP로 성장할 수 있다
 - pandas development team. [`DataFrame.groupby`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html), [`GroupBy.agg`](https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.agg.html), [`qcut`](https://pandas.pydata.org/docs/reference/api/pandas.qcut.html). pandas API Reference.
 - scikit-learn developers. [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html), [`KMeans`](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), [`silhouette_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html). scikit-learn documentation.
 
-## 다음 단원
+## 다음 장
 
-이번 단원에서는 거래를 고객별 RFM으로 요약하고, 일관된 점수 방향과 검증 가능한 세분화 절차를 만들었다. 다음 단원에서는 상품 사진을 고차원 임베딩으로 바꿔 시각적으로 가까운 옷을 검색하는 과정을 다룬다.
+이번 장에서는 거래를 고객별 RFM으로 요약하고, 일관된 점수 방향과 검증 가능한 세분화 절차를 만들었다. 다음 장에서는 상품 사진을 고차원 임베딩으로 바꿔 시각적으로 가까운 옷을 검색하는 과정을 다룬다.
