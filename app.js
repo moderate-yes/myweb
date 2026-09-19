@@ -4,6 +4,7 @@
   const app = document.querySelector("#app");
   const config = window.SITE_CONFIG || {};
   const titleCache = new Map();
+  const markdownCache = new Map();
   const hiddenSubjects = new Set(["consumer_data_utilization", "data_literacy"]);
   let contentKeys = [];
   let catalog = {};
@@ -14,6 +15,38 @@
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+
+  function protectMathFromMarkdown(markdown) {
+    // Marked consumes backslashes in MathJax delimiters, so restore TeX only after Markdown parsing.
+    const segments = [];
+    const tokenPrefix = "NMOFMATHTOKEN";
+    const mathOrCode = /```[\s\S]*?```|`[^`\n]*`|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$\$[\s\S]*?\$\$|\$(?!\$)(?:\\.|[^$\n])+\$/g;
+    const source = markdown.replace(mathOrCode, (segment) => {
+      if (segment.startsWith("`")) return segment;
+      const token = `${tokenPrefix}${segments.length}END`;
+      segments.push(segment);
+      return token;
+    });
+
+    return {
+      source,
+      restore(html) {
+        return segments.reduce(
+          (result, segment, index) => result.replaceAll(`${tokenPrefix}${index}END`, escapeHtml(segment)),
+          html
+        );
+      }
+    };
+  }
+
+  function normalizeStrongBoundaries(markdown) {
+    // CommonMark may leave **term(...)** raw when a Korean particle follows the closing marker.
+    const codeOrStrongBeforeWord = /```[\s\S]*?```|`[^`\n]*`|\*\*([^*\n]+?)\*\*(?=[\p{L}\p{N}])/gu;
+    return markdown.replace(codeOrStrongBeforeWord, (segment, strongText) => {
+      if (segment.startsWith("`")) return segment;
+      return `<strong>${strongText}</strong>`;
+    });
+  }
 
   const encodePath = (path) => path.split("/").map(encodeURIComponent).join("/");
 
@@ -75,12 +108,12 @@
 
   function buildCatalog(keys) {
     return keys.reduce((result, key) => {
-      const match = key.match(/^templates\/([^/]+)\/lectures_(english|korean)\/([^/]+\.md)$/);
+      const match = key.match(/^templates\/([^/]+)\/lectures_(english|korean)\/(?:([^/]+)\/)?([^/]+\.md)$/);
       if (!match) return result;
-      const [, subject, language, filename] = match;
+      const [, subject, language, part, filename] = match;
       if (hiddenSubjects.has(subject)) return result;
       result[subject] ||= { english: [], korean: [] };
-      result[subject][language].push({ filename, key });
+      result[subject][language].push({ filename, key, part: part || "" });
       return result;
     }, {});
   }
@@ -100,11 +133,54 @@
 
   function subjectLabel(subject) {
     const labels = {
-      fashion_bigdata_1: "패션 빅데이터 1",
-      fashion_bigdata_2: "패션 빅데이터 2",
+      "00_start_here": "Start Here",
+      "01_fashion_bigdata": "Fashion Data Analysis and AI",
+      "02_python_basic": "Python Basic",
+      "03_html_css_basic": "HTML·CSS Basic",
+      "04_ai_basic": "AI Basic",
+      "05_ai_math": "AI Math",
+      "06_fashion_computing": "Fashion Computing",
     };
     if (labels[subject]) return labels[subject];
-    return subject.replaceAll(/[_-]/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+    return subject.replace(/^\d+_/, "").replaceAll(/[_-]/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+  }
+
+  function partLabel(part) {
+    const labels = {
+      "01_introduction": "Introduction",
+      "02_data": "Data",
+      "03_analysis": "Analysis",
+      "04_system": "System",
+      "05_application": "Application",
+      "06_ai": "Application",
+    };
+    return labels[part] || part.replace(/^\d+_/, "").replaceAll("_", " ");
+  }
+
+  function sectionsFromMarkdown(markdown) {
+    const sections = [];
+    let inFence = false;
+    markdown.split("\n").forEach((line) => {
+      if (line.trim().startsWith("```")) {
+        inFence = !inFence;
+        return;
+      }
+      const match = !inFence && line.match(/^##\s+(.+?)\s*#*\s*$/);
+      if (match) sections.push(match[1].trim());
+    });
+    return sections;
+  }
+
+  function sectionListMarkup(subject, language, item) {
+    const markdown = markdownCache.get(item.key);
+    if (!markdown) return "";
+    return sectionsFromMarkdown(markdown).map((title, index) => `
+      <li><a class="toc-section" href="${lectureUrl(subject, language, item.filename, index)}" data-section="${index}">${escapeHtml(title)}</a></li>`).join("");
+  }
+
+  function scrollToSection(index) {
+    const heading = document.querySelectorAll("#lecture-document .md-content h2")[index];
+    heading?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function documentLabel(filename) {
@@ -120,11 +196,14 @@
   }
 
   async function fetchMarkdown(key) {
+    if (markdownCache.has(key)) return markdownCache.get(key);
     const url = new URL(encodePath(key), location.href.split("#")[0]);
     url.searchParams.set("updated", Date.now().toString());
     const response = await fetch(url, { cache: "no-store" });
     if (!response.ok) throw new Error(`Unable to load ${key} (${response.status})`);
-    return response.text();
+    const markdown = await response.text();
+    markdownCache.set(key, markdown);
+    return markdown;
   }
 
   function titleFromMarkdown(markdown, fallback) {
@@ -180,6 +259,25 @@
     images.forEach((image) => observer.observe(image));
   }
 
+  function bindSectionLinks(root) {
+    root.querySelectorAll(".toc-chapter.current .toc-section").forEach((link) => {
+      if (link.dataset.bound) return;
+      link.dataset.bound = "true";
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        scrollToSection(Number(link.dataset.section));
+        history.replaceState(null, "", link.getAttribute("href"));
+      });
+    });
+  }
+
+  function fillCurrentSections(subject, language, item) {
+    const list = document.querySelector(".toc-chapter.current .toc-sections");
+    if (!list || list.children.length) return;
+    list.innerHTML = sectionListMarkup(subject, language, item);
+    bindSectionLinks(list.closest(".toc-chapter"));
+  }
+
   async function hydrateTitles(subject, language) {
     const items = catalog[subject]?.[language] || [];
     await Promise.all(items.map(async (item) => {
@@ -210,8 +308,9 @@
     animateMouth();
   }
 
-  function lectureUrl(subject, language, filename) {
+  function lectureUrl(subject, language, filename, section) {
     const params = new URLSearchParams({ subject, lang: language, doc: filename });
+    if (section !== undefined) params.set("sec", String(section));
     return `#/lecture?${params}`;
   }
 
@@ -225,10 +324,19 @@
     }
     let language = currentRoute.params.get("lang") || config.defaultLanguage || "english";
     if (!["english", "korean"].includes(language)) language = "english";
-    let subject = currentRoute.params.get("subject") || config.defaultSubject || subjects[0];
+    const requestedSubject = currentRoute.params.get("subject") || config.defaultSubject || subjects[0];
+    let subject = requestedSubject;
     const migratedSubjects = {
-      data_literacy: "fashion_bigdata_1",
-      consumer_data_utilization: "fashion_bigdata_2",
+      data_literacy: "01_fashion_bigdata",
+      consumer_data_utilization: "01_fashion_bigdata",
+      fashion_bigdata_1: "01_fashion_bigdata",
+      fashion_bigdata_2: "01_fashion_bigdata",
+      fashion_bigdata: "01_fashion_bigdata",
+      python_basic: "02_python_basic",
+      html_css_basic: "03_html_css_basic",
+      "ai-basic": "04_ai_basic",
+      "ai-math": "05_ai_math",
+      fashion_computing: "06_fashion_computing",
     };
     if (!catalog[subject]) subject = migratedSubjects[subject] || subjects[0];
     if (!(catalog[subject]?.[language] || []).length) {
@@ -236,25 +344,136 @@
     }
     const documents = catalog[subject][language] || [];
     let filename = currentRoute.params.get("doc") || documents[0]?.filename || "";
+    const migratedBigdata2Files = {
+      "01_ch1_데이터_프로젝트와_안전한_수집.md": "19_ch19_도구와_벤치마크_데이터셋.md",
+      "02_ch2_상품_텍스트_마이닝.md": "23_ch23_상품명_키워드_분석.md",
+      "03_ch3_판매량_급변과_이상치.md": "20_ch20_급상승_상품_분석.md",
+      "04_ch4_RFM_고객_분석.md": "21_ch21_RFM_고객_분류.md",
+      "05_ch5_이미지_유사도_검색.md": "22_ch22_이미지_유사도_추천.md",
+      "06_ch6_검색의도와_SEO.md": "26_ch26_시장_데이터_융합_추천.md",
+      "07_ch7_고객경험과_행동분석.md": "31_ch31_AB_테스트.md",
+      "08_ch8_콘텐츠와_성과지표.md": "41_ch41_콘텐츠와_성과지표.md",
+      "09_ch9_BCG_UGC_AIGC.md": "42_ch42_BCG_UGC_AIGC.md",
+      "10_ch10_패션_이미지_생성과_검증.md": "43_ch43_패션_이미지_생성과_검증.md",
+      "11_ch11_자동화와_의사결정.md": "44_ch44_자동화와_의사결정.md",
+      "12_ch12_생성형_AI와_최종프로젝트.md": "45_ch45_생성형_AI와_최종프로젝트.md",
+    };
+    if (requestedSubject === "fashion_bigdata_2" && migratedBigdata2Files[filename]) {
+      filename = migratedBigdata2Files[filename];
+    }
+    const shiftedFashionBigdataFiles = {
+      "20_ch20_상품_텍스트_마이닝.md": "23_ch23_상품명_키워드_분석.md",
+      "21_ch21_판매량_급변과_이상치.md": "20_ch20_급상승_상품_분석.md",
+      "22_ch22_RFM_고객_분석.md": "21_ch21_RFM_고객_분류.md",
+      "23_ch23_이미지_유사도_검색.md": "22_ch22_이미지_유사도_추천.md",
+      "24_ch24_검색의도와_SEO.md": "26_ch26_시장_데이터_융합_추천.md",
+      "25_ch25_고객경험과_행동분석.md": "31_ch31_AB_테스트.md",
+      "26_ch26_콘텐츠와_성과지표.md": "41_ch41_콘텐츠와_성과지표.md",
+      "27_ch27_BCG_UGC_AIGC.md": "42_ch42_BCG_UGC_AIGC.md",
+      "28_ch28_패션_이미지_생성과_검증.md": "43_ch43_패션_이미지_생성과_검증.md",
+      "29_ch29_자동화와_의사결정.md": "44_ch44_자동화와_의사결정.md",
+      "30_ch30_생성형_AI와_최종프로젝트.md": "45_ch45_생성형_AI와_최종프로젝트.md",
+      "07_ch7_질문과_분석_워크플로우.md": "07_ch7_분석_개괄.md",
+      "07_ch7_질문과_분석_유형.md": "07_ch7_분석_개괄.md",
+      "08_ch8_집단_비교.md": "10_ch10_특성화와_차별화.md",
+      "08_ch8_현황_비교와_패턴_발견.md": "10_ch10_특성화와_차별화.md",
+      "09_ch9_관계와_인과.md": "15_ch15_분석_평가.md",
+      "09_ch9_예측과_불확실성.md": "12_ch12_분류와_회귀.md",
+      "10_ch10_확률과_불확실성.md": "12_ch12_분류와_회귀.md",
+      "10_ch10_관계_인과와_실험.md": "15_ch15_분석_평가.md",
+      "11_ch11_데이터의_한계와_증거.md": "15_ch15_분석_평가.md",
+      "11_ch11_편향_증거와_의사결정.md": "15_ch15_분석_평가.md",
+      "12_ch12_데이터_분석_시스템과_보안.md": "16_ch16_데이터_저장과_이동.md",
+      "12_ch12_로컬_서버_DB와_데이터_처리.md": "16_ch16_데이터_저장과_이동.md",
+      "12_ch12_데이터_저장과_이동.md": "16_ch16_데이터_저장과_이동.md",
+      "13_ch13_CPU_GPU_클라우드와_보안.md": "17_ch17_분석_시스템_도입과_비용_산정.md",
+      "13_ch13_컴퓨터_자원과_처리_성능.md": "17_ch17_분석_시스템_도입과_비용_산정.md",
+      "17_ch17_컴퓨터_자원과_처리_성능.md": "17_ch17_분석_시스템_도입과_비용_산정.md",
+      "14_ch14_클라우드_비용과_보안.md": "18_ch18_분석_시스템_운영과_보안.md",
+      "18_ch18_클라우드_비용과_보안.md": "18_ch18_분석_시스템_운영과_보안.md",
+      "12_ch12_데이터_프로젝트와_안전한_수집.md": "19_ch19_도구와_벤치마크_데이터셋.md",
+      "13_ch13_데이터_프로젝트와_안전한_수집.md": "19_ch19_도구와_벤치마크_데이터셋.md",
+      "14_ch14_데이터_프로젝트와_안전한_수집.md": "19_ch19_도구와_벤치마크_데이터셋.md",
+      "15_ch15_데이터_프로젝트와_안전한_수집.md": "19_ch19_도구와_벤치마크_데이터셋.md",
+      "19_ch19_데이터_프로젝트와_안전한_수집.md": "19_ch19_도구와_벤치마크_데이터셋.md",
+      "13_ch13_상품_텍스트_마이닝.md": "23_ch23_상품명_키워드_분석.md",
+      "14_ch14_상품_텍스트_마이닝.md": "23_ch23_상품명_키워드_분석.md",
+      "15_ch15_상품_텍스트_마이닝.md": "23_ch23_상품명_키워드_분석.md",
+      "16_ch16_상품_텍스트_마이닝.md": "23_ch23_상품명_키워드_분석.md",
+      "14_ch14_판매량_급변과_이상치.md": "20_ch20_급상승_상품_분석.md",
+      "15_ch15_판매량_급변과_이상치.md": "20_ch20_급상승_상품_분석.md",
+      "16_ch16_판매량_급변과_이상치.md": "20_ch20_급상승_상품_분석.md",
+      "17_ch17_판매량_급변과_이상치.md": "20_ch20_급상승_상품_분석.md",
+      "15_ch15_RFM_고객_분석.md": "21_ch21_RFM_고객_분류.md",
+      "16_ch16_RFM_고객_분석.md": "21_ch21_RFM_고객_분류.md",
+      "17_ch17_RFM_고객_분석.md": "21_ch21_RFM_고객_분류.md",
+      "18_ch18_RFM_고객_분석.md": "21_ch21_RFM_고객_분류.md",
+      "16_ch16_이미지_유사도_검색.md": "22_ch22_이미지_유사도_추천.md",
+      "17_ch17_이미지_유사도_검색.md": "22_ch22_이미지_유사도_추천.md",
+      "18_ch18_이미지_유사도_검색.md": "22_ch22_이미지_유사도_추천.md",
+      "19_ch19_이미지_유사도_검색.md": "22_ch22_이미지_유사도_추천.md",
+      "17_ch17_검색의도와_SEO.md": "26_ch26_시장_데이터_융합_추천.md",
+      "18_ch18_검색의도와_SEO.md": "26_ch26_시장_데이터_융합_추천.md",
+      "19_ch19_검색의도와_SEO.md": "26_ch26_시장_데이터_융합_추천.md",
+      "20_ch20_검색의도와_SEO.md": "26_ch26_시장_데이터_융합_추천.md",
+      "18_ch18_고객경험과_행동분석.md": "31_ch31_AB_테스트.md",
+      "19_ch19_고객경험과_행동분석.md": "31_ch31_AB_테스트.md",
+      "20_ch20_고객경험과_행동분석.md": "31_ch31_AB_테스트.md",
+      "21_ch21_고객경험과_행동분석.md": "31_ch31_AB_테스트.md",
+      "19_ch19_콘텐츠와_성과지표.md": "41_ch41_콘텐츠와_성과지표.md",
+      "20_ch20_콘텐츠와_성과지표.md": "41_ch41_콘텐츠와_성과지표.md",
+      "21_ch21_콘텐츠와_성과지표.md": "41_ch41_콘텐츠와_성과지표.md",
+      "22_ch22_콘텐츠와_성과지표.md": "41_ch41_콘텐츠와_성과지표.md",
+      "20_ch20_BCG_UGC_AIGC.md": "42_ch42_BCG_UGC_AIGC.md",
+      "21_ch21_BCG_UGC_AIGC.md": "42_ch42_BCG_UGC_AIGC.md",
+      "22_ch22_BCG_UGC_AIGC.md": "42_ch42_BCG_UGC_AIGC.md",
+      "23_ch23_BCG_UGC_AIGC.md": "42_ch42_BCG_UGC_AIGC.md",
+      "21_ch21_패션_이미지_생성과_검증.md": "43_ch43_패션_이미지_생성과_검증.md",
+      "22_ch22_패션_이미지_생성과_검증.md": "43_ch43_패션_이미지_생성과_검증.md",
+      "23_ch23_패션_이미지_생성과_검증.md": "43_ch43_패션_이미지_생성과_검증.md",
+      "24_ch24_패션_이미지_생성과_검증.md": "43_ch43_패션_이미지_생성과_검증.md",
+      "22_ch22_자동화와_의사결정.md": "44_ch44_자동화와_의사결정.md",
+      "23_ch23_자동화와_의사결정.md": "44_ch44_자동화와_의사결정.md",
+      "24_ch24_자동화와_의사결정.md": "44_ch44_자동화와_의사결정.md",
+      "25_ch25_자동화와_의사결정.md": "44_ch44_자동화와_의사결정.md",
+      "23_ch23_생성형_AI와_최종프로젝트.md": "45_ch45_생성형_AI와_최종프로젝트.md",
+      "24_ch24_생성형_AI와_최종프로젝트.md": "45_ch45_생성형_AI와_최종프로젝트.md",
+      "25_ch25_생성형_AI와_최종프로젝트.md": "45_ch45_생성형_AI와_최종프로젝트.md",
+      "26_ch26_생성형_AI와_최종프로젝트.md": "45_ch45_생성형_AI와_최종프로젝트.md",
+    };
+    if (subject === "01_fashion_bigdata" && shiftedFashionBigdataFiles[filename]) {
+      filename = shiftedFashionBigdataFiles[filename];
+    }
     if (!documents.some((item) => item.filename === filename)) filename = documents[0]?.filename || "";
 
     const subjectMarkup = subjects.map((subjectName) => {
-      const open = subjectName === subject;
       const subjectDocuments = catalog[subjectName][language] || [];
-      const links = subjectDocuments.length
-        ? subjectDocuments.map((item) => `
-            <a class="document-link ${open && item.filename === filename ? "active" : ""}"
+      let lastPart = "";
+      const chapters = subjectDocuments.map((item) => {
+        const isCurrent = subjectName === subject && item.filename === filename;
+        const partHeading = item.part && item.part !== lastPart
+          ? `<p class="toc-part">${escapeHtml(partLabel(item.part))}</p>`
+          : "";
+        if (item.part) lastPart = item.part;
+        return `${partHeading}
+          <div class="toc-chapter ${isCurrent ? "current" : ""}">
+            <a class="document-link ${isCurrent ? "active" : ""}"
                href="${lectureUrl(subjectName, language, item.filename)}" data-key="${escapeHtml(item.key)}">
               <span class="chapter-number">${chapterNumber(item.filename)}</span>
               <span class="document-title">${escapeHtml(titleCache.get(item.key) || documentLabel(item.filename))}</span>
-            </a>`).join("")
+            </a>
+            <button class="toc-toggle" type="button" aria-expanded="${isCurrent}" aria-label="절 목록 펼치기"
+                    data-subject="${escapeHtml(subjectName)}" data-filename="${escapeHtml(item.filename)}"></button>
+            <ul class="toc-sections" ${isCurrent ? "" : "hidden"}>${isCurrent ? sectionListMarkup(subjectName, language, item) : ""}</ul>
+          </div>`;
+      }).join("");
+      const body = subjectDocuments.length
+        ? chapters
         : `<p class="document-link">${language === "korean" ? "이 폴더에 마크다운 파일을 추가하세요." : "Add Markdown files to this folder."}</p>`;
       return `
-        <section class="subject">
-          <button class="subject-toggle" type="button" aria-expanded="${open}" data-subject="${escapeHtml(subjectName)}">
-            ${escapeHtml(subjectLabel(subjectName))}
-          </button>
-          <div class="document-list" ${open ? "" : "hidden"}>${links}</div>
+        <section class="toc-course">
+          <p class="toc-caption">${escapeHtml(subjectLabel(subjectName))}</p>
+          ${body}
         </section>`;
     }).join("");
 
@@ -288,14 +507,24 @@
         </aside>
       </div>`;
 
-    app.querySelectorAll(".subject-toggle").forEach((button) => {
-      button.addEventListener("click", () => {
+    app.querySelectorAll(".toc-toggle").forEach((button) => {
+      button.addEventListener("click", async () => {
         const expanded = button.getAttribute("aria-expanded") === "true";
+        const list = button.nextElementSibling;
         button.setAttribute("aria-expanded", String(!expanded));
-        button.nextElementSibling.hidden = expanded;
-        if (!expanded) hydrateTitles(button.dataset.subject, language);
+        list.hidden = expanded;
+        if (expanded || list.children.length) return;
+        const item = catalog[button.dataset.subject][language].find((entry) => entry.filename === button.dataset.filename);
+        try {
+          await fetchMarkdown(item.key);
+          list.innerHTML = sectionListMarkup(button.dataset.subject, language, item);
+          bindSectionLinks(list);
+        } catch {
+          list.innerHTML = "";
+        }
       });
     });
+    bindSectionLinks(app);
     app.querySelectorAll("[data-language]").forEach((button) => {
       button.addEventListener("click", () => {
         const nextLanguage = button.dataset.language;
@@ -303,8 +532,84 @@
         navigate(lectureUrl(subject, nextLanguage, nextDocs[0]?.filename || "").slice(1));
       });
     });
-    hydrateTitles(subject, language);
+    hydrateTitles(subject, language).then(() => {
+      subjects.filter((name) => name !== subject).forEach((name) => hydrateTitles(name, language));
+    });
     loadDocument(subject, language, filename);
+  }
+
+  function hydrateAnalysisChartSwitchers(root) {
+    root.querySelectorAll(".analysis-example-figure").forEach((figure, index) => {
+      const nodesBeforeCode = [];
+      let candidate = figure.nextElementSibling;
+      let codeBlock = null;
+
+      while (candidate && !/^H[12]$/.test(candidate.tagName)) {
+        if (candidate.matches("pre") && candidate.querySelector("code.language-python")) {
+          codeBlock = candidate;
+          break;
+        }
+        nodesBeforeCode.push(candidate);
+        candidate = candidate.nextElementSibling;
+      }
+      if (!codeBlock) return;
+
+      const switcher = document.createElement("section");
+      switcher.className = "analysis-chart-switcher";
+
+      const tabs = document.createElement("div");
+      tabs.className = "analysis-chart-tabs";
+      tabs.setAttribute("role", "tablist");
+      tabs.setAttribute("aria-label", `그림 ${index + 1} 보기 방식`);
+
+      const graphTab = document.createElement("button");
+      graphTab.type = "button";
+      graphTab.className = "analysis-chart-tab";
+      graphTab.textContent = "그래프";
+
+      const codeTab = document.createElement("button");
+      codeTab.type = "button";
+      codeTab.className = "analysis-chart-tab";
+      codeTab.textContent = "Python 코드";
+
+      const graphPanel = document.createElement("div");
+      const codePanel = document.createElement("div");
+      const graphId = `analysis-chart-${index + 1}-graph`;
+      const codeId = `analysis-chart-${index + 1}-code`;
+
+      graphPanel.id = graphId;
+      graphPanel.className = "analysis-chart-panel";
+      graphPanel.setAttribute("role", "tabpanel");
+      codePanel.id = codeId;
+      codePanel.className = "analysis-chart-panel analysis-chart-code";
+      codePanel.setAttribute("role", "tabpanel");
+
+      graphTab.id = `${graphId}-tab`;
+      graphTab.setAttribute("role", "tab");
+      graphTab.setAttribute("aria-controls", graphId);
+      codeTab.id = `${codeId}-tab`;
+      codeTab.setAttribute("role", "tab");
+      codeTab.setAttribute("aria-controls", codeId);
+      graphPanel.setAttribute("aria-labelledby", graphTab.id);
+      codePanel.setAttribute("aria-labelledby", codeTab.id);
+
+      const activate = (showCode) => {
+        graphTab.setAttribute("aria-selected", String(!showCode));
+        codeTab.setAttribute("aria-selected", String(showCode));
+        graphPanel.hidden = showCode;
+        codePanel.hidden = !showCode;
+      };
+
+      graphTab.addEventListener("click", () => activate(false));
+      codeTab.addEventListener("click", () => activate(true));
+      tabs.append(graphTab, codeTab);
+      figure.parentNode.insertBefore(switcher, figure);
+      graphPanel.appendChild(figure);
+      nodesBeforeCode.forEach((node) => codePanel.appendChild(node));
+      codePanel.appendChild(codeBlock);
+      switcher.append(tabs, graphPanel, codePanel);
+      activate(false);
+    });
   }
 
   async function loadDocument(subject, language, filename) {
@@ -322,7 +627,10 @@
       let html;
       if (window.marked && window.DOMPurify) {
         window.marked.setOptions({ gfm: true, breaks: true });
-        html = window.DOMPurify.sanitize(window.marked.parse(markdown), {
+        const protectedMath = protectMathFromMarkdown(markdown);
+        const markdownSource = normalizeStrongBoundaries(protectedMath.source);
+        const parsedMarkdown = protectedMath.restore(window.marked.parse(markdownSource));
+        html = window.DOMPurify.sanitize(parsedMarkdown, {
           USE_PROFILES: { html: true },
           ADD_ATTR: ["target", "rel", "data-youtube-id", "data-title"]
         });
@@ -333,13 +641,27 @@
         <div class="document-meta">${escapeHtml(subjectLabel(subject))} · ${escapeHtml(language)}</div>
         <article class="md-content">${html}</article>`;
       container.querySelectorAll("a[href]").forEach((link) => {
+        const raw = link.getAttribute("href") || "";
+        const lecture = raw.match(/^templates\/([^/]+)\/lectures_(english|korean)\/(?:[^/]+\/)?([^/#?]+\.md)(?:#sec-(\d+))?$/);
+        if (lecture) {
+          const target = decodeURIComponent(lecture[3]);
+          const known = (catalog[lecture[1]]?.[lecture[2]] || []).some((doc) => doc.filename === target);
+          if (known) {
+            link.setAttribute("href", lectureUrl(lecture[1], lecture[2], target, lecture[4] === undefined ? undefined : Number(lecture[4])));
+            return;
+          }
+        }
         if (/^https?:/i.test(link.href)) {
           link.target = "_blank";
           link.rel = "noopener noreferrer";
         }
       });
+      hydrateAnalysisChartSwitchers(container);
       hydrateYouTubeEmbeds(container);
       hydrateAnimatedLectureImages(container);
+      fillCurrentSections(subject, language, item);
+      const section = route().params.get("sec");
+      if (section !== null) scrollToSection(Number(section));
       window.MathJax?.typesetPromise?.([container]).catch(() => {});
     } catch (error) {
       container.innerHTML = `<div class="document-state"><h2>Document unavailable</h2><p>${escapeHtml(error.message)}</p></div>`;

@@ -1,0 +1,222 @@
+# Optional: Can AI Move and Handle Cloth?
+
+## 학습 목표
+
+두 Part는 한 공정에서 연결될 수 있지만 입력·출력·평가 지표가 다르다. 수업에서는 전반부와 후반부를 별도 차시로 운영해도 된다.
+
+이 장을 마치면 다음을 할 수 있다.
+
+- 옷의 **형상 예측**, **물리 시뮬레이션**, **로봇 조작**을 서로 다른 문제로 구분한다.
+- 메시, 그래프, 상태, 행동이 천을 표현하는 방식을 간단한 수식으로 설명한다.
+- TailorNet, HOOD, DiffCloth, FlingBot, Visuotactile Affordances의 질문과 검증 범위를 비교한다.
+- 논문 속 수치가 새로운 소재·의복·로봇에서도 그대로 유지된다고 단정할 수 없는 이유를 말한다.
+
+> **심화 · 선택**: 이 장은 코어 트랙(1~4·8장)에 포함되지 않으며, 물리 시뮬레이션과 로봇 조작은 패션 서비스 실무와 거리가 있다. 8장의 검증 사다리 논의를 위해 4.6절 비교표만 읽어도 된다.
+
+<div class="comparison-cards" role="img" aria-label="가상 천 계산과 실물 로봇 조작의 구분">
+  <section class="concept-card"><h3>Part A · 가상 천</h3><p>상태·물성·접촉 → 다음 Mesh</p><small>TailorNet · HOOD · DiffCloth</small></section>
+  <section class="concept-card"><h3>Part B · 실물 조작</h3><p>영상·촉각 → 잡기·이동 행동</p><small>FlingBot · Visuotactile</small></section>
+</div>
+
+## 1. 연구 질문: 천은 왜 단단한 물체보다 어려운가?
+
+컵은 잡아도 전체 모양이 거의 유지되지만 천은 한 점을 잡는 순간 나머지 부분이 모두 달라진다.
+천의 자유도는 매우 크고, 접힘·마찰·충돌·가림이 동시에 발생한다.
+따라서 “AI가 천을 다룬다”는 말에는 적어도 세 가지 연구 질문이 섞여 있다.
+
+1. **형상 예측:** 사람의 자세가 바뀌면 옷의 3D 메시가 어떻게 변할까?
+2. **물리 추론:** 소재와 힘이 주어졌을 때 다음 순간의 주름과 접촉은 무엇일까?
+3. **행동 선택:** 카메라와 촉각을 보고 로봇은 어디를 어떻게 잡아야 할까?
+
+[TailorNet](https://virtualhumans.mpi-inf.mpg.de/tailornet/)과 [HOOD](https://dolorousrtur.github.io/hood/)는 주로 앞의 두 질문을 다룬다.
+[FlingBot](https://flingbot.cs.columbia.edu/)과 [Visuotactile Affordances](https://proceedings.mlr.press/v205/sunil23a.html)는 실제 로봇 행동에 더 가깝다. 여기서 **어포던스(affordance)**란 천의 특정 위치에서 잡기·당기기 같은 행동이 성공할 가능성을 뜻한다.
+가상 인체 위 코트의 주름을 잘 예측한다고 해서 로봇이 그 코트를 잘 잡는 것은 아니다.
+반대로 코트를 넓게 펼쳤다고 해서 그 코트의 착용 주름을 정확히 재현한 것도 아니다.
+
+## 2. P501 코트로 보는 단순한 예
+
+앞 장에서 만든 P501 코트가 배송 상자에서 구겨진 채 작업대 위에 놓였다고 하자.
+우리가 원하는 결과를 두 단계로 나눠 보자.
+### 단계 A: 가상 코트 움직임 예측
+
+- 입력: P501 패턴 메시, 소재 근사값, 착용자 체형, 팔을 드는 동작
+- 질문: 1초 뒤 소매와 몸판의 꼭짓점은 어디에 있을까?
+- 출력: 시간에 따라 변하는 3D 메시와 접촉 위치
+
+### 단계 B: 실제 코트 펼치기
+
+- 입력: 위에서 본 깊이 영상, 그리퍼 상태, 필요하면 촉각 영상
+- 질문: 어느 두 점을 잡고 어떤 속도로 움직여야 코트가 펴질까?
+- 출력: 잡기 위치, 이동 궤적, 멈춤 또는 재시도 결정
+
+단순한 성공 기준은 “작업대에서 보이는 코트 면적이 커졌다”가 될 수 있다.
+그러나 안감이 뒤집히거나 소매가 접힌 상태에서도 면적은 크게 측정될 수 있다.
+따라서 P501의 실제 기준에는 앞·뒤 방향, 소매 정렬, 단추와 라펠의 손상 여부도 포함해야 한다.
+시뮬레이터에서 성공한 행동은 실제 울 혼방 코트의 무게와 미끄러움 때문에 실패할 수 있다.
+
+## 3. 입력·표현·수식·출력
+
+### 3.1 천을 그래프로 표현하기
+천 메시를 그래프 $G=(V,E)$로 생각할 수 있다.
+$V$는 천의 꼭짓점, $E$는 서로 연결된 꼭짓점 쌍이다.
+한 꼭짓점에는 위치 $\mathbf{x}_i$, 속도 $\mathbf{v}_i$, 질량 $m_i$ 같은 값이 붙는다.
+몸이나 작업대와 닿는지 나타내는 접촉 정보도 필요하다.
+### 3.2 다음 상태 예측하기
+현재 상태와 외력을 묶어 $s_t$라고 하면 다음 상태는 다음처럼 쓸 수 있다.
+
+$$
+\hat{s}_{t+1}=f_\theta(s_t,\;u_t,\;c)
+$$
+
+$u_t$는 사람 또는 로봇의 움직임, $c$는 소재·체형·마찰 같은 조건이다.
+$f_\theta$가 신경망이면 데이터에서 변화 규칙을 학습한다.
+물리 시뮬레이터는 늘어남, 굽힘, 중력, 충돌 에너지를 직접 계산한다.
+HOOD처럼 물리 에너지를 학습 손실로 쓰면 정답 애니메이션 없이도 모델을 훈련할 수 있다.
+### 3.3 행동을 선택하기
+로봇 정책은 관측 $o_t$에서 행동 $a_t$를 고른다.
+
+$$
+a_t=\pi_\phi(o_t), \qquad s_{t+1}=F(s_t,a_t)
+$$
+
+행동은 “두 점 잡기 → 당기기 → 빠르게 펼치기” 또는 “가장자리를 잡고 모서리까지 미끄러지기”일 수 있다.
+FlingBot의 자기지도 신호는 행동 전후의 면적 증가량, 즉 $\Delta C=C_{t+1}-C_t$이다.
+
+$$
+C=\frac{\text{작업대에서 관측된 천 마스크 면적}}{\text{완전히 편 천의 기준 면적}}
+$$
+
+이 값은 펼침 정도의 대리 지표이지 라펠·소매·안감이 올바르다는 증거는 아니다.
+촉각 기반 방법은 영상의 한 점 $p$마다 가장자리를 성공적으로 잡을 점수 $q(p)$를 예측할 수 있다.
+### 3.4 무엇이 출력되는가?
+
+| 문제 | 대표 입력 | 대표 출력 | 출력이 말하지 않는 것 |
+|---|---|---|---|
+| 가상 드레이프 | 자세·체형·스타일 | 3D 꼭짓점 위치 | 실제 소재의 모든 물성 |
+| 동적 시뮬레이션 | 메시·속도·접촉 | 다음 프레임 메시 | 미관과 착용감 |
+| 펼치기 | RGB-D 영상 | 잡기·당기기·플링 행동 | 의복의 완전한 정렬 |
+| 촉각 슬라이딩 | 깊이·촉각 영상 | 가장자리 자세와 이동 제어 | 보이지 않는 전체 천 상태 |
+
+## 4. 대표 연구의 발전과 평가
+
+### 4.1 TailorNet: 빠른 착의 형상 예측
+[TailorNet(CVPR 2020)](https://virtualhumans.mpi-inf.mpg.de/tailornet/)은 자세, 체형, 의복 스타일에서 3D 의복 변형을 예측한다.
+저주파 변형과 고주파 주름을 나눠 학습해 물리 시뮬레이션의 세부 주름을 보존하려 했다.
+공식 프로젝트는 55,800 프레임 데이터와 물리 시뮬레이션보다 1,000배 이상 빠른 실행을 보고한다.
+이는 고정된 의복 범주와 대응되는 메시에서의 빠른 예측 성과이며, 자유로운 패턴이나 실제 코트 조작의 증거는 아니다.
+### 4.2 HOOD: 다양한 메시의 동적 변형
+[HOOD(CVPR 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Grigorev_HOOD_Hierarchical_Graphs_for_Generalized_Modelling_of_Clothing_Dynamics_CVPR_2023_paper.pdf)는 계층 그래프로 먼 꼭짓점 사이의 영향을 효율적으로 전달한다.
+정답 시뮬레이션 프레임 대신 물리 기반 손실을 사용하고, 학습 때 보지 않은 체형과 의복 토폴로지에 대한 일반화를 실험했다.
+하지만 논문은 의복끼리의 접촉과 자기 관통을 처리하지 않으며, 학습 범위를 벗어난 속도에서 실패할 수 있다고 밝힌다.
+### 4.3 DiffCloth: 결과에서 원인으로 되돌아가기
+[DiffCloth(SIGGRAPH 2022)](https://people.csail.mit.edu/liyifei/publication/diffcloth/)는 건식 마찰 접촉을 포함한 미분 가능한 천 시뮬레이터다.
+결과의 오차가 소재 변수나 로봇 궤적에 어떻게 연결되는지 기울기로 계산한다.
+연구는 소재 추정, 보조 착의 궤적, 폐루프 제어, 드레스 역설계 예를 보였다.
+미분 가능하다는 것은 현실이 자동으로 정확하다는 뜻이 아니며, 충돌과 소재 모델의 가정은 그대로 남는다.
+### 4.4 FlingBot: 빠르게 던져 펼치기
+[FlingBot(CoRL 2021, proceedings 2022)](https://proceedings.mlr.press/v164/ha22a.html)은 두 팔로 잡고, 벌리고, 빠르게 던지는 행동을 자기지도 방식으로 학습했다.
+공식 프로젝트는 새로운 천에서 세 번 이내 행동으로 80%가 넘는 면적을 얻고, 직사각형 천만으로 학습한 뒤 티셔츠에도 시험했다고 보고한다.
+실제 로봇 미세조정 실험에서는 준정적 집어놓기 기준선보다 면적 증가가 네 배 이상이었다.
+이 수치는 해당 로봇·카메라·천·면적 정의에서 나온 결과이며, 무거운 P501 코트의 안전성과 정렬 성능을 보장하지 않는다.
+### 4.5 Visuotactile Affordances: 보고 잡은 뒤 느끼며 이동하기
+[Visuotactile Affordances(CoRL 2022/Proceedings 2023)](https://proceedings.mlr.press/v205/sunil23a.html)는 시각으로 가장자리 잡기 후보를 찾고 촉각으로 잡은 상태와 가장자리 자세를 확인한다.
+논문은 가장자리 잡기 90% 성공률과, 잡은 뒤 인접 모서리까지 실시간으로 미끄러지는 시연을 보고한다.
+이는 제한된 천과 장비에서의 구성 요소 평가이며, 다양한 코트를 처음부터 끝까지 접는 성공률은 아니다.
+### 4.6 비교표
+
+| 연구 | 핵심 문제 | 검증의 중심 | 강의에서 남길 질문 |
+|---|---|---|---|
+| TailorNet, 2020 | 자세·체형·스타일별 형상 | 시뮬레이션 메시, 속도 | 빠른 근사가 어떤 세부를 잃는가? |
+| FlingBot, 2021/2022 | 구겨진 천 펼치기 | 면적 증가, 행동 수, 실물 로봇 | 면적이 의복 정렬을 대표하는가? |
+| DiffCloth, 2022 | 미분 가능한 물리 | 역문제와 제어 예제 | 물리 가정이 틀리면 기울기는 유용한가? |
+| HOOD, 2023 | 임의 토폴로지 동역학 | 물리 손실, 미관측 형상 | 자기 충돌 없는 결과를 어디까지 믿을까? |
+| Visuotactile, 2023 | 가장자리 잡기와 슬라이딩 | 잡기 성공률, 로봇 시연 | 수건에서 코트로 무엇이 달라지는가? |
+
+## 5. 문제 발생: 연구 데모가 공정이 되기까지
+
+첫째, **시뮬레이션-현실 간극**이 있다. 마찰, 두께, 안감, 봉제선, 장식은 정확히 측정하기 어렵다.
+둘째, **부분 관측** 문제가 있다. 카메라는 겹친 소매와 내부 접힘을 볼 수 없고 촉각은 닿은 곳만 안다.
+셋째, **목표의 대리성** 문제가 있다. coverage가 높아도 방향과 부품 정렬은 틀릴 수 있다.
+넷째, **안전과 손상** 문제가 있다. 빠른 플링은 작업자, 로봇, 단추, 섬세한 원단에 위험할 수 있다.
+다섯째, **분포 변화**가 있다. 수건에서 배운 가장자리는 라펠·안감·벨트가 있는 코트의 가장자리와 다르다.
+여섯째, **평가 단위**가 다르다. 프레임 오차, 메시 거리, 면적, 잡기 성공률은 서로 대신할 수 없다.
+따라서 **논문 속 metric은 실물 성능과 같지 않다(metric ≠ real-world performance).**
+또한 **기하학적으로 몸에 맞는 것과 압박·가동성·열감까지 좋은 착용감은 다르다(geometric fit ≠ comfort).**
+실제 도입 전에는 다양한 코트, 반복 횟수, 실패 복구, 손상률, 시간, 작업자 개입을 함께 기록해야 한다.
+### Python으로 천 Graph의 한 점을 이웃 방향으로 이동하기
+
+천을 Graph로 보면 Vertex는 위치, Edge는 이웃 관계를 나타낸다. 가운데 점이 위로 튀어나온 단순한 상황에서 이웃 평균 방향으로 절반만 이동시키는 한 단계를 계산한다.
+
+```python
+import numpy as np
+
+positions = np.array([[0.0, 0.0], [1.0, 1.0], [2.0, 0.0]])
+middle = positions[1]
+neighbor_mean = positions[[0, 2]].mean(axis=0)
+next_middle = middle + 0.5 * (neighbor_mean - middle)
+
+print("middle now =", middle)
+print("neighbor mean =", neighbor_mean)
+print("middle next =", next_middle)
+```
+
+```output
+middle now = [1. 1.]
+neighbor mean = [1. 0.]
+middle next = [1.  0.5]
+```
+
+실제 천 시뮬레이션에는 질량, 탄성, 충돌, 중력과 시간 간격이 추가된다. 이 코드는 Graph 이웃 정보가 다음 상태 계산에 사용된다는 원리만 보여준다.
+
+## 짧은 활동: P501 검증 카드 만들기
+
+네 명이 한 조가 되어 “P501 코트를 펼치는 로봇”의 검증 카드를 작성한다.
+
+1. 소재·사이즈·초기 구김을 최소 세 집단으로 나눈다.
+2. coverage 외에 정렬, 손상, 시간, 재시도 횟수 지표를 하나씩 정한다.
+3. 위험한 실패 한 가지와 그때의 즉시 중단 조건을 쓴다.
+4. 시뮬레이션 결과와 실물 결과를 한 표에 섞지 않고 따로 보고한다.
+
+## 이 장의 핵심
+
+- 천의 형상 예측, 물리 계산, 로봇 행동 선택은 연결되지만 동일한 과제가 아니다.
+- 메시와 그래프는 천의 고차원 상태를 구조화하고, 정책은 관측에서 행동을 선택한다.
+- TailorNet·HOOD·DiffCloth는 가상 변형과 물리 추론을, FlingBot·Visuotactile은 실제 조작의 일부를 보여 준다.
+- 좋은 데모를 현장 능력으로 해석하려면 소재 다양성, 안전, 실패 복구, 실물 반복 검증이 필요하다.
+
+## 학습 점검
+
+1. TailorNet의 출력과 FlingBot의 출력은 어떻게 다른가?
+2. FlingBot의 coverage가 90%여도 P501 작업이 실패일 수 있는 예를 하나 들어 보자.
+3. 시각과 촉각을 함께 쓰면 무엇이 좋아지고, 무엇은 여전히 알기 어려운가?
+
+<details>
+<summary>정답과 해설 보기</summary>
+
+1. TailorNet은 자세·체형·스타일에 따른 3D 의복 메시를 예측하고, FlingBot은 영상에서 두 팔의 잡기·벌리기·플링 행동을 선택한다.
+2. 라펠이 뒤집히거나 소매가 몸판 아래 접혀도 투영 면적은 크게 나올 수 있다. 따라서 방향·부품 정렬·손상 기준이 추가로 필요하다.
+3. 시각은 전체 후보 위치를 안내하고 촉각은 가려진 접촉 상태를 확인한다. 그러나 두 센서만으로 내부 겹침, 정확한 소재 물성, 전체 3D 상태를 완전히 알 수는 없다.
+
+</details>
+
+## 참고문헌
+
+1. Patel, C., Liao, Z., & Pons-Moll, G. (2020). [TailorNet: Predicting Clothing in 3D as a Function of Human Pose, Shape and Garment Style](https://virtualhumans.mpi-inf.mpg.de/tailornet/). CVPR.
+2. Ha, H., & Song, S. (2022). [FlingBot: The Unreasonable Effectiveness of Dynamic Manipulation for Cloth Unfolding](https://proceedings.mlr.press/v164/ha22a.html). *Proceedings of the 5th Conference on Robot Learning, PMLR 164*, 24–33.
+3. Li, Y., Du, T., Wu, K., Xu, J., & Matusik, W. (2022). [DiffCloth: Differentiable Cloth Simulation with Dry Frictional Contact](https://doi.org/10.1145/3527660). ACM Transactions on Graphics.
+4. Grigorev, A., Thomaszewski, B., Black, M. J., & Hilliges, O. (2023). [HOOD: Hierarchical Graphs for Generalized Modelling of Clothing Dynamics](https://openaccess.thecvf.com/content/CVPR2023/papers/Grigorev_HOOD_Hierarchical_Graphs_for_Generalized_Modelling_of_Clothing_Dynamics_CVPR_2023_paper.pdf). CVPR.
+5. Sunil, N., Wang, S., She, Y., Adelson, E., & Rodriguez, A. (2023). [Visuotactile Affordances for Cloth Manipulation with Local Control](https://proceedings.mlr.press/v205/sunil23a.html). Proceedings of Machine Learning Research 205.
+
+## 다음 장
+
+천을 예측하고 움직이는 시스템도 결국 특정 데이터와 지표 안에서 평가된다.
+8장에서는 패션 AI의 정확도를 과제별로 해석하고, 몸 데이터·창작물·실물 안전에 대한 책임을 최종 프로젝트 기준으로 통합한다.
+
+## 핵심 용어
+
+- **천 상태**: 한 시점의 꼭짓점 위치·속도, 주름, 접촉 관계.
+- **메시**: 천 표면을 꼭짓점과 삼각형의 연결로 나타낸 것.
+- **동역학**: 힘과 현재 상태로부터 다음 상태를 계산하는 규칙.
+- **정책**: 관측을 받아 로봇의 다음 행동을 선택하는 함수.
+- **어포던스**: 특정 위치에서 어떤 행동이 성공할 가능성.
+- **시뮬레이션-현실 간극**: 가상 실험과 실제 천·센서·로봇 사이의 차이.

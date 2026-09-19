@@ -9,7 +9,7 @@
 window.SITE_CONFIG = Object.freeze({
   s3BucketUrl: "https://ppujju.s3.ap-northeast-2.amazonaws.com",
   contentPrefix: "templates/",
-  defaultSubject: "fashion_bigdata_1",
+  defaultSubject: "01_fashion_bigdata",
   defaultLanguage: "korean",
   portfolioPassword: "1234"
 });

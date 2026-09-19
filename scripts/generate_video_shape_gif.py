@@ -12,7 +12,7 @@ FRAME_COUNT = 12
 OUTPUT = (
     Path(__file__).resolve().parents[1]
     / "templates"
-    / "consumer_data_utilization"
+    / "01_fashion_bigdata"
     / "lectures_korean"
     / "images"
     / "video-shape-time-axis.gif"

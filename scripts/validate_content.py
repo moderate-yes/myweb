@@ -13,6 +13,8 @@ TEMPLATES = ROOT / "templates"
 INDEX = ROOT / "content-index.js"
 LOCAL_LINK = re.compile(r"!?\[[^\]]*\]\((?!https?://|mailto:|#)([^)]+)\)")
 INDEX_ENTRY = re.compile(r'"(templates/[^"\n]+\.md)"')
+ESCAPED_BOLD = re.compile(r"\\\*\\\*")
+EXCESSIVE_ASTERISKS = re.compile(r"(?<!\\)\*{4,}")
 
 
 def resolve_link(source: Path, target: str) -> Path:
@@ -36,12 +38,23 @@ def validate_markdown(path: Path) -> list[str]:
         if not in_fence:
             outside_code.append(line)
     h1 = [line for line in outside_code if line.startswith("# ")]
+    prose = "\n".join(outside_code)
     if len(h1) != 1:
         errors.append(f"{path.relative_to(ROOT)}: H1은 1개여야 합니다(현재 {len(h1)}개).")
     if text.count("```") % 2:
         errors.append(f"{path.relative_to(ROOT)}: 코드 펜스가 닫히지 않았습니다.")
     if text.count("<details") != text.count("</details>"):
         errors.append(f"{path.relative_to(ROOT)}: details 태그 수가 맞지 않습니다.")
+    if ESCAPED_BOLD.search(prose):
+        errors.append(f"{path.relative_to(ROOT)}: 굵게 표시 기호를 이스케이프한 `\\*\\*`가 있습니다.")
+    if EXCESSIVE_ASTERISKS.search(prose):
+        errors.append(f"{path.relative_to(ROOT)}: 연속된 별표가 4개 이상입니다. 굵게 표시 기호가 중복되었는지 확인하세요.")
+    if prose.count("\\[") != prose.count("\\]"):
+        errors.append(f"{path.relative_to(ROOT)}: LaTeX 블록 구분자 `\\[`와 `\\]`의 수가 맞지 않습니다.")
+    if prose.count("\\(") != prose.count("\\)"):
+        errors.append(f"{path.relative_to(ROOT)}: LaTeX 인라인 구분자 `\\(`와 `\\)`의 수가 맞지 않습니다.")
+    if prose.count("$$") % 2:
+        errors.append(f"{path.relative_to(ROOT)}: LaTeX 블록 구분자 `$$`가 닫히지 않았습니다.")
     if not path.name.startswith("00_") and not re.search(r"^## 참고문헌", text, flags=re.MULTILINE):
         errors.append(f"{path.relative_to(ROOT)}: 참고문헌 섹션이 없습니다.")
     for raw_target in LOCAL_LINK.findall(text):
@@ -72,7 +85,7 @@ def main() -> int:
     parser.add_argument("--all", action="store_true", help="영문 강의도 검사")
     args = parser.parse_args()
 
-    pattern = "lectures_*/*.md" if args.all else "lectures_korean/*.md"
+    pattern = "lectures_*/**/*.md" if args.all else "lectures_korean/**/*.md"
     paths = sorted(TEMPLATES.glob(f"*/{pattern}"))
     errors = validate_index()
     for path in paths:

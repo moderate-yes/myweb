@@ -1,0 +1,1401 @@
+review_id,product_id,customer_id,created_at,rating,size_purchased,height_cm,weight_kg,fit,text,aspect_labels
+R00001,P028,C0595,2026-01-17,5,L,175,58,true_to_size,포장이 꼼꼼했어요. 두께감이 적당해요.,delivery:pos;material:pos
+R00002,P030,C0068,2026-05-27,2,L,182,68,true_to_size,원단이 뻣뻣해요. 화면과 색이 달라요.,material:neg;color:neg
+R00003,P080,C0346,2026-01-29,4,FREE,163,57,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00004,P013,C0515,2026-05-17,5,S,168,67,small,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R00005,P029,C0412,2026-06-24,3,XL,157,59,large,한 치수 크게 사야 해요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00006,P052,C0068,2026-05-04,4,M,167,76,small,기장이 너무 길어요. 배송이 빨라요.,size:neg;delivery:pos
+R00007,P048,C0477,2026-01-21,5,L,161,77,true_to_size,세일가에 잘 샀어요. 원단이 고급스러워요.,price:pos;material:pos
+R00008,P042,C0418,2026-06-19,5,S,174,61,small,색감이 고급스러워요. 배송이 빨라요.,color:pos;delivery:pos
+R00009,P048,C0259,2026-06-16,3,S,161,48,true_to_size,포장이 꼼꼼했어요. 핏이 예쁘게 떨어져요. 이 가격이면 다른 데가 나아요.,delivery:pos;size:pos;price:neg
+R00010,P038,C0361,2026-05-06,4,S,159,49,large,배송이 빨라요. 소재가 얇고 비쳐요. 색상이 화면과 똑같아요.,delivery:pos;material:neg;color:pos
+R00011,P001,C0279,2026-04-09,3,S,159,58,small,사이즈가 생각보다 작아요. 가격 대비 만족해요.,size:neg;price:pos
+R00012,P032,C0312,2026-05-15,2,L,174,57,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요. 화면과 색이 달라요.,size:neg;price:pos;color:neg
+R00013,P040,C0186,2026-01-20,4,M,165,65,small,두께감이 적당해요.,material:pos
+R00014,P030,C0250,2026-05-24,5,S,161,63,true_to_size,가격 대비 만족해요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00015,P066,C0275,2026-03-12,3,M,167,53,true_to_size,소재가 얇고 비쳐요.,material:neg
+R00016,P010,C0218,2026-04-09,5,S,168,48,small,색상이 화면과 똑같아요.,color:pos
+R00017,P008,C0333,2026-01-27,4,XL,170,64,large,가격 대비 만족해요. 기장이 너무 길어요.,price:pos;size:neg
+R00018,P066,C0429,2026-05-08,5,M,161,54,true_to_size,포장이 꼼꼼했어요. 세일가에 잘 샀어요. 두께감이 적당해요.,delivery:pos;price:pos;material:pos
+R00019,P017,C0366,2026-01-30,4,M,170,53,true_to_size,가격 대비 만족해요. 사이즈가 딱 맞아요.,price:pos;size:pos
+R00020,P028,C0583,2026-03-29,3,M,160,52,true_to_size,박스가 찌그러져 왔어요.,delivery:neg
+R00021,P015,C0368,2026-01-26,3,M,155,62,large,포장이 꼼꼼했어요. 기장이 너무 길어요.,delivery:pos;size:neg
+R00022,P073,C0467,2026-03-18,5,FREE,163,54,true_to_size,색감이 고급스러워요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R00023,P016,C0346,2026-04-08,3,M,168,40,true_to_size,이 가격이면 다른 데가 나아요. 배송이 빨라요.,price:neg;delivery:pos
+R00024,P038,C0123,2026-05-27,3,S,176,68,small,사이즈가 생각보다 작아요.,size:neg
+R00025,P036,C0099,2026-06-28,2,L,163,67,large,소재가 얇고 비쳐요. 박스가 찌그러져 왔어요.,material:neg;delivery:neg
+R00026,P052,C0077,2026-03-07,3,M,170,51,true_to_size,가격 대비 만족해요. 박스가 찌그러져 왔어요.,price:pos;delivery:neg
+R00027,P008,C0592,2026-01-28,5,S,161,67,small,가격 대비 만족해요. 포장이 꼼꼼했어요. 원단이 고급스러워요.,price:pos;delivery:pos;material:pos
+R00028,P040,C0206,2026-04-01,5,S,167,68,small,세일가에 잘 샀어요. 한 치수 크게 사야 해요. 포장이 꼼꼼했어요.,price:pos;size:neg;delivery:pos
+R00029,P004,C0582,2026-04-23,5,L,173,59,large,두께감이 적당해요.,material:pos
+R00030,P050,C0587,2026-04-14,4,XL,159,51,large,소재가 얇고 비쳐요. 배송이 빨라요.,material:neg;delivery:pos
+R00031,P001,C0321,2026-02-07,5,M,160,61,true_to_size,세일가에 잘 샀어요. 원단이 고급스러워요.,price:pos;material:pos
+R00032,P001,C0564,2026-03-29,3,M,153,52,large,화면과 색이 달라요. 소재가 부드럽고 촉감이 좋아요.,color:neg;material:pos
+R00033,P061,C0046,2026-05-10,4,L,177,92,small,이 가격이면 다른 데가 나아요. 소재가 부드럽고 촉감이 좋아요.,price:neg;material:pos
+R00034,P055,C0320,2026-04-04,3,S,164,65,small,원단이 뻣뻣해요. 색감이 고급스러워요.,material:neg;color:pos
+R00035,P040,C0129,2026-05-31,3,M,165,68,small,배송이 빨라요. 기장이 너무 길어요.,delivery:pos;size:neg
+R00036,P013,C0192,2026-07-11,4,L,162,53,large,세일가에 잘 샀어요. 두께감이 적당해요.,price:pos;material:pos
+R00037,P045,C0595,2026-05-07,5,XL,158,64,large,두께감이 적당해요.,material:pos
+R00038,P013,C0418,2026-03-15,5,S,164,47,true_to_size,세일가에 잘 샀어요.,price:pos
+R00039,P040,C0167,2026-02-27,3,S,183,69,small,사이즈가 생각보다 작아요.,size:neg
+R00040,P008,C0186,2026-01-09,5,S,155,51,true_to_size,색상이 화면과 똑같아요. 사이즈가 딱 맞아요.,color:pos;size:pos
+R00041,P055,C0283,2026-07-03,3,L,159,50,large,가격 대비 만족해요. 사이즈가 생각보다 작아요.,price:pos;size:neg
+R00042,P008,C0213,2026-01-16,4,M,160,47,true_to_size,사이즈가 딱 맞아요. 소재가 얇고 비쳐요.,size:pos;material:neg
+R00043,P080,C0183,2026-03-11,5,FREE,168,84,true_to_size,두께감이 적당해요. 색상이 화면과 똑같아요.,material:pos;color:pos
+R00044,P008,C0321,2026-01-22,5,S,165,54,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00045,P008,C0357,2026-01-29,4,M,169,44,true_to_size,두께감이 적당해요. 가격 대비 만족해요.,material:pos;price:pos
+R00046,P008,C0182,2026-01-30,4,XL,173,75,true_to_size,핏이 예쁘게 떨어져요. 색감이 고급스러워요. 가격 대비 만족해요.,size:pos;color:pos;price:pos
+R00047,P006,C0351,2026-02-19,4,L,169,47,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00048,P023,C0214,2026-04-17,3,M,163,50,large,원단이 뻣뻣해요. 포장이 꼼꼼했어요.,material:neg;delivery:pos
+R00049,P011,C0461,2026-06-08,5,XL,180,60,large,색상이 화면과 똑같아요.,color:pos
+R00050,P049,C0333,2026-01-13,2,M,174,46,true_to_size,색상이 사진보다 어두워요.,color:neg
+R00051,P006,C0418,2026-04-03,3,M,164,45,large,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R00052,P016,C0382,2026-05-13,4,L,171,60,true_to_size,포장이 꼼꼼했어요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R00053,P038,C0467,2026-05-15,3,L,148,67,large,가격에 비해 아쉬워요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R00054,P048,C0502,2026-01-17,5,M,162,51,large,색감이 고급스러워요.,color:pos
+R00055,P037,C0388,2026-04-30,5,S,171,63,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00056,P064,C0057,2026-01-16,5,S,181,70,small,포장이 꼼꼼했어요. 가격 대비 만족해요.,delivery:pos;price:pos
+R00057,P032,C0274,2026-01-31,3,S,182,67,small,화면과 색이 달라요. 기장이 너무 길어요.,color:neg;size:neg
+R00058,P059,C0215,2026-01-23,2,L,170,58,true_to_size,기장이 너무 길어요.,size:neg
+R00059,P040,C0079,2026-06-01,4,S,175,66,small,가격 대비 만족해요.,price:pos
+R00060,P040,C0482,2026-04-09,5,L,151,46,large,원단이 고급스러워요.,material:pos
+R00061,P007,C0249,2026-02-02,2,M,183,75,small,배송이 일주일 넘게 걸렸어요. 기장이 너무 길어요.,delivery:neg;size:neg
+R00062,P007,C0320,2026-02-13,5,S,169,64,small,원단이 고급스러워요.,material:pos
+R00063,P043,C0214,2026-06-29,5,S,168,53,true_to_size,소재가 부드럽고 촉감이 좋아요. 배송이 빨라요.,material:pos;delivery:pos
+R00064,P055,C0057,2026-04-20,5,L,172,82,true_to_size,배송이 빨라요. 핏이 예쁘게 떨어져요.,delivery:pos;size:pos
+R00065,P001,C0418,2026-01-26,2,M,173,41,large,기장이 너무 길어요. 배송이 일주일 넘게 걸렸어요.,size:neg;delivery:neg
+R00066,P040,C0259,2026-06-01,5,S,164,45,small,원단이 고급스러워요.,material:pos
+R00067,P040,C0270,2026-01-14,3,XL,180,73,true_to_size,가격 대비 만족해요. 화면과 색이 달라요.,price:pos;color:neg
+R00068,P030,C0294,2026-03-25,4,S,157,75,small,포장이 꼼꼼했어요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R00069,P007,C0330,2026-01-21,5,XL,171,67,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00070,P066,C0033,2026-06-01,2,S,169,52,small,한 치수 크게 사야 해요. 이 가격이면 다른 데가 나아요.,size:neg;price:neg
+R00071,P021,C0040,2026-06-21,5,M,163,51,true_to_size,정사이즈라 고민 없이 골랐어요. 색상이 화면과 똑같아요. 가격 대비 만족해요.,size:pos;color:pos;price:pos
+R00072,P046,C0044,2026-06-24,2,L,183,40,large,박스가 찌그러져 왔어요. 사이즈가 생각보다 작아요.,delivery:neg;size:neg
+R00073,P038,C0259,2026-04-25,1,L,168,55,large,화면과 색이 달라요. 기장이 너무 길어요.,color:neg;size:neg
+R00074,P060,C0215,2026-06-27,4,XL,161,66,large,배송이 일주일 넘게 걸렸어요. 두께감이 적당해요.,delivery:neg;material:pos
+R00075,P059,C0275,2026-04-12,2,M,162,51,true_to_size,보풀이 금방 생겨요.,material:neg
+R00076,P007,C0447,2026-04-04,5,M,151,56,large,색상이 화면과 똑같아요.,color:pos
+R00077,P030,C0284,2026-02-27,5,L,175,60,large,포장이 꼼꼼했어요. 가격 대비 만족해요. 사이즈가 생각보다 작아요.,delivery:pos;price:pos;size:neg
+R00078,P011,C0148,2026-04-09,4,XL,168,69,large,색감이 고급스러워요.,color:pos
+R00079,P043,C0353,2026-02-28,5,L,159,44,large,색상이 화면과 똑같아요.,color:pos
+R00080,P008,C0005,2026-03-08,4,L,162,67,large,소재가 부드럽고 촉감이 좋아요. 색상이 사진보다 어두워요.,material:pos;color:neg
+R00081,P006,C0302,2026-03-13,5,M,165,53,true_to_size,세일가에 잘 샀어요. 색상이 화면과 똑같아요. 두께감이 적당해요.,price:pos;color:pos;material:pos
+R00082,P019,C0113,2026-04-26,5,L,166,49,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00083,P030,C0110,2026-06-19,4,M,152,53,large,한 치수 크게 사야 해요. 두께감이 적당해요.,size:neg;material:pos
+R00084,P064,C0453,2026-02-06,4,XL,179,65,large,원단이 고급스러워요. 한 치수 크게 사야 해요.,material:pos;size:neg
+R00085,P042,C0357,2026-05-18,5,L,149,46,large,색감이 고급스러워요.,color:pos
+R00086,P013,C0467,2026-04-08,5,S,164,57,small,색감이 고급스러워요. 기장이 너무 길어요. 세일가에 잘 샀어요.,color:pos;size:neg;price:pos
+R00087,P043,C0146,2026-05-01,5,S,161,51,true_to_size,원단이 고급스러워요. 핏이 예쁘게 떨어져요.,material:pos;size:pos
+R00088,P013,C0192,2026-02-13,2,S,166,71,small,기장이 너무 길어요. 색감이 고급스러워요.,size:neg;color:pos
+R00089,P021,C0299,2026-04-17,2,M,162,58,true_to_size,화면과 색이 달라요.,color:neg
+R00090,P074,C0001,2026-06-13,3,FREE,171,85,small,기장이 너무 길어요. 색상이 사진보다 어두워요.,size:neg;color:neg
+R00091,P042,C0570,2026-02-10,1,L,167,54,true_to_size,가격에 비해 아쉬워요.,price:neg
+R00092,P064,C0044,2026-05-18,2,M,161,59,large,가격에 비해 아쉬워요.,price:neg
+R00093,P072,C0057,2026-04-14,5,L,172,72,small,색감이 고급스러워요. 두께감이 적당해요.,color:pos;material:pos
+R00094,P071,C0350,2026-01-20,4,L,163,49,large,기장이 너무 길어요. 색감이 고급스러워요.,size:neg;color:pos
+R00095,P013,C0018,2026-04-17,5,M,159,48,true_to_size,두께감이 적당해요. 핏이 예쁘게 떨어져요.,material:pos;size:pos
+R00096,P016,C0283,2026-02-14,5,M,154,50,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00097,P076,C0214,2026-03-11,5,FREE,169,55,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00098,P040,C0325,2026-04-05,3,L,180,48,true_to_size,가격에 비해 아쉬워요.,price:neg
+R00099,P016,C0130,2026-06-09,5,L,179,58,true_to_size,배송이 빨라요.,delivery:pos
+R00100,P008,C0456,2026-02-24,5,M,153,52,large,두께감이 적당해요. 세일가에 잘 샀어요.,material:pos;price:pos
+R00101,P008,C0418,2026-01-24,3,S,170,59,small,기장이 너무 길어요.,size:neg
+R00102,P037,C0400,2026-06-22,5,S,178,61,small,색상이 화면과 똑같아요. 배송이 빨라요. 세일가에 잘 샀어요.,color:pos;delivery:pos;price:pos
+R00103,P015,C0077,2026-03-17,4,S,168,63,true_to_size,기장이 너무 길어요. 두께감이 적당해요. 세일가에 잘 샀어요.,size:neg;material:pos;price:pos
+R00104,P032,C0036,2026-05-28,3,L,161,48,large,색상이 사진보다 어두워요. 기장이 너무 길어요.,color:neg;size:neg
+R00105,P052,C0239,2026-07-06,5,XL,168,55,large,가격 대비 만족해요.,price:pos
+R00106,P075,C0415,2026-01-31,3,FREE,163,55,large,한 치수 크게 사야 해요. 색상이 화면과 똑같아요. 가격에 비해 아쉬워요.,size:neg;color:pos;price:neg
+R00107,P051,C0112,2026-04-11,3,M,155,59,large,두께감이 적당해요. 사이즈가 생각보다 작아요. 포장이 꼼꼼했어요.,material:pos;size:neg;delivery:pos
+R00108,P064,C0058,2026-05-13,5,S,170,43,true_to_size,가격 대비 만족해요. 소재가 부드럽고 촉감이 좋아요. 포장이 꼼꼼했어요.,price:pos;material:pos;delivery:pos
+R00109,P053,C0496,2026-02-19,4,L,157,54,large,세일가에 잘 샀어요. 사이즈가 생각보다 작아요. 두께감이 적당해요.,price:pos;size:neg;material:pos
+R00110,P040,C0110,2026-03-07,3,S,169,62,small,사이즈가 생각보다 작아요.,size:neg
+R00111,P004,C0502,2026-01-20,1,XL,156,71,large,기장이 너무 길어요. 소재가 얇고 비쳐요.,size:neg;material:neg
+R00112,P042,C0477,2026-03-30,4,L,162,51,large,세일가에 잘 샀어요. 원단이 뻣뻣해요.,price:pos;material:neg
+R00113,P055,C0354,2026-07-12,3,L,162,44,large,색상이 화면과 똑같아요. 보풀이 금방 생겨요.,color:pos;material:neg
+R00114,P036,C0221,2026-03-10,4,M,161,60,true_to_size,색감이 고급스러워요. 원단이 고급스러워요.,color:pos;material:pos
+R00115,P009,C0089,2026-02-09,1,L,160,56,large,한 치수 크게 사야 해요.,size:neg
+R00116,P055,C0181,2026-03-16,5,S,167,59,small,세일가에 잘 샀어요.,price:pos
+R00117,P064,C0155,2026-06-04,1,S,157,61,true_to_size,소재가 얇고 비쳐요.,material:neg
+R00118,P006,C0066,2026-03-03,2,M,169,66,true_to_size,박스가 찌그러져 왔어요.,delivery:neg
+R00119,P073,C0204,2026-06-05,5,FREE,163,55,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00120,P010,C0357,2026-02-02,1,M,169,65,small,이 가격이면 다른 데가 나아요.,price:neg
+R00121,P013,C0465,2026-01-18,4,L,187,67,small,색감이 고급스러워요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R00122,P040,C0093,2026-05-01,2,L,157,60,large,박스가 찌그러져 왔어요.,delivery:neg
+R00123,P006,C0130,2026-03-27,1,M,171,63,small,한 치수 크게 사야 해요.,size:neg
+R00124,P066,C0052,2026-01-15,5,L,162,40,large,색감이 고급스러워요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00125,P029,C0235,2026-06-14,4,L,158,52,large,원단이 고급스러워요. 색감이 고급스러워요.,material:pos;color:pos
+R00126,P045,C0087,2026-07-01,4,M,180,77,small,색감이 고급스러워요. 한 치수 크게 사야 해요. 두께감이 적당해요.,color:pos;size:neg;material:pos
+R00127,P061,C0436,2026-05-19,4,L,172,49,large,세일가에 잘 샀어요. 소재가 부드럽고 촉감이 좋아요.,price:pos;material:pos
+R00128,P079,C0110,2026-05-21,2,FREE,167,61,true_to_size,색상이 사진보다 어두워요.,color:neg
+R00129,P055,C0240,2026-01-21,5,S,154,50,true_to_size,세일가에 잘 샀어요. 포장이 꼼꼼했어요. 원단이 고급스러워요.,price:pos;delivery:pos;material:pos
+R00130,P017,C0005,2026-01-06,3,XL,167,41,large,박스가 찌그러져 왔어요.,delivery:neg
+R00131,P042,C0033,2026-01-19,5,L,176,61,small,가격 대비 만족해요.,price:pos
+R00132,P028,C0068,2026-04-03,2,M,170,71,small,한 치수 크게 사야 해요. 원단이 뻣뻣해요.,size:neg;material:neg
+R00133,P040,C0058,2026-02-10,5,L,168,51,large,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R00134,P060,C0333,2026-05-01,3,M,159,52,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요. 배송이 일주일 넘게 걸렸어요.,size:neg;price:pos;delivery:neg
+R00135,P027,C0441,2026-05-31,3,M,170,65,true_to_size,이 가격이면 다른 데가 나아요. 정사이즈라 고민 없이 골랐어요.,price:neg;size:pos
+R00136,P040,C0246,2026-02-13,5,L,172,60,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00137,P013,C0209,2026-02-21,2,S,153,61,small,가격에 비해 아쉬워요.,price:neg
+R00138,P043,C0333,2026-02-13,3,M,162,65,true_to_size,색상이 화면과 똑같아요. 보풀이 금방 생겨요.,color:pos;material:neg
+R00139,P040,C0053,2026-06-01,5,S,167,68,small,세일가에 잘 샀어요.,price:pos
+R00140,P045,C0214,2026-04-04,3,M,170,75,small,가격에 비해 아쉬워요.,price:neg
+R00141,P047,C0386,2026-06-29,5,L,152,60,large,두께감이 적당해요.,material:pos
+R00142,P008,C0077,2026-02-24,5,XL,163,41,large,두께감이 적당해요.,material:pos
+R00143,P024,C0467,2026-05-30,5,M,171,43,large,색상이 화면과 똑같아요.,color:pos
+R00144,P009,C0005,2026-02-23,3,M,157,61,large,색상이 사진보다 어두워요. 기장이 너무 길어요.,color:neg;size:neg
+R00145,P017,C0516,2026-02-17,2,M,172,55,small,기장이 너무 길어요.,size:neg
+R00146,P042,C0489,2026-04-25,5,M,164,57,true_to_size,배송이 빨라요.,delivery:pos
+R00147,P048,C0113,2026-07-02,5,S,158,51,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00148,P057,C0451,2026-03-06,5,M,177,73,small,원단이 고급스러워요.,material:pos
+R00149,P040,C0010,2026-06-28,4,S,171,50,small,세일가에 잘 샀어요. 사이즈가 생각보다 작아요.,price:pos;size:neg
+R00150,P003,C0190,2026-06-26,2,M,166,62,true_to_size,배송이 빨라요. 색상이 사진보다 어두워요.,delivery:pos;color:neg
+R00151,P030,C0595,2026-05-27,3,XL,149,58,large,기장이 너무 길어요. 포장이 꼼꼼했어요.,size:neg;delivery:pos
+R00152,P026,C0429,2026-06-23,5,S,164,50,true_to_size,색감이 고급스러워요. 가격 대비 만족해요.,color:pos;price:pos
+R00153,P051,C0587,2026-06-14,2,M,165,61,large,색상이 사진보다 어두워요.,color:neg
+R00154,P008,C0386,2026-02-02,5,M,161,45,large,세일가에 잘 샀어요.,price:pos
+R00155,P059,C0018,2026-03-02,5,M,173,54,small,세일가에 잘 샀어요. 사이즈가 생각보다 작아요.,price:pos;size:neg
+R00156,P040,C0597,2026-05-24,5,M,169,48,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00157,P016,C0279,2026-07-03,4,M,160,59,true_to_size,두께감이 적당해요.,material:pos
+R00158,P048,C0171,2026-05-05,2,L,156,44,large,사이즈가 생각보다 작아요.,size:neg
+R00159,P043,C0361,2026-02-08,5,M,156,71,true_to_size,정사이즈라 고민 없이 골랐어요. 세일가에 잘 샀어요.,size:pos;price:pos
+R00160,P019,C0567,2026-06-19,5,L,178,73,true_to_size,색감이 고급스러워요.,color:pos
+R00161,P060,C0532,2026-02-05,4,XL,170,55,large,소재가 부드럽고 촉감이 좋아요. 배송이 빨라요. 사이즈가 생각보다 작아요.,material:pos;delivery:pos;size:neg
+R00162,P073,C0192,2026-03-01,5,FREE,156,40,large,포장이 꼼꼼했어요. 가격 대비 만족해요.,delivery:pos;price:pos
+R00163,P034,C0519,2026-05-21,5,XL,170,73,large,색감이 고급스러워요.,color:pos
+R00164,P040,C0083,2026-02-22,5,M,169,63,small,두께감이 적당해요.,material:pos
+R00165,P040,C0573,2026-04-22,1,M,162,51,true_to_size,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00166,P023,C0350,2026-02-25,4,XL,165,52,large,세일가에 잘 샀어요. 배송이 일주일 넘게 걸렸어요.,price:pos;delivery:neg
+R00167,P069,C0099,2026-05-31,5,M,169,55,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00168,P080,C0148,2026-03-17,5,FREE,176,56,true_to_size,색감이 고급스러워요. 정사이즈라 고민 없이 골랐어요.,color:pos;size:pos
+R00169,P072,C0526,2026-06-24,4,M,156,56,large,배송이 빨라요.,delivery:pos
+R00170,P014,C0545,2026-03-05,2,L,153,71,large,이 가격이면 다른 데가 나아요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R00171,P028,C0058,2026-01-24,5,M,167,56,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00172,P055,C0001,2026-05-05,5,XL,174,66,large,포장이 꼼꼼했어요.,delivery:pos
+R00173,P015,C0113,2026-02-23,5,M,164,57,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00174,P011,C0018,2026-05-30,4,M,158,61,true_to_size,사이즈가 딱 맞아요. 이 가격이면 다른 데가 나아요. 포장이 꼼꼼했어요.,size:pos;price:neg;delivery:pos
+R00175,P040,C0259,2026-01-27,5,M,159,61,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00176,P040,C0489,2026-04-30,5,M,162,42,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00177,P059,C0207,2026-04-19,3,S,160,42,small,이 가격이면 다른 데가 나아요.,price:neg
+R00178,P055,C0317,2026-07-15,5,M,172,57,true_to_size,원단이 고급스러워요.,material:pos
+R00179,P017,C0190,2026-02-14,2,M,156,60,large,한 치수 크게 사야 해요.,size:neg
+R00180,P078,C0515,2026-07-03,5,FREE,154,56,large,원단이 고급스러워요.,material:pos
+R00181,P040,C0335,2026-02-21,4,M,161,60,small,원단이 고급스러워요. 화면과 색이 달라요.,material:pos;color:neg
+R00182,P076,C0564,2026-05-04,5,FREE,167,55,large,세일가에 잘 샀어요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00183,P053,C0214,2026-04-16,2,M,167,65,small,기장이 너무 길어요.,size:neg
+R00184,P078,C0308,2026-06-23,5,FREE,173,56,true_to_size,정사이즈라 고민 없이 골랐어요. 배송이 빨라요.,size:pos;delivery:pos
+R00185,P021,C0242,2026-03-03,1,M,177,73,small,사이즈가 생각보다 작아요. 가격에 비해 아쉬워요.,size:neg;price:neg
+R00186,P035,C0333,2026-03-17,5,M,162,54,true_to_size,배송이 빨라요.,delivery:pos
+R00187,P011,C0122,2026-04-06,5,L,166,54,large,배송이 빨라요.,delivery:pos
+R00188,P006,C0570,2026-01-15,5,S,148,61,small,포장이 꼼꼼했어요.,delivery:pos
+R00189,P064,C0077,2026-04-16,2,XL,159,41,large,포장이 꼼꼼했어요. 원단이 뻣뻣해요. 이 가격이면 다른 데가 나아요.,delivery:pos;material:neg;price:neg
+R00190,P027,C0250,2026-07-03,5,M,155,58,true_to_size,배송이 빨라요.,delivery:pos
+R00191,P007,C0100,2026-02-03,5,M,167,41,true_to_size,색감이 고급스러워요.,color:pos
+R00192,P011,C0109,2026-01-30,4,S,172,76,small,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R00193,P001,C0148,2026-03-22,5,XL,175,71,large,세일가에 잘 샀어요.,price:pos
+R00194,P008,C0129,2026-05-17,5,L,177,71,true_to_size,배송이 빨라요.,delivery:pos
+R00195,P055,C0112,2026-05-02,2,M,164,61,true_to_size,화면과 색이 달라요.,color:neg
+R00196,P074,C0124,2026-04-16,4,FREE,164,59,large,포장이 꼼꼼했어요. 색상이 사진보다 어두워요.,delivery:pos;color:neg
+R00197,P078,C0568,2026-03-22,3,FREE,177,56,true_to_size,소재가 부드럽고 촉감이 좋아요. 화면과 색이 달라요.,material:pos;color:neg
+R00198,P037,C0400,2026-05-13,1,L,184,62,large,가격에 비해 아쉬워요.,price:neg
+R00199,P002,C0114,2026-02-21,5,L,168,45,large,두께감이 적당해요.,material:pos
+R00200,P040,C0182,2026-06-19,2,L,180,68,small,소재가 얇고 비쳐요. 한 치수 크게 사야 해요.,material:neg;size:neg
+R00201,P001,C0424,2026-02-20,1,L,154,60,large,소재가 얇고 비쳐요.,material:neg
+R00202,P059,C0066,2026-03-20,2,XL,175,54,large,사이즈가 생각보다 작아요.,size:neg
+R00203,P063,C0596,2026-02-12,3,M,174,67,true_to_size,색상이 화면과 똑같아요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R00204,P055,C0357,2026-04-08,5,S,163,45,true_to_size,배송이 빨라요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00205,P008,C0302,2026-03-28,5,M,162,59,large,색감이 고급스러워요. 세일가에 잘 샀어요.,color:pos;price:pos
+R00206,P052,C0455,2026-06-12,3,XL,173,66,large,두께감이 적당해요. 이 가격이면 다른 데가 나아요.,material:pos;price:neg
+R00207,P040,C0595,2026-05-12,3,L,159,50,true_to_size,보풀이 금방 생겨요. 사이즈가 생각보다 작아요.,material:neg;size:neg
+R00208,P055,C0275,2026-06-13,5,S,166,55,small,배송이 빨라요.,delivery:pos
+R00209,P059,C0447,2026-05-04,5,M,160,58,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00210,P017,C0596,2026-01-29,2,M,173,76,small,가격에 비해 아쉬워요.,price:neg
+R00211,P008,C0593,2026-02-02,5,S,164,52,true_to_size,배송이 빨라요. 색감이 고급스러워요.,delivery:pos;color:pos
+R00212,P001,C0186,2026-07-07,3,S,161,45,true_to_size,색감이 고급스러워요. 이 가격이면 다른 데가 나아요. 사이즈가 생각보다 작아요.,color:pos;price:neg;size:neg
+R00213,P073,C0479,2026-06-20,4,FREE,161,54,true_to_size,가격 대비 만족해요.,price:pos
+R00214,P008,C0062,2026-02-25,1,M,166,76,small,이 가격이면 다른 데가 나아요. 기장이 너무 길어요.,price:neg;size:neg
+R00215,P032,C0153,2026-07-09,5,XL,183,82,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00216,P043,C0188,2026-05-28,5,L,178,76,true_to_size,가격 대비 만족해요.,price:pos
+R00217,P055,C0115,2026-06-12,5,M,172,51,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00218,P016,C0438,2026-06-04,5,S,161,58,small,원단이 고급스러워요.,material:pos
+R00219,P022,C0451,2026-07-16,2,S,175,80,small,사이즈가 생각보다 작아요.,size:neg
+R00220,P026,C0250,2026-04-03,2,XL,150,57,large,이 가격이면 다른 데가 나아요.,price:neg
+R00221,P011,C0335,2026-02-23,4,L,153,47,large,한 치수 크게 사야 해요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00222,P001,C0279,2026-04-21,2,M,169,50,large,배송이 일주일 넘게 걸렸어요. 기장이 너무 길어요. 이 가격이면 다른 데가 나아요.,delivery:neg;size:neg;price:neg
+R00223,P043,C0277,2026-02-15,3,L,157,48,large,이 가격이면 다른 데가 나아요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R00224,P038,C0127,2026-04-11,3,S,159,45,small,색상이 사진보다 어두워요. 세일가에 잘 샀어요.,color:neg;price:pos
+R00225,P007,C0325,2026-02-06,5,S,157,58,true_to_size,가격 대비 만족해요. 포장이 꼼꼼했어요.,price:pos;delivery:pos
+R00226,P059,C0077,2026-01-22,4,L,151,48,large,소재가 얇고 비쳐요. 배송이 빨라요. 세일가에 잘 샀어요.,material:neg;delivery:pos;price:pos
+R00227,P008,C0489,2026-05-31,5,M,158,57,large,색감이 고급스러워요.,color:pos
+R00228,P008,C0114,2026-03-15,3,M,156,57,true_to_size,배송이 일주일 넘게 걸렸어요. 사이즈가 딱 맞아요.,delivery:neg;size:pos
+R00229,P073,C0330,2026-06-02,5,FREE,158,54,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00230,P017,C0451,2026-02-09,4,L,174,76,true_to_size,원단이 고급스러워요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R00231,P001,C0051,2026-03-11,4,L,170,66,large,가격 대비 만족해요. 원단이 뻣뻣해요. 포장이 꼼꼼했어요.,price:pos;material:neg;delivery:pos
+R00232,P011,C0259,2026-02-09,4,S,158,48,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00233,P062,C0564,2026-07-08,4,S,166,43,true_to_size,가격 대비 만족해요. 포장이 꼼꼼했어요. 기장이 너무 길어요.,price:pos;delivery:pos;size:neg
+R00234,P051,C0204,2026-03-27,2,L,159,50,large,기장이 너무 길어요.,size:neg
+R00235,P064,C0052,2026-04-10,3,M,165,61,true_to_size,이 가격이면 다른 데가 나아요. 사이즈가 생각보다 작아요. 소재가 부드럽고 촉감이 좋아요.,price:neg;size:neg;material:pos
+R00236,P046,C0146,2026-05-28,4,L,161,52,large,박스가 찌그러져 왔어요. 세일가에 잘 샀어요. 색감이 고급스러워요.,delivery:neg;price:pos;color:pos
+R00237,P077,C0130,2026-03-27,5,FREE,186,64,true_to_size,색감이 고급스러워요. 배송이 빨라요. 가격 대비 만족해요.,color:pos;delivery:pos;price:pos
+R00238,P055,C0179,2026-03-20,2,S,172,58,small,사이즈가 생각보다 작아요.,size:neg
+R00239,P021,C0124,2026-03-20,4,L,183,76,true_to_size,원단이 고급스러워요. 색감이 고급스러워요. 이 가격이면 다른 데가 나아요.,material:pos;color:pos;price:neg
+R00240,P018,C0279,2026-03-06,5,S,166,48,true_to_size,두께감이 적당해요. 색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,material:pos;color:pos;delivery:pos
+R00241,P008,C0515,2026-04-09,3,L,162,54,large,배송이 빨라요. 기장이 너무 길어요. 가격에 비해 아쉬워요.,delivery:pos;size:neg;price:neg
+R00242,P017,C0570,2026-04-08,1,M,157,58,large,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00243,P034,C0568,2026-04-14,2,M,151,52,large,한 치수 크게 사야 해요.,size:neg
+R00244,P078,C0100,2026-06-25,5,FREE,171,59,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00245,P065,C0596,2026-02-20,5,L,168,76,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00246,P008,C0515,2026-03-20,5,S,152,57,small,배송이 빨라요.,delivery:pos
+R00247,P076,C0131,2026-05-04,2,FREE,182,70,small,기장이 너무 길어요. 색상이 사진보다 어두워요.,size:neg;color:neg
+R00248,P041,C0077,2026-06-13,3,L,165,51,large,가격 대비 만족해요. 배송이 빨라요. 한 치수 크게 사야 해요.,price:pos;delivery:pos;size:neg
+R00249,P011,C0167,2026-06-13,3,M,174,69,true_to_size,세일가에 잘 샀어요. 배송이 일주일 넘게 걸렸어요. 정사이즈라 고민 없이 골랐어요.,price:pos;delivery:neg;size:pos
+R00250,P061,C0096,2026-03-14,5,L,176,66,true_to_size,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R00251,P045,C0005,2026-03-05,5,M,169,51,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00252,P073,C0282,2026-04-27,2,FREE,161,55,true_to_size,소재가 얇고 비쳐요.,material:neg
+R00253,P034,C0181,2026-03-28,1,L,160,52,large,색상이 사진보다 어두워요.,color:neg
+R00254,P021,C0246,2026-02-13,5,S,160,62,small,색상이 화면과 똑같아요.,color:pos
+R00255,P011,C0160,2026-01-17,4,L,182,78,true_to_size,두께감이 적당해요. 가격 대비 만족해요. 사이즈가 생각보다 작아요.,material:pos;price:pos;size:neg
+R00256,P064,C0010,2026-03-17,2,XL,164,55,large,기장이 너무 길어요. 배송이 일주일 넘게 걸렸어요.,size:neg;delivery:neg
+R00257,P075,C0124,2026-04-28,5,FREE,175,70,small,배송이 빨라요.,delivery:pos
+R00258,P040,C0595,2026-04-18,2,M,164,40,large,이 가격이면 다른 데가 나아요. 한 치수 크게 사야 해요.,price:neg;size:neg
+R00259,P028,C0221,2026-06-15,2,L,162,57,large,한 치수 크게 사야 해요.,size:neg
+R00260,P040,C0477,2026-04-24,3,L,151,42,large,화면과 색이 달라요.,color:neg
+R00261,P009,C0283,2026-04-15,2,M,164,61,large,가격에 비해 아쉬워요. 박스가 찌그러져 왔어요.,price:neg;delivery:neg
+R00262,P042,C0190,2026-05-26,3,M,163,60,small,포장이 꼼꼼했어요. 한 치수 크게 사야 해요.,delivery:pos;size:neg
+R00263,P019,C0250,2026-04-29,3,XL,167,62,large,색상이 사진보다 어두워요.,color:neg
+R00264,P048,C0430,2026-04-15,5,M,170,54,true_to_size,배송이 빨라요.,delivery:pos
+R00265,P040,C0078,2026-03-01,4,M,171,75,small,색감이 고급스러워요.,color:pos
+R00266,P016,C0089,2026-03-05,2,L,171,50,true_to_size,가격에 비해 아쉬워요.,price:neg
+R00267,P043,C0250,2026-04-18,5,S,165,63,true_to_size,가격 대비 만족해요. 배송이 빨라요.,price:pos;delivery:pos
+R00268,P028,C0068,2026-05-28,3,M,176,61,small,세일가에 잘 샀어요. 한 치수 크게 사야 해요.,price:pos;size:neg
+R00269,P011,C0416,2026-04-08,2,L,162,58,large,박스가 찌그러져 왔어요.,delivery:neg
+R00270,P072,C0100,2026-07-09,4,M,165,40,large,두께감이 적당해요. 배송이 빨라요. 기장이 너무 길어요.,material:pos;delivery:pos;size:neg
+R00271,P011,C0582,2026-02-27,3,M,163,68,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R00272,P043,C0547,2026-05-15,5,M,167,52,true_to_size,원단이 고급스러워요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R00273,P010,C0283,2026-05-24,5,M,165,55,true_to_size,두께감이 적당해요.,material:pos
+R00274,P006,C0436,2026-05-10,4,L,164,64,true_to_size,가격 대비 만족해요. 색상이 사진보다 어두워요.,price:pos;color:neg
+R00275,P053,C0317,2026-03-03,5,S,154,62,small,가격 대비 만족해요. 색감이 고급스러워요. 소재가 부드럽고 촉감이 좋아요.,price:pos;color:pos;material:pos
+R00276,P012,C0319,2026-02-18,3,S,162,50,true_to_size,정사이즈라 고민 없이 골랐어요. 색상이 사진보다 어두워요.,size:pos;color:neg
+R00277,P028,C0572,2026-03-07,2,S,157,60,large,색상이 사진보다 어두워요.,color:neg
+R00278,P066,C0567,2026-03-18,1,S,174,71,small,이 가격이면 다른 데가 나아요.,price:neg
+R00279,P061,C0277,2026-05-25,1,L,153,62,large,사이즈가 생각보다 작아요.,size:neg
+R00280,P001,C0457,2026-01-22,4,S,169,56,small,색감이 고급스러워요. 배송이 빨라요. 보풀이 금방 생겨요.,color:pos;delivery:pos;material:neg
+R00281,P080,C0157,2026-03-01,5,FREE,171,55,true_to_size,세일가에 잘 샀어요. 두께감이 적당해요. 사이즈가 딱 맞아요.,price:pos;material:pos;size:pos
+R00282,P015,C0458,2026-01-19,3,L,171,48,large,사이즈가 생각보다 작아요. 화면과 색이 달라요.,size:neg;color:neg
+R00283,P055,C0541,2026-07-06,3,S,163,40,true_to_size,기장이 너무 길어요.,size:neg
+R00284,P008,C0325,2026-01-30,1,S,160,61,small,보풀이 금방 생겨요. 기장이 너무 길어요.,material:neg;size:neg
+R00285,P074,C0400,2026-02-16,5,FREE,173,78,true_to_size,가격 대비 만족해요.,price:pos
+R00286,P056,C0564,2026-05-13,4,S,151,49,true_to_size,세일가에 잘 샀어요. 원단이 고급스러워요. 색상이 사진보다 어두워요.,price:pos;material:pos;color:neg
+R00287,P037,C0251,2026-05-09,2,M,168,49,large,기장이 너무 길어요.,size:neg
+R00288,P021,C0164,2026-04-30,2,S,165,60,small,기장이 너무 길어요. 원단이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,size:neg;material:pos;delivery:neg
+R00289,P039,C0040,2026-07-06,5,M,156,76,small,색상이 화면과 똑같아요.,color:pos
+R00290,P019,C0044,2026-06-04,5,L,171,61,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00291,P059,C0559,2026-06-02,5,S,164,68,small,포장이 꼼꼼했어요.,delivery:pos
+R00292,P020,C0504,2026-04-12,1,L,166,55,large,색상이 사진보다 어두워요.,color:neg
+R00293,P073,C0140,2026-01-29,2,FREE,160,51,large,원단이 뻣뻣해요.,material:neg
+R00294,P045,C0146,2026-03-19,3,XL,156,40,large,포장이 꼼꼼했어요. 기장이 너무 길어요. 이 가격이면 다른 데가 나아요.,delivery:pos;size:neg;price:neg
+R00295,P007,C0386,2026-04-14,4,L,163,48,large,색상이 화면과 똑같아요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R00296,P027,C0333,2026-05-19,3,S,170,65,small,보풀이 금방 생겨요. 색감이 고급스러워요.,material:neg;color:pos
+R00297,P049,C0559,2026-05-08,1,M,162,58,large,소재가 얇고 비쳐요.,material:neg
+R00298,P016,C0477,2026-06-10,2,L,157,59,large,소재가 얇고 비쳐요.,material:neg
+R00299,P051,C0493,2026-05-04,5,L,164,48,large,색상이 화면과 똑같아요.,color:pos
+R00300,P008,C0005,2026-06-04,5,M,160,65,true_to_size,사이즈가 딱 맞아요. 두께감이 적당해요.,size:pos;material:pos
+R00301,P078,C0466,2026-04-20,4,FREE,170,71,small,세일가에 잘 샀어요.,price:pos
+R00302,P017,C0451,2026-01-23,5,XL,181,62,large,색감이 고급스러워요. 가격 대비 만족해요.,color:pos;price:pos
+R00303,P055,C0274,2026-03-25,4,L,178,70,true_to_size,가격 대비 만족해요. 박스가 찌그러져 왔어요.,price:pos;delivery:neg
+R00304,P059,C0215,2026-04-29,4,S,165,53,true_to_size,박스가 찌그러져 왔어요. 가격 대비 만족해요.,delivery:neg;price:pos
+R00305,P069,C0479,2026-02-21,1,M,169,56,true_to_size,원단이 뻣뻣해요.,material:neg
+R00306,P051,C0274,2026-01-16,2,M,164,55,large,원단이 뻣뻣해요.,material:neg
+R00307,P049,C0479,2026-01-23,2,L,173,57,large,박스가 찌그러져 왔어요. 이 가격이면 다른 데가 나아요.,delivery:neg;price:neg
+R00308,P016,C0274,2026-03-13,5,M,164,62,small,세일가에 잘 샀어요. 색감이 고급스러워요.,price:pos;color:pos
+R00309,P011,C0163,2026-06-30,4,L,164,56,large,한 치수 크게 사야 해요. 색상이 화면과 똑같아요.,size:neg;color:pos
+R00310,P055,C0455,2026-02-06,1,S,183,72,small,기장이 너무 길어요.,size:neg
+R00311,P008,C0492,2026-03-05,4,L,153,41,large,포장이 꼼꼼했어요. 원단이 고급스러워요. 사이즈가 생각보다 작아요.,delivery:pos;material:pos;size:neg
+R00312,P059,C0274,2026-06-19,4,M,179,65,small,색감이 고급스러워요.,color:pos
+R00313,P075,C0504,2026-05-08,5,FREE,156,62,true_to_size,색감이 고급스러워요.,color:pos
+R00314,P040,C0484,2026-04-20,5,XL,173,51,large,세일가에 잘 샀어요. 배송이 빨라요.,price:pos;delivery:pos
+R00315,P011,C0114,2026-06-20,5,XL,175,54,large,가격 대비 만족해요. 기장이 너무 길어요. 소재가 부드럽고 촉감이 좋아요.,price:pos;size:neg;material:pos
+R00316,P059,C0470,2026-06-07,5,M,165,52,true_to_size,세일가에 잘 샀어요.,price:pos
+R00317,P040,C0058,2026-04-19,3,L,173,44,large,세일가에 잘 샀어요. 색감이 고급스러워요. 소재가 얇고 비쳐요.,price:pos;color:pos;material:neg
+R00318,P017,C0005,2026-02-15,5,L,160,56,large,색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00319,P005,C0572,2026-02-23,5,L,162,61,large,세일가에 잘 샀어요. 색감이 고급스러워요.,price:pos;color:pos
+R00320,P035,C0559,2026-04-20,5,S,155,64,true_to_size,정사이즈라 고민 없이 골랐어요. 색감이 고급스러워요. 가격 대비 만족해요.,size:pos;color:pos;price:pos
+R00321,P040,C0494,2026-06-26,2,M,181,67,small,화면과 색이 달라요.,color:neg
+R00322,P061,C0436,2026-01-28,1,S,166,53,small,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00323,P013,C0400,2026-04-12,2,L,176,71,small,한 치수 크게 사야 해요.,size:neg
+R00324,P020,C0193,2026-04-02,2,L,150,48,large,배송이 일주일 넘게 걸렸어요. 소재가 얇고 비쳐요. 기장이 너무 길어요.,delivery:neg;material:neg;size:neg
+R00325,P017,C0026,2026-03-03,4,L,178,66,small,색상이 화면과 똑같아요. 세일가에 잘 샀어요.,color:pos;price:pos
+R00326,P046,C0274,2026-02-14,5,XL,185,80,true_to_size,세일가에 잘 샀어요.,price:pos
+R00327,P053,C0361,2026-02-28,2,L,164,42,large,박스가 찌그러져 왔어요.,delivery:neg
+R00328,P036,C0368,2026-05-12,5,M,172,53,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00329,P032,C0213,2026-01-28,5,M,166,54,true_to_size,세일가에 잘 샀어요.,price:pos
+R00330,P040,C0397,2026-02-01,2,S,168,54,small,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00331,P059,C0052,2026-04-14,5,M,158,75,small,원단이 고급스러워요.,material:pos
+R00332,P006,C0350,2026-02-17,5,L,162,49,large,세일가에 잘 샀어요.,price:pos
+R00333,P054,C0214,2026-03-17,5,XL,160,66,large,배송이 빨라요.,delivery:pos
+R00334,P013,C0388,2026-02-07,4,S,170,59,small,두께감이 적당해요. 박스가 찌그러져 왔어요.,material:pos;delivery:neg
+R00335,P069,C0350,2026-03-06,1,M,163,63,true_to_size,박스가 찌그러져 왔어요. 이 가격이면 다른 데가 나아요.,delivery:neg;price:neg
+R00336,P080,C0140,2026-04-17,3,FREE,159,51,large,두께감이 적당해요. 가격에 비해 아쉬워요.,material:pos;price:neg
+R00337,P008,C0438,2026-03-07,4,XL,167,50,large,원단이 고급스러워요. 세일가에 잘 샀어요.,material:pos;price:pos
+R00338,P008,C0001,2026-06-02,3,S,178,74,small,포장이 꼼꼼했어요. 화면과 색이 달라요.,delivery:pos;color:neg
+R00339,P008,C0129,2026-05-04,5,L,180,76,true_to_size,원단이 고급스러워요.,material:pos
+R00340,P055,C0077,2026-03-05,2,M,164,64,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R00341,P015,C0108,2026-06-06,5,L,148,58,large,색감이 고급스러워요.,color:pos
+R00342,P061,C0068,2026-06-30,4,S,174,68,small,배송이 빨라요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R00343,P040,C0093,2026-01-25,3,L,175,51,large,사이즈가 생각보다 작아요.,size:neg
+R00344,P033,C0100,2026-07-04,5,M,160,40,large,색상이 화면과 똑같아요.,color:pos
+R00345,P040,C0130,2026-06-24,5,L,166,66,true_to_size,가격 대비 만족해요.,price:pos
+R00346,P034,C0022,2026-03-05,5,L,168,54,large,배송이 빨라요. 두께감이 적당해요.,delivery:pos;material:pos
+R00347,P002,C0113,2026-06-12,5,M,162,52,true_to_size,색감이 고급스러워요. 핏이 예쁘게 떨어져요.,color:pos;size:pos
+R00348,P030,C0123,2026-04-26,3,S,173,74,small,기장이 너무 길어요. 두께감이 적당해요.,size:neg;material:pos
+R00349,P074,C0123,2026-03-07,5,FREE,171,64,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00350,P006,C0545,2026-03-07,5,XL,167,72,true_to_size,배송이 빨라요. 색감이 고급스러워요.,delivery:pos;color:pos
+R00351,P012,C0346,2026-04-29,3,S,163,54,small,사이즈가 생각보다 작아요. 포장이 꼼꼼했어요.,size:neg;delivery:pos
+R00352,P027,C0435,2026-04-30,4,L,171,60,true_to_size,원단이 뻣뻣해요. 가격 대비 만족해요. 핏이 예쁘게 떨어져요.,material:neg;price:pos;size:pos
+R00353,P034,C0504,2026-03-02,5,M,167,70,small,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R00354,P071,C0429,2026-06-27,5,S,164,48,small,배송이 빨라요. 가격 대비 만족해요.,delivery:pos;price:pos
+R00355,P033,C0146,2026-05-23,4,S,162,47,true_to_size,세일가에 잘 샀어요.,price:pos
+R00356,P042,C0341,2026-01-13,5,M,166,61,small,포장이 꼼꼼했어요.,delivery:pos
+R00357,P040,C0599,2026-03-28,4,S,165,54,true_to_size,포장이 꼼꼼했어요. 색상이 사진보다 어두워요.,delivery:pos;color:neg
+R00358,P069,C0583,2026-06-26,4,S,166,67,small,배송이 빨라요. 색상이 화면과 똑같아요. 소재가 얇고 비쳐요.,delivery:pos;color:pos;material:neg
+R00359,P073,C0215,2026-02-24,2,FREE,160,55,large,배송이 일주일 넘게 걸렸어요. 색상이 사진보다 어두워요.,delivery:neg;color:neg
+R00360,P042,C0353,2026-02-04,2,S,164,43,small,사이즈가 생각보다 작아요.,size:neg
+R00361,P035,C0334,2026-04-15,5,M,162,52,true_to_size,세일가에 잘 샀어요. 원단이 고급스러워요. 배송이 빨라요.,price:pos;material:pos;delivery:pos
+R00362,P008,C0403,2026-02-07,5,S,169,46,true_to_size,포장이 꼼꼼했어요. 사이즈가 딱 맞아요.,delivery:pos;size:pos
+R00363,P073,C0299,2026-06-22,5,FREE,167,70,small,가격 대비 만족해요.,price:pos
+R00364,P055,C0406,2026-05-08,2,L,156,59,large,사이즈가 생각보다 작아요. 배송이 일주일 넘게 걸렸어요.,size:neg;delivery:neg
+R00365,P016,C0192,2026-05-17,5,M,169,45,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00366,P038,C0099,2026-05-11,3,L,163,63,large,세일가에 잘 샀어요. 기장이 너무 길어요.,price:pos;size:neg
+R00367,P055,C0477,2026-03-24,3,XL,156,46,large,가격 대비 만족해요. 한 치수 크게 사야 해요.,price:pos;size:neg
+R00368,P023,C0129,2026-05-25,2,M,165,74,true_to_size,원단이 뻣뻣해요.,material:neg
+R00369,P051,C0188,2026-03-22,5,XL,159,75,large,배송이 빨라요. 원단이 고급스러워요.,delivery:pos;material:pos
+R00370,P028,C0400,2026-05-01,4,M,175,72,small,기장이 너무 길어요. 색감이 고급스러워요. 원단이 뻣뻣해요.,size:neg;color:pos;material:neg
+R00371,P073,C0114,2026-04-17,5,FREE,176,50,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00372,P009,C0018,2026-05-29,4,M,161,64,true_to_size,색상이 화면과 똑같아요. 세일가에 잘 샀어요.,color:pos;price:pos
+R00373,P021,C0566,2026-06-13,2,L,153,65,large,기장이 너무 길어요.,size:neg
+R00374,P008,C0186,2026-04-18,5,M,170,54,true_to_size,배송이 빨라요. 정사이즈라 고민 없이 골랐어요.,delivery:pos;size:pos
+R00375,P038,C0004,2026-02-26,4,L,162,59,true_to_size,세일가에 잘 샀어요.,price:pos
+R00376,P071,C0296,2026-06-17,4,S,170,53,small,가격 대비 만족해요. 배송이 빨라요. 기장이 너무 길어요.,price:pos;delivery:pos;size:neg
+R00377,P055,C0214,2026-04-25,4,M,160,45,true_to_size,정사이즈라 고민 없이 골랐어요. 이 가격이면 다른 데가 나아요. 배송이 빨라요.,size:pos;price:neg;delivery:pos
+R00378,P042,C0545,2026-06-09,5,M,173,69,small,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R00379,P069,C0429,2026-02-15,4,M,162,48,true_to_size,정사이즈라 고민 없이 골랐어요. 두께감이 적당해요. 색감이 고급스러워요.,size:pos;material:pos;color:pos
+R00380,P017,C0085,2026-03-18,3,S,173,99,small,이 가격이면 다른 데가 나아요. 원단이 고급스러워요.,price:neg;material:pos
+R00381,P037,C0397,2026-02-05,2,L,162,55,large,기장이 너무 길어요.,size:neg
+R00382,P026,C0089,2026-06-15,1,L,162,77,large,이 가격이면 다른 데가 나아요. 색상이 사진보다 어두워요.,price:neg;color:neg
+R00383,P043,C0058,2026-06-06,5,M,156,54,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00384,P027,C0481,2026-05-15,5,S,157,53,true_to_size,소재가 부드럽고 촉감이 좋아요. 색감이 고급스러워요.,material:pos;color:pos
+R00385,P026,C0052,2026-06-19,2,M,162,54,true_to_size,박스가 찌그러져 왔어요.,delivery:neg
+R00386,P008,C0582,2026-03-05,3,S,160,52,true_to_size,소재가 얇고 비쳐요.,material:neg
+R00387,P012,C0438,2026-01-21,3,XL,167,52,large,배송이 일주일 넘게 걸렸어요. 화면과 색이 달라요.,delivery:neg;color:neg
+R00388,P052,C0220,2026-05-29,5,M,167,50,large,세일가에 잘 샀어요.,price:pos
+R00389,P008,C0489,2026-06-02,5,S,167,60,true_to_size,가격 대비 만족해요. 포장이 꼼꼼했어요.,price:pos;delivery:pos
+R00390,P055,C0430,2026-02-07,4,L,154,53,large,색감이 고급스러워요.,color:pos
+R00391,P017,C0057,2026-05-29,2,M,172,59,true_to_size,색상이 사진보다 어두워요.,color:neg
+R00392,P071,C0035,2026-01-20,5,S,171,66,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00393,P030,C0242,2026-02-05,3,M,178,61,true_to_size,색상이 사진보다 어두워요. 가격 대비 만족해요.,color:neg;price:pos
+R00394,P040,C0282,2026-07-03,4,L,169,56,true_to_size,사이즈가 생각보다 작아요. 원단이 고급스러워요. 색감이 고급스러워요.,size:neg;material:pos;color:pos
+R00395,P040,C0274,2026-05-25,2,S,186,65,small,가격에 비해 아쉬워요. 박스가 찌그러져 왔어요.,price:neg;delivery:neg
+R00396,P055,C0433,2026-06-09,2,M,149,56,large,기장이 너무 길어요.,size:neg
+R00397,P045,C0355,2026-06-19,3,S,175,57,small,이 가격이면 다른 데가 나아요. 배송이 빨라요. 색상이 사진보다 어두워요.,price:neg;delivery:pos;color:neg
+R00398,P064,C0304,2026-03-18,4,M,156,64,large,배송이 빨라요.,delivery:pos
+R00399,P038,C0335,2026-04-30,4,L,163,40,large,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요. 이 가격이면 다른 데가 나아요.,color:pos;delivery:neg;price:neg
+R00400,P078,C0265,2026-06-15,5,FREE,180,67,true_to_size,포장이 꼼꼼했어요. 정사이즈라 고민 없이 골랐어요.,delivery:pos;size:pos
+R00401,P030,C0057,2026-04-09,4,S,181,75,small,한 치수 크게 사야 해요. 가격 대비 만족해요.,size:neg;price:pos
+R00402,P060,C0411,2026-02-13,5,S,156,54,small,포장이 꼼꼼했어요. 두께감이 적당해요.,delivery:pos;material:pos
+R00403,P016,C0600,2026-02-20,5,M,170,61,small,원단이 고급스러워요.,material:pos
+R00404,P042,C0481,2026-06-16,2,XL,160,40,large,기장이 너무 길어요.,size:neg
+R00405,P020,C0250,2026-02-03,4,S,161,51,true_to_size,배송이 빨라요. 이 가격이면 다른 데가 나아요. 색감이 고급스러워요.,delivery:pos;price:neg;color:pos
+R00406,P080,C0277,2026-02-14,5,FREE,151,52,large,원단이 고급스러워요. 배송이 빨라요. 가격 대비 만족해요.,material:pos;delivery:pos;price:pos
+R00407,P011,C0587,2026-01-12,4,M,171,64,true_to_size,세일가에 잘 샀어요.,price:pos
+R00408,P042,C0179,2026-03-17,2,M,163,62,small,한 치수 크게 사야 해요. 보풀이 금방 생겨요.,size:neg;material:neg
+R00409,P048,C0245,2026-02-26,4,M,180,79,small,기장이 너무 길어요. 색감이 고급스러워요. 배송이 빨라요.,size:neg;color:pos;delivery:pos
+R00410,P016,C0335,2026-04-17,4,L,165,42,large,배송이 빨라요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00411,P014,C0176,2026-01-20,4,L,176,57,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00412,P013,C0146,2026-03-10,4,M,158,61,small,가격에 비해 아쉬워요. 두께감이 적당해요. 기장이 너무 길어요.,price:neg;material:pos;size:neg
+R00413,P037,C0005,2026-03-25,2,S,148,49,large,한 치수 크게 사야 해요.,size:neg
+R00414,P055,C0429,2026-02-17,4,S,163,48,small,배송이 빨라요.,delivery:pos
+R00415,P042,C0274,2026-04-19,5,M,173,81,small,두께감이 적당해요. 색상이 화면과 똑같아요.,material:pos;color:pos
+R00416,P010,C0385,2026-02-23,5,L,168,53,large,원단이 고급스러워요.,material:pos
+R00417,P064,C0325,2026-02-14,4,M,168,57,small,색상이 화면과 똑같아요. 한 치수 크게 사야 해요.,color:pos;size:neg
+R00418,P028,C0153,2026-05-26,5,S,179,77,small,포장이 꼼꼼했어요.,delivery:pos
+R00419,P051,C0155,2026-04-14,2,L,157,59,large,색상이 사진보다 어두워요.,color:neg
+R00420,P017,C0544,2026-05-21,4,S,161,44,large,포장이 꼼꼼했어요.,delivery:pos
+R00421,P073,C0140,2026-03-01,5,FREE,165,51,large,세일가에 잘 샀어요. 포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,price:pos;delivery:pos;size:neg
+R00422,P022,C0096,2026-05-20,3,M,174,67,true_to_size,가격에 비해 아쉬워요. 배송이 빨라요.,price:neg;delivery:pos
+R00423,P008,C0550,2026-07-11,4,S,172,47,small,가격 대비 만족해요.,price:pos
+R00424,P069,C0206,2026-04-13,1,M,172,71,small,기장이 너무 길어요.,size:neg
+R00425,P040,C0567,2026-02-01,5,L,176,72,true_to_size,색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00426,P075,C0600,2026-01-11,4,FREE,177,66,true_to_size,색상이 화면과 똑같아요. 이 가격이면 다른 데가 나아요.,color:pos;price:neg
+R00427,P055,C0140,2026-01-21,3,S,152,66,true_to_size,화면과 색이 달라요. 세일가에 잘 샀어요.,color:neg;price:pos
+R00428,P055,C0178,2026-05-22,5,S,161,42,true_to_size,가격 대비 만족해요.,price:pos
+R00429,P016,C0215,2026-02-10,2,L,164,47,true_to_size,정사이즈라 고민 없이 골랐어요. 가격에 비해 아쉬워요. 배송이 일주일 넘게 걸렸어요.,size:pos;price:neg;delivery:neg
+R00430,P071,C0155,2026-05-15,5,M,166,40,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00431,P001,C0414,2026-05-06,5,S,168,64,small,배송이 빨라요. 색감이 고급스러워요.,delivery:pos;color:pos
+R00432,P060,C0136,2026-04-24,5,M,169,74,small,가격 대비 만족해요.,price:pos
+R00433,P011,C0182,2026-02-13,4,L,172,63,large,원단이 고급스러워요. 가격에 비해 아쉬워요.,material:pos;price:neg
+R00434,P008,C0492,2026-02-17,5,M,171,59,true_to_size,포장이 꼼꼼했어요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00435,P064,C0325,2026-05-10,3,L,166,40,large,색상이 화면과 똑같아요. 한 치수 크게 사야 해요.,color:pos;size:neg
+R00436,P037,C0275,2026-01-27,1,XL,154,52,large,박스가 찌그러져 왔어요. 이 가격이면 다른 데가 나아요.,delivery:neg;price:neg
+R00437,P001,C0265,2026-03-18,4,L,182,67,true_to_size,화면과 색이 달라요. 포장이 꼼꼼했어요.,color:neg;delivery:pos
+R00438,P026,C0123,2026-07-11,5,L,173,66,true_to_size,색상이 화면과 똑같아요. 두께감이 적당해요.,color:pos;material:pos
+R00439,P042,C0115,2026-05-24,2,S,150,49,true_to_size,화면과 색이 달라요. 이 가격이면 다른 데가 나아요.,color:neg;price:neg
+R00440,P064,C0479,2026-05-22,4,M,163,53,true_to_size,소재가 얇고 비쳐요. 포장이 꼼꼼했어요.,material:neg;delivery:pos
+R00441,P040,C0435,2026-05-28,1,XL,183,71,true_to_size,화면과 색이 달라요.,color:neg
+R00442,P050,C0164,2026-05-02,4,S,160,51,small,소재가 부드럽고 촉감이 좋아요. 사이즈가 생각보다 작아요.,material:pos;size:neg
+R00443,P011,C0463,2026-01-22,5,M,166,58,true_to_size,색감이 고급스러워요.,color:pos
+R00444,P009,C0583,2026-03-08,5,M,163,57,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00445,P055,C0458,2026-06-14,5,M,165,45,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00446,P017,C0545,2026-02-09,2,XL,177,75,true_to_size,색상이 사진보다 어두워요. 포장이 꼼꼼했어요.,color:neg;delivery:pos
+R00447,P027,C0182,2026-06-09,1,M,172,72,small,화면과 색이 달라요.,color:neg
+R00448,P006,C0533,2026-01-07,5,S,176,56,small,색상이 화면과 똑같아요. 세일가에 잘 샀어요.,color:pos;price:pos
+R00449,P059,C0295,2026-02-26,4,S,173,59,small,배송이 빨라요. 색상이 사진보다 어두워요.,delivery:pos;color:neg
+R00450,P055,C0308,2026-06-27,5,S,154,43,true_to_size,색감이 고급스러워요. 정사이즈라 고민 없이 골랐어요. 소재가 부드럽고 촉감이 좋아요.,color:pos;size:pos;material:pos
+R00451,P064,C0596,2026-02-21,4,S,174,85,small,색상이 사진보다 어두워요. 포장이 꼼꼼했어요.,color:neg;delivery:pos
+R00452,P043,C0188,2026-03-21,2,L,173,63,large,한 치수 크게 사야 해요.,size:neg
+R00453,P055,C0080,2026-03-31,5,M,168,52,large,가격 대비 만족해요.,price:pos
+R00454,P042,C0112,2026-03-12,5,M,165,56,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00455,P071,C0218,2026-04-24,4,M,162,62,true_to_size,배송이 빨라요.,delivery:pos
+R00456,P034,C0181,2026-06-28,5,M,169,64,true_to_size,두께감이 적당해요.,material:pos
+R00457,P043,C0333,2026-03-31,5,XL,168,51,large,배송이 빨라요. 사이즈가 생각보다 작아요. 색상이 화면과 똑같아요.,delivery:pos;size:neg;color:pos
+R00458,P011,C0113,2026-02-16,5,S,158,62,true_to_size,배송이 빨라요. 색상이 화면과 똑같아요. 사이즈가 딱 맞아요.,delivery:pos;color:pos;size:pos
+R00459,P001,C0146,2026-06-23,5,M,166,57,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00460,P040,C0052,2026-03-28,4,L,160,49,large,원단이 고급스러워요. 세일가에 잘 샀어요. 기장이 너무 길어요.,material:pos;price:pos;size:neg
+R00461,P017,C0068,2026-01-29,5,XL,174,76,large,배송이 빨라요.,delivery:pos
+R00462,P021,C0335,2026-01-28,2,M,160,49,large,한 치수 크게 사야 해요. 색상이 화면과 똑같아요.,size:neg;color:pos
+R00463,P040,C0058,2026-03-01,5,XL,156,58,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00464,P064,C0157,2026-07-07,3,S,172,76,small,사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00465,P040,C0294,2026-07-06,5,M,170,69,small,소재가 부드럽고 촉감이 좋아요. 세일가에 잘 샀어요.,material:pos;price:pos
+R00466,P055,C0188,2026-06-30,5,M,177,77,small,소재가 얇고 비쳐요. 세일가에 잘 샀어요. 포장이 꼼꼼했어요.,material:neg;price:pos;delivery:pos
+R00467,P015,C0214,2026-04-30,4,M,164,55,large,이 가격이면 다른 데가 나아요. 소재가 부드럽고 촉감이 좋아요. 사이즈가 생각보다 작아요.,price:neg;material:pos;size:neg
+R00468,P040,C0077,2026-03-04,3,L,163,51,large,색감이 고급스러워요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R00469,P074,C0099,2026-01-06,2,FREE,161,48,large,화면과 색이 달라요.,color:neg
+R00470,P001,C0361,2026-05-11,5,M,163,74,true_to_size,세일가에 잘 샀어요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00471,P039,C0595,2026-06-17,5,M,162,60,true_to_size,색감이 고급스러워요.,color:pos
+R00472,P031,C0153,2026-03-22,4,M,173,90,small,화면과 색이 달라요. 가격 대비 만족해요.,color:neg;price:pos
+R00473,P059,C0552,2026-03-31,1,L,168,40,large,화면과 색이 달라요.,color:neg
+R00474,P072,C0033,2026-04-06,2,L,180,81,small,사이즈가 생각보다 작아요.,size:neg
+R00475,P045,C0400,2026-03-25,5,L,175,55,large,색상이 화면과 똑같아요.,color:pos
+R00476,P043,C0068,2026-01-23,3,S,163,68,small,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00477,P008,C0492,2026-02-19,3,L,161,55,large,한 치수 크게 사야 해요.,size:neg
+R00478,P076,C0493,2026-05-13,5,FREE,159,59,true_to_size,배송이 빨라요.,delivery:pos
+R00479,P011,C0357,2026-02-01,4,S,159,51,true_to_size,색상이 사진보다 어두워요. 세일가에 잘 샀어요.,color:neg;price:pos
+R00480,P013,C0568,2026-04-06,5,L,166,58,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00481,P071,C0450,2026-06-18,5,M,172,63,small,포장이 꼼꼼했어요.,delivery:pos
+R00482,P075,C0307,2026-02-26,5,FREE,160,61,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00483,P057,C0438,2026-06-28,4,M,165,40,large,색상이 사진보다 어두워요. 원단이 고급스러워요.,color:neg;material:pos
+R00484,P043,C0299,2026-03-02,3,M,164,57,true_to_size,가격 대비 만족해요. 보풀이 금방 생겨요.,price:pos;material:neg
+R00485,P017,C0438,2026-05-03,4,XL,157,53,large,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R00486,P040,C0526,2026-02-24,5,L,169,52,large,세일가에 잘 샀어요. 소재가 얇고 비쳐요. 배송이 빨라요.,price:pos;material:neg;delivery:pos
+R00487,P048,C0214,2026-06-21,3,S,155,54,true_to_size,사이즈가 딱 맞아요. 색상이 사진보다 어두워요.,size:pos;color:neg
+R00488,P001,C0240,2026-01-24,2,S,168,66,small,화면과 색이 달라요.,color:neg
+R00489,P007,C0066,2026-02-08,1,M,163,55,large,가격에 비해 아쉬워요.,price:neg
+R00490,P040,C0572,2026-04-15,5,M,163,60,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00491,P006,C0155,2026-06-12,5,L,163,61,large,색감이 고급스러워요.,color:pos
+R00492,P055,C0274,2026-04-21,4,M,168,75,true_to_size,소재가 부드럽고 촉감이 좋아요. 이 가격이면 다른 데가 나아요. 색상이 화면과 똑같아요.,material:pos;price:neg;color:pos
+R00493,P064,C0411,2026-03-21,5,L,159,53,large,소재가 부드럽고 촉감이 좋아요. 배송이 빨라요.,material:pos;delivery:pos
+R00494,P067,C0155,2026-05-27,4,S,176,73,small,색상이 화면과 똑같아요. 기장이 너무 길어요.,color:pos;size:neg
+R00495,P067,C0373,2026-05-15,4,M,166,66,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00496,P030,C0080,2026-03-22,2,M,160,42,large,원단이 뻣뻣해요.,material:neg
+R00497,P055,C0131,2026-05-14,2,S,179,75,small,배송이 일주일 넘게 걸렸어요. 보풀이 금방 생겨요.,delivery:neg;material:neg
+R00498,P045,C0077,2026-04-08,3,L,163,51,large,기장이 너무 길어요. 두께감이 적당해요.,size:neg;material:pos
+R00499,P030,C0167,2026-03-30,5,M,162,70,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00500,P048,C0393,2026-06-24,3,M,173,56,true_to_size,가격에 비해 아쉬워요. 색감이 고급스러워요.,price:neg;color:pos
+R00501,P069,C0221,2026-04-16,5,S,166,40,true_to_size,배송이 빨라요.,delivery:pos
+R00502,P008,C0454,2026-01-16,5,M,162,50,true_to_size,핏이 예쁘게 떨어져요. 색상이 화면과 똑같아요. 소재가 부드럽고 촉감이 좋아요.,size:pos;color:pos;material:pos
+R00503,P055,C0317,2026-01-30,5,M,159,58,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00504,P040,C0589,2026-04-15,1,XL,158,46,large,소재가 얇고 비쳐요.,material:neg
+R00505,P073,C0459,2026-06-04,5,FREE,164,49,true_to_size,색감이 고급스러워요. 배송이 빨라요.,color:pos;delivery:pos
+R00506,P030,C0397,2026-04-08,5,M,161,65,true_to_size,정사이즈라 고민 없이 골랐어요. 색상이 화면과 똑같아요.,size:pos;color:pos
+R00507,P056,C0496,2026-04-05,4,L,157,47,large,가격 대비 만족해요. 색감이 고급스러워요. 기장이 너무 길어요.,price:pos;color:pos;size:neg
+R00508,P001,C0600,2026-04-11,5,L,161,76,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00509,P039,C0451,2026-06-08,5,S,165,69,small,세일가에 잘 샀어요.,price:pos
+R00510,P062,C0503,2026-03-31,5,S,161,40,true_to_size,색감이 고급스러워요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00511,P028,C0595,2026-07-01,4,S,162,61,small,배송이 일주일 넘게 걸렸어요. 가격 대비 만족해요.,delivery:neg;price:pos
+R00512,P052,C0397,2026-05-19,5,S,171,53,true_to_size,두께감이 적당해요.,material:pos
+R00513,P027,C0011,2026-04-17,5,S,185,72,small,세일가에 잘 샀어요. 색감이 고급스러워요.,price:pos;color:pos
+R00514,P011,C0350,2026-03-19,1,S,165,61,true_to_size,한 치수 크게 사야 해요.,size:neg
+R00515,P007,C0383,2026-03-10,5,L,162,53,large,색감이 고급스러워요. 가격 대비 만족해요.,color:pos;price:pos
+R00516,P072,C0479,2026-06-03,5,S,171,52,small,원단이 고급스러워요.,material:pos
+R00517,P048,C0377,2026-01-17,4,XL,162,40,large,배송이 빨라요. 소재가 부드럽고 촉감이 좋아요.,delivery:pos;material:pos
+R00518,P009,C0066,2026-02-27,2,S,148,40,large,한 치수 크게 사야 해요.,size:neg
+R00519,P060,C0335,2026-03-12,5,L,161,58,large,가격 대비 만족해요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00520,P038,C0033,2026-05-22,3,L,172,80,true_to_size,정사이즈라 고민 없이 골랐어요. 배송이 일주일 넘게 걸렸어요.,size:pos;delivery:neg
+R00521,P017,C0582,2026-03-05,4,L,167,53,large,포장이 꼼꼼했어요. 색상이 사진보다 어두워요.,delivery:pos;color:neg
+R00522,P042,C0110,2026-06-17,2,XL,160,57,large,사이즈가 생각보다 작아요. 보풀이 금방 생겨요.,size:neg;material:neg
+R00523,P057,C0146,2026-04-25,5,M,175,47,large,가격 대비 만족해요.,price:pos
+R00524,P027,C0595,2026-04-17,4,XL,175,61,large,포장이 꼼꼼했어요. 화면과 색이 달라요.,delivery:pos;color:neg
+R00525,P040,C0001,2026-04-14,5,S,172,66,small,포장이 꼼꼼했어요.,delivery:pos
+R00526,P008,C0192,2026-03-07,4,L,173,56,large,한 치수 크게 사야 해요. 색상이 화면과 똑같아요.,size:neg;color:pos
+R00527,P020,C0130,2026-02-19,3,M,176,66,true_to_size,한 치수 크게 사야 해요. 이 가격이면 다른 데가 나아요. 원단이 고급스러워요.,size:neg;price:neg;material:pos
+R00528,P040,C0564,2026-05-31,5,XL,161,62,large,포장이 꼼꼼했어요. 가격 대비 만족해요.,delivery:pos;price:pos
+R00529,P040,C0022,2026-02-10,5,M,166,60,true_to_size,두께감이 적당해요. 박스가 찌그러져 왔어요. 가격 대비 만족해요.,material:pos;delivery:neg;price:pos
+R00530,P037,C0454,2026-05-04,5,L,168,64,true_to_size,색감이 고급스러워요. 소재가 부드럽고 촉감이 좋아요. 한 치수 크게 사야 해요.,color:pos;material:pos;size:neg
+R00531,P021,C0490,2026-05-21,3,M,168,79,small,배송이 빨라요. 사이즈가 생각보다 작아요. 가격 대비 만족해요.,delivery:pos;size:neg;price:pos
+R00532,P034,C0196,2026-06-20,5,M,164,51,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00533,P003,C0249,2026-01-31,4,M,172,85,small,색상이 화면과 똑같아요. 세일가에 잘 샀어요.,color:pos;price:pos
+R00534,P056,C0537,2026-03-16,3,S,171,65,small,보풀이 금방 생겨요. 색상이 화면과 똑같아요.,material:neg;color:pos
+R00535,P027,C0350,2026-04-13,3,L,168,63,true_to_size,화면과 색이 달라요. 가격에 비해 아쉬워요.,color:neg;price:neg
+R00536,P071,C0033,2026-02-20,4,M,167,77,small,기장이 너무 길어요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00537,P021,C0153,2026-04-24,5,XL,180,46,large,두께감이 적당해요.,material:pos
+R00538,P074,C0406,2026-06-06,5,FREE,173,59,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00539,P021,C0545,2026-05-05,3,XL,165,85,large,색감이 고급스러워요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R00540,P073,C0567,2026-02-10,4,FREE,177,74,small,두께감이 적당해요. 배송이 빨라요. 한 치수 크게 사야 해요.,material:pos;delivery:pos;size:neg
+R00541,P030,C0350,2026-01-21,5,S,167,53,true_to_size,세일가에 잘 샀어요. 색감이 고급스러워요.,price:pos;color:pos
+R00542,P045,C0249,2026-06-06,4,L,170,80,true_to_size,색감이 고급스러워요. 사이즈가 딱 맞아요.,color:pos;size:pos
+R00543,P001,C0346,2026-02-08,4,L,165,43,large,원단이 뻣뻣해요. 세일가에 잘 샀어요.,material:neg;price:pos
+R00544,P076,C0499,2026-01-22,3,FREE,165,72,true_to_size,사이즈가 생각보다 작아요. 가격 대비 만족해요. 색상이 사진보다 어두워요.,size:neg;price:pos;color:neg
+R00545,P028,C0206,2026-05-17,3,M,180,64,true_to_size,소재가 얇고 비쳐요. 정사이즈라 고민 없이 골랐어요.,material:neg;size:pos
+R00546,P038,C0196,2026-02-14,3,M,161,40,large,박스가 찌그러져 왔어요. 두께감이 적당해요.,delivery:neg;material:pos
+R00547,P009,C0206,2026-02-19,3,XL,181,65,large,배송이 빨라요. 원단이 뻣뻣해요.,delivery:pos;material:neg
+R00548,P073,C0387,2026-04-23,3,FREE,148,63,large,화면과 색이 달라요. 소재가 부드럽고 촉감이 좋아요.,color:neg;material:pos
+R00549,P011,C0577,2026-02-13,2,S,183,64,small,박스가 찌그러져 왔어요.,delivery:neg
+R00550,P027,C0397,2026-07-08,5,XL,158,42,large,포장이 꼼꼼했어요. 색감이 고급스러워요. 가격 대비 만족해요.,delivery:pos;color:pos;price:pos
+R00551,P014,C0186,2026-06-10,3,S,160,56,small,기장이 너무 길어요. 배송이 빨라요. 화면과 색이 달라요.,size:neg;delivery:pos;color:neg
+R00552,P067,C0587,2026-02-06,5,S,170,57,true_to_size,두께감이 적당해요.,material:pos
+R00553,P001,C0452,2026-01-10,3,L,181,65,true_to_size,세일가에 잘 샀어요. 사이즈가 생각보다 작아요.,price:pos;size:neg
+R00554,P080,C0220,2026-01-29,2,FREE,158,61,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R00555,P019,C0515,2026-03-15,5,M,159,64,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00556,P073,C0438,2026-06-28,5,FREE,168,40,large,원단이 고급스러워요.,material:pos
+R00557,P073,C0492,2026-03-09,5,FREE,165,55,true_to_size,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R00558,P008,C0496,2026-02-03,4,L,172,65,true_to_size,가격 대비 만족해요. 화면과 색이 달라요.,price:pos;color:neg
+R00559,P015,C0595,2026-06-12,5,S,167,63,true_to_size,두께감이 적당해요.,material:pos
+R00560,P008,C0114,2026-05-02,2,M,160,47,large,기장이 너무 길어요.,size:neg
+R00561,P026,C0148,2026-01-27,3,M,177,79,small,한 치수 크게 사야 해요. 색감이 고급스러워요.,size:neg;color:pos
+R00562,P008,C0005,2026-03-03,2,M,158,60,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R00563,P055,C0096,2026-05-09,4,M,172,79,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00564,P055,C0127,2026-01-25,5,M,169,43,large,가격 대비 만족해요.,price:pos
+R00565,P040,C0435,2026-04-12,2,L,187,78,small,가격에 비해 아쉬워요.,price:neg
+R00566,P016,C0283,2026-01-24,4,S,161,64,small,원단이 고급스러워요.,material:pos
+R00567,P038,C0109,2026-06-23,3,M,173,74,true_to_size,화면과 색이 달라요. 소재가 부드럽고 촉감이 좋아요.,color:neg;material:pos
+R00568,P042,C0240,2026-03-27,4,L,158,62,large,가격 대비 만족해요. 사이즈가 생각보다 작아요.,price:pos;size:neg
+R00569,P007,C0383,2026-05-16,2,L,170,66,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R00570,P001,C0186,2026-02-16,5,S,158,46,true_to_size,세일가에 잘 샀어요.,price:pos
+R00571,P056,C0455,2026-06-27,3,S,183,68,small,세일가에 잘 샀어요. 기장이 너무 길어요. 보풀이 금방 생겨요.,price:pos;size:neg;material:neg
+R00572,P042,C0109,2026-02-16,2,M,170,67,small,기장이 너무 길어요.,size:neg
+R00573,P016,C0209,2026-05-13,3,M,176,56,small,기장이 너무 길어요. 세일가에 잘 샀어요. 색상이 사진보다 어두워요.,size:neg;price:pos;color:neg
+R00574,P042,C0333,2026-04-03,3,S,161,66,small,원단이 뻣뻣해요. 색감이 고급스러워요.,material:neg;color:pos
+R00575,P008,C0114,2026-01-27,2,M,164,62,true_to_size,화면과 색이 달라요.,color:neg
+R00576,P007,C0346,2026-05-21,5,XL,155,56,large,세일가에 잘 샀어요.,price:pos
+R00577,P027,C0041,2026-01-27,3,L,163,56,large,기장이 너무 길어요. 가격에 비해 아쉬워요. 배송이 빨라요.,size:neg;price:neg;delivery:pos
+R00578,P038,C0572,2026-03-09,2,XL,161,54,large,화면과 색이 달라요.,color:neg
+R00579,P055,C0430,2026-04-05,5,M,153,78,true_to_size,가격 대비 만족해요.,price:pos
+R00580,P073,C0265,2026-02-10,2,FREE,170,66,small,가격에 비해 아쉬워요.,price:neg
+R00581,P043,C0398,2026-07-14,5,L,173,72,true_to_size,원단이 고급스러워요.,material:pos
+R00582,P074,C0249,2026-06-15,4,FREE,167,71,true_to_size,원단이 뻣뻣해요. 색감이 고급스러워요.,material:neg;color:pos
+R00583,P010,C0066,2026-06-29,3,XL,160,46,large,배송이 빨라요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R00584,P010,C0275,2026-05-22,5,XL,166,52,large,원단이 고급스러워요.,material:pos
+R00585,P040,C0577,2026-04-01,5,XL,170,84,small,배송이 빨라요.,delivery:pos
+R00586,P056,C0443,2026-05-13,2,S,159,63,small,사이즈가 생각보다 작아요.,size:neg
+R00587,P008,C0057,2026-03-31,5,S,181,72,small,색감이 고급스러워요.,color:pos
+R00588,P023,C0212,2026-04-27,3,M,158,55,true_to_size,색상이 사진보다 어두워요.,color:neg
+R00589,P011,C0438,2026-06-28,5,L,154,57,large,색감이 고급스러워요.,color:pos
+R00590,P048,C0190,2026-05-23,2,L,160,49,large,색상이 사진보다 어두워요.,color:neg
+R00591,P017,C0294,2026-04-16,5,L,160,60,true_to_size,색감이 고급스러워요.,color:pos
+R00592,P017,C0368,2026-02-18,5,M,167,62,true_to_size,세일가에 잘 샀어요. 색상이 화면과 똑같아요. 정사이즈라 고민 없이 골랐어요.,price:pos;color:pos;size:pos
+R00593,P073,C0123,2026-04-10,4,FREE,176,77,small,배송이 빨라요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R00594,P042,C0463,2026-04-18,4,M,172,68,small,세일가에 잘 샀어요. 배송이 빨라요.,price:pos;delivery:pos
+R00595,P055,C0489,2026-07-12,4,M,165,54,true_to_size,색상이 사진보다 어두워요. 포장이 꼼꼼했어요.,color:neg;delivery:pos
+R00596,P051,C0455,2026-02-02,2,S,172,74,small,한 치수 크게 사야 해요. 색상이 사진보다 어두워요.,size:neg;color:neg
+R00597,P008,C0257,2026-04-17,3,L,162,53,large,색상이 사진보다 어두워요.,color:neg
+R00598,P002,C0265,2026-03-30,5,L,183,74,true_to_size,가격 대비 만족해요.,price:pos
+R00599,P037,C0441,2026-05-23,3,S,174,75,small,화면과 색이 달라요. 박스가 찌그러져 왔어요.,color:neg;delivery:neg
+R00600,P075,C0005,2026-01-26,3,FREE,161,67,small,원단이 뻣뻣해요. 가격 대비 만족해요. 기장이 너무 길어요.,material:neg;price:pos;size:neg
+R00601,P056,C0283,2026-04-27,5,M,162,58,true_to_size,포장이 꼼꼼했어요. 원단이 고급스러워요.,delivery:pos;material:pos
+R00602,P008,C0265,2026-01-14,4,S,175,77,small,소재가 부드럽고 촉감이 좋아요. 박스가 찌그러져 왔어요.,material:pos;delivery:neg
+R00603,P059,C0477,2026-06-25,5,M,166,55,true_to_size,원단이 고급스러워요.,material:pos
+R00604,P061,C0186,2026-07-02,5,M,165,51,true_to_size,색감이 고급스러워요.,color:pos
+R00605,P029,C0325,2026-07-16,5,M,159,52,true_to_size,색감이 고급스러워요. 가격 대비 만족해요.,color:pos;price:pos
+R00606,P037,C0275,2026-06-29,5,M,159,68,true_to_size,세일가에 잘 샀어요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00607,P040,C0588,2026-04-02,5,XL,153,59,large,색상이 화면과 똑같아요.,color:pos
+R00608,P048,C0214,2026-05-14,5,S,167,52,true_to_size,기장이 너무 길어요. 색감이 고급스러워요. 배송이 빨라요.,size:neg;color:pos;delivery:pos
+R00609,P008,C0013,2026-05-12,5,M,158,53,true_to_size,배송이 빨라요. 원단이 고급스러워요. 세일가에 잘 샀어요.,delivery:pos;material:pos;price:pos
+R00610,P075,C0110,2026-05-04,4,FREE,166,50,large,배송이 빨라요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00611,P001,C0099,2026-05-05,4,L,163,48,large,색감이 고급스러워요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R00612,P051,C0283,2026-04-01,4,XL,164,57,large,색상이 화면과 똑같아요.,color:pos
+R00613,P010,C0057,2026-01-18,5,L,170,81,true_to_size,포장이 꼼꼼했어요. 원단이 고급스러워요.,delivery:pos;material:pos
+R00614,P016,C0587,2026-04-23,5,L,171,40,large,두께감이 적당해요. 기장이 너무 길어요.,material:pos;size:neg
+R00615,P042,C0570,2026-06-04,4,L,170,52,true_to_size,이 가격이면 다른 데가 나아요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R00616,P019,C0386,2026-05-14,5,M,159,55,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00617,P027,C0499,2026-04-15,5,S,159,75,small,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R00618,P017,C0346,2026-06-22,3,S,160,70,small,이 가격이면 다른 데가 나아요. 색감이 고급스러워요.,price:neg;color:pos
+R00619,P057,C0451,2026-04-28,4,L,172,68,true_to_size,배송이 빨라요. 보풀이 금방 생겨요.,delivery:pos;material:neg
+R00620,P015,C0489,2026-02-09,5,S,162,49,true_to_size,가격 대비 만족해요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00621,P037,C0092,2026-04-18,4,L,159,46,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요. 소재가 부드럽고 촉감이 좋아요.,size:neg;price:pos;material:pos
+R00622,P021,C0153,2026-05-06,5,L,175,66,true_to_size,핏이 예쁘게 떨어져요. 배송이 빨라요. 가격 대비 만족해요.,size:pos;delivery:pos;price:pos
+R00623,P060,C0171,2026-04-20,4,L,174,62,true_to_size,배송이 빨라요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R00624,P059,C0477,2026-06-14,2,S,165,45,small,사이즈가 생각보다 작아요.,size:neg
+R00625,P074,C0435,2026-01-08,5,FREE,177,63,true_to_size,배송이 빨라요.,delivery:pos
+R00626,P027,C0572,2026-04-18,5,M,161,53,large,원단이 고급스러워요.,material:pos
+R00627,P008,C0001,2026-03-06,4,S,185,73,small,원단이 고급스러워요.,material:pos
+R00628,P020,C0127,2026-04-10,2,M,148,51,large,한 치수 크게 사야 해요. 색상이 사진보다 어두워요. 소재가 얇고 비쳐요.,size:neg;color:neg;material:neg
+R00629,P057,C0077,2026-07-09,4,L,168,55,large,포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R00630,P001,C0400,2026-03-08,5,M,171,65,true_to_size,원단이 고급스러워요.,material:pos
+R00631,P016,C0097,2026-06-23,5,L,161,54,true_to_size,색감이 고급스러워요.,color:pos
+R00632,P052,C0146,2026-04-03,4,S,162,54,true_to_size,세일가에 잘 샀어요. 한 치수 크게 사야 해요.,price:pos;size:neg
+R00633,P008,C0113,2026-03-18,3,M,154,54,true_to_size,배송이 일주일 넘게 걸렸어요. 색감이 고급스러워요.,delivery:neg;color:pos
+R00634,P010,C0564,2026-02-19,5,M,153,61,true_to_size,핏이 예쁘게 떨어져요. 세일가에 잘 샀어요.,size:pos;price:pos
+R00635,P008,C0587,2026-02-24,3,S,161,60,small,포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R00636,P059,C0275,2026-07-06,5,S,163,51,true_to_size,원단이 고급스러워요. 핏이 예쁘게 떨어져요.,material:pos;size:pos
+R00637,P030,C0437,2026-05-17,5,S,165,48,large,색감이 고급스러워요.,color:pos
+R00638,P012,C0279,2026-04-29,3,M,163,48,true_to_size,배송이 빨라요. 이 가격이면 다른 데가 나아요.,delivery:pos;price:neg
+R00639,P055,C0188,2026-05-31,2,M,184,80,small,한 치수 크게 사야 해요.,size:neg
+R00640,P040,C0011,2026-07-10,1,L,171,67,true_to_size,보풀이 금방 생겨요.,material:neg
+R00641,P017,C0066,2026-05-04,4,L,171,59,true_to_size,가격에 비해 아쉬워요. 색감이 고급스러워요.,price:neg;color:pos
+R00642,P069,C0479,2026-06-30,3,M,154,54,large,색감이 고급스러워요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R00643,P019,C0250,2026-04-26,4,L,159,55,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00644,P055,C0274,2026-02-09,2,S,179,69,small,보풀이 금방 생겨요.,material:neg
+R00645,P040,C0496,2026-04-06,4,L,169,53,large,세일가에 잘 샀어요. 배송이 빨라요. 사이즈가 생각보다 작아요.,price:pos;delivery:pos;size:neg
+R00646,P064,C0353,2026-05-03,5,L,156,55,large,색감이 고급스러워요. 두께감이 적당해요.,color:pos;material:pos
+R00647,P017,C0482,2026-03-12,4,S,171,46,small,포장이 꼼꼼했어요. 세일가에 잘 샀어요. 화면과 색이 달라요.,delivery:pos;price:pos;color:neg
+R00648,P050,C0383,2026-04-09,4,M,161,59,true_to_size,사이즈가 딱 맞아요. 가격에 비해 아쉬워요.,size:pos;price:neg
+R00649,P008,C0451,2026-01-17,2,S,177,67,small,색상이 사진보다 어두워요.,color:neg
+R00650,P043,C0335,2026-03-28,5,S,164,69,small,배송이 빨라요.,delivery:pos
+R00651,P023,C0417,2026-06-26,5,L,176,78,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00652,P048,C0325,2026-05-02,3,S,156,49,true_to_size,핏이 예쁘게 떨어져요. 색상이 사진보다 어두워요.,size:pos;color:neg
+R00653,P035,C0463,2026-06-07,3,S,170,48,true_to_size,세일가에 잘 샀어요. 기장이 너무 길어요.,price:pos;size:neg
+R00654,P078,C0520,2026-01-30,4,FREE,173,66,small,가격 대비 만족해요. 박스가 찌그러져 왔어요.,price:pos;delivery:neg
+R00655,P011,C0489,2026-05-24,1,M,166,61,large,한 치수 크게 사야 해요.,size:neg
+R00656,P043,C0424,2026-01-17,5,L,165,63,large,가격 대비 만족해요.,price:pos
+R00657,P064,C0333,2026-03-30,4,M,168,49,true_to_size,원단이 고급스러워요. 색상이 화면과 똑같아요.,material:pos;color:pos
+R00658,P008,C0579,2026-07-09,5,L,157,47,large,포장이 꼼꼼했어요. 가격 대비 만족해요.,delivery:pos;price:pos
+R00659,P008,C0124,2026-03-25,5,S,181,81,small,가격 대비 만족해요.,price:pos
+R00660,P064,C0277,2026-06-18,2,L,167,69,large,보풀이 금방 생겨요.,material:neg
+R00661,P059,C0208,2026-03-06,4,S,161,52,small,세일가에 잘 샀어요.,price:pos
+R00662,P059,C0164,2026-04-01,3,L,174,56,true_to_size,화면과 색이 달라요. 포장이 꼼꼼했어요. 보풀이 금방 생겨요.,color:neg;delivery:pos;material:neg
+R00663,P006,C0582,2026-02-01,3,M,168,71,small,한 치수 크게 사야 해요.,size:neg
+R00664,P069,C0277,2026-06-16,2,S,158,60,small,원단이 뻣뻣해요. 화면과 색이 달라요. 기장이 너무 길어요.,material:neg;color:neg;size:neg
+R00665,P058,C0477,2026-05-29,5,L,159,57,large,원단이 고급스러워요.,material:pos
+R00666,P040,C0209,2026-02-03,4,M,161,51,true_to_size,색감이 고급스러워요. 원단이 뻣뻣해요. 세일가에 잘 샀어요.,color:pos;material:neg;price:pos
+R00667,P037,C0058,2026-03-19,5,M,167,54,true_to_size,포장이 꼼꼼했어요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00668,P014,C0283,2026-02-13,5,S,170,57,small,색상이 화면과 똑같아요.,color:pos
+R00669,P021,C0271,2026-05-15,2,S,173,84,small,이 가격이면 다른 데가 나아요.,price:neg
+R00670,P040,C0469,2026-06-05,5,M,169,51,true_to_size,색상이 화면과 똑같아요. 포장이 꼼꼼했어요. 세일가에 잘 샀어요.,color:pos;delivery:pos;price:pos
+R00671,P064,C0479,2026-06-27,5,M,155,69,true_to_size,세일가에 잘 샀어요.,price:pos
+R00672,P064,C0350,2026-02-27,5,XL,159,43,large,두께감이 적당해요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R00673,P042,C0382,2026-05-24,5,M,161,65,true_to_size,색감이 고급스러워요. 세일가에 잘 샀어요.,color:pos;price:pos
+R00674,P040,C0265,2026-05-12,3,XL,178,68,true_to_size,세일가에 잘 샀어요. 색상이 사진보다 어두워요. 두께감이 적당해요.,price:pos;color:neg;material:pos
+R00675,P073,C0596,2026-04-04,5,FREE,173,61,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00676,P029,C0595,2026-01-12,2,L,156,43,large,원단이 뻣뻣해요. 한 치수 크게 사야 해요.,material:neg;size:neg
+R00677,P045,C0477,2026-05-04,2,M,157,40,large,소재가 얇고 비쳐요. 배송이 일주일 넘게 걸렸어요.,material:neg;delivery:neg
+R00678,P040,C0325,2026-06-20,4,M,168,55,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00679,P046,C0430,2026-03-27,2,S,159,68,small,박스가 찌그러져 왔어요.,delivery:neg
+R00680,P040,C0573,2026-05-09,5,L,170,61,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00681,P043,C0220,2026-03-24,3,M,165,56,large,색상이 화면과 똑같아요. 소재가 얇고 비쳐요.,color:pos;material:neg
+R00682,P075,C0123,2026-02-17,1,FREE,174,68,small,한 치수 크게 사야 해요.,size:neg
+R00683,P015,C0127,2026-03-18,3,M,155,54,large,박스가 찌그러져 왔어요. 세일가에 잘 샀어요.,delivery:neg;price:pos
+R00684,P043,C0283,2026-06-21,2,S,171,58,true_to_size,보풀이 금방 생겨요.,material:neg
+R00685,P014,C0186,2026-06-05,3,S,157,42,true_to_size,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R00686,P043,C0188,2026-02-15,5,M,170,79,small,포장이 꼼꼼했어요.,delivery:pos
+R00687,P008,C0259,2026-02-01,5,M,169,50,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00688,P061,C0544,2026-06-10,2,M,156,55,true_to_size,가격에 비해 아쉬워요.,price:neg
+R00689,P043,C0360,2026-01-17,4,L,170,57,large,색감이 고급스러워요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R00690,P040,C0279,2026-04-26,5,L,167,62,true_to_size,두께감이 적당해요. 배송이 빨라요.,material:pos;delivery:pos
+R00691,P012,C0081,2026-07-03,2,S,174,79,small,색상이 사진보다 어두워요.,color:neg
+R00692,P072,C0052,2026-03-27,5,L,162,53,large,색상이 화면과 똑같아요.,color:pos
+R00693,P064,C0479,2026-07-03,2,XL,165,49,large,사이즈가 생각보다 작아요.,size:neg
+R00694,P042,C0275,2026-06-15,5,M,162,63,true_to_size,핏이 예쁘게 떨어져요. 포장이 꼼꼼했어요. 소재가 부드럽고 촉감이 좋아요.,size:pos;delivery:pos;material:pos
+R00695,P069,C0320,2026-06-22,3,M,163,50,true_to_size,원단이 고급스러워요. 한 치수 크게 사야 해요.,material:pos;size:neg
+R00696,P021,C0010,2026-05-14,5,M,159,50,true_to_size,세일가에 잘 샀어요.,price:pos
+R00697,P038,C0283,2026-03-11,5,L,157,44,large,세일가에 잘 샀어요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00698,P055,C0444,2026-07-09,2,L,174,75,small,박스가 찌그러져 왔어요. 사이즈가 생각보다 작아요.,delivery:neg;size:neg
+R00699,P011,C0507,2026-05-13,4,L,161,56,large,색감이 고급스러워요. 기장이 너무 길어요.,color:pos;size:neg
+R00700,P038,C0327,2026-01-29,3,S,154,57,small,색상이 화면과 똑같아요. 이 가격이면 다른 데가 나아요. 기장이 너무 길어요.,color:pos;price:neg;size:neg
+R00701,P008,C0502,2026-01-22,5,M,162,66,true_to_size,핏이 예쁘게 떨어져요. 원단이 고급스러워요. 배송이 빨라요.,size:pos;material:pos;delivery:pos
+R00702,P015,C0265,2026-01-09,2,L,174,50,large,이 가격이면 다른 데가 나아요. 사이즈가 생각보다 작아요.,price:neg;size:neg
+R00703,P054,C0430,2026-05-07,5,M,168,56,true_to_size,색상이 화면과 똑같아요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R00704,P042,C0333,2026-02-26,5,M,156,51,true_to_size,소재가 부드럽고 촉감이 좋아요. 핏이 예쁘게 떨어져요.,material:pos;size:pos
+R00705,P017,C0358,2026-06-07,5,S,170,55,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00706,P008,C0097,2026-03-22,5,S,159,45,large,세일가에 잘 샀어요. 포장이 꼼꼼했어요. 보풀이 금방 생겨요.,price:pos;delivery:pos;material:neg
+R00707,P073,C0015,2026-02-28,4,FREE,161,58,true_to_size,가격 대비 만족해요.,price:pos
+R00708,P040,C0209,2026-05-17,5,S,148,42,true_to_size,배송이 빨라요. 정사이즈라 고민 없이 골랐어요.,delivery:pos;size:pos
+R00709,P040,C0335,2026-02-24,5,L,172,48,large,포장이 꼼꼼했어요.,delivery:pos
+R00710,P002,C0265,2026-02-03,4,M,169,65,true_to_size,소재가 부드럽고 촉감이 좋아요. 포장이 꼼꼼했어요. 이 가격이면 다른 데가 나아요.,material:pos;delivery:pos;price:neg
+R00711,P015,C0129,2026-03-19,5,L,171,84,true_to_size,핏이 예쁘게 떨어져요. 배송이 빨라요.,size:pos;delivery:pos
+R00712,P075,C0570,2026-03-23,2,FREE,162,58,true_to_size,색상이 사진보다 어두워요. 박스가 찌그러져 왔어요.,color:neg;delivery:neg
+R00713,P065,C0359,2026-04-30,3,L,178,79,true_to_size,원단이 뻣뻣해요. 포장이 꼼꼼했어요.,material:neg;delivery:pos
+R00714,P080,C0577,2026-04-29,4,FREE,168,85,true_to_size,원단이 고급스러워요.,material:pos
+R00715,P040,C0294,2026-04-14,4,L,157,65,true_to_size,두께감이 적당해요. 사이즈가 생각보다 작아요. 색감이 고급스러워요.,material:pos;size:neg;color:pos
+R00716,P016,C0567,2026-03-10,4,XL,173,70,true_to_size,세일가에 잘 샀어요.,price:pos
+R00717,P011,C0107,2026-02-15,3,S,176,65,small,원단이 뻣뻣해요. 색감이 고급스러워요.,material:neg;color:pos
+R00718,P027,C0600,2026-02-19,2,M,182,83,small,기장이 너무 길어요. 이 가격이면 다른 데가 나아요.,size:neg;price:neg
+R00719,P017,C0005,2026-01-16,4,M,168,47,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00720,P004,C0579,2026-04-18,5,S,167,51,true_to_size,핏이 예쁘게 떨어져요. 배송이 빨라요.,size:pos;delivery:pos
+R00721,P056,C0492,2026-05-10,2,S,164,48,true_to_size,원단이 뻣뻣해요.,material:neg
+R00722,P055,C0110,2026-05-19,4,M,162,62,true_to_size,원단이 고급스러워요.,material:pos
+R00723,P040,C0469,2026-04-07,3,M,159,66,true_to_size,색상이 사진보다 어두워요.,color:neg
+R00724,P068,C0148,2026-04-08,3,S,170,74,small,사이즈가 생각보다 작아요. 배송이 빨라요.,size:neg;delivery:pos
+R00725,P006,C0220,2026-02-07,4,S,168,40,true_to_size,가격에 비해 아쉬워요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R00726,P040,C0455,2026-01-13,3,S,172,81,small,소재가 부드럽고 촉감이 좋아요. 한 치수 크게 사야 해요. 배송이 일주일 넘게 걸렸어요.,material:pos;size:neg;delivery:neg
+R00727,P040,C0294,2026-06-15,5,M,173,40,true_to_size,사이즈가 딱 맞아요. 원단이 고급스러워요. 세일가에 잘 샀어요.,size:pos;material:pos;price:pos
+R00728,P051,C0406,2026-06-15,5,L,180,58,true_to_size,사이즈가 딱 맞아요. 색감이 고급스러워요.,size:pos;color:pos
+R00729,P038,C0252,2026-02-23,2,M,165,61,true_to_size,가격에 비해 아쉬워요.,price:neg
+R00730,P009,C0418,2026-05-02,2,M,160,51,large,기장이 너무 길어요.,size:neg
+R00731,P040,C0493,2026-06-26,4,L,163,57,large,원단이 뻣뻣해요. 색감이 고급스러워요.,material:neg;color:pos
+R00732,P031,C0418,2026-04-09,5,S,157,60,true_to_size,가격 대비 만족해요.,price:pos
+R00733,P064,C0519,2026-04-23,1,XL,173,69,large,박스가 찌그러져 왔어요. 기장이 너무 길어요.,delivery:neg;size:neg
+R00734,P043,C0577,2026-05-03,4,S,163,70,small,포장이 꼼꼼했어요. 원단이 고급스러워요.,delivery:pos;material:pos
+R00735,P040,C0541,2026-03-31,2,M,166,54,true_to_size,보풀이 금방 생겨요.,material:neg
+R00736,P024,C0011,2026-01-18,5,M,175,73,small,가격 대비 만족해요.,price:pos
+R00737,P043,C0190,2026-05-28,2,S,156,53,true_to_size,보풀이 금방 생겨요. 이 가격이면 다른 데가 나아요.,material:neg;price:neg
+R00738,P037,C0430,2026-01-21,5,M,167,49,large,색상이 화면과 똑같아요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R00739,P004,C0481,2026-07-03,5,S,153,56,true_to_size,원단이 고급스러워요.,material:pos
+R00740,P012,C0525,2026-04-21,3,S,159,72,small,보풀이 금방 생겨요. 포장이 꼼꼼했어요.,material:neg;delivery:pos
+R00741,P056,C0089,2026-01-18,3,XL,154,53,large,배송이 빨라요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R00742,P055,C0024,2026-04-04,5,L,169,49,large,소재가 부드럽고 촉감이 좋아요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R00743,P072,C0350,2026-03-31,4,S,164,49,small,배송이 빨라요. 기장이 너무 길어요. 색상이 화면과 똑같아요.,delivery:pos;size:neg;color:pos
+R00744,P049,C0283,2026-06-12,5,M,159,57,large,가격 대비 만족해요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00745,P060,C0457,2026-05-29,5,M,164,48,true_to_size,세일가에 잘 샀어요.,price:pos
+R00746,P073,C0186,2026-03-10,5,FREE,175,42,large,색상이 화면과 똑같아요.,color:pos
+R00747,P001,C0447,2026-01-30,2,M,160,52,large,색상이 사진보다 어두워요. 소재가 얇고 비쳐요.,color:neg;material:neg
+R00748,P059,C0504,2026-05-03,5,M,164,51,true_to_size,세일가에 잘 샀어요. 포장이 꼼꼼했어요.,price:pos;delivery:pos
+R00749,P072,C0481,2026-01-13,5,S,160,51,small,가격 대비 만족해요.,price:pos
+R00750,P050,C0248,2026-05-15,5,S,153,54,true_to_size,세일가에 잘 샀어요. 원단이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,price:pos;material:pos;delivery:neg
+R00751,P015,C0099,2026-04-29,4,M,161,57,large,한 치수 크게 사야 해요. 원단이 고급스러워요. 색상이 화면과 똑같아요.,size:neg;material:pos;color:pos
+R00752,P077,C0589,2026-02-14,2,FREE,166,57,large,기장이 너무 길어요.,size:neg
+R00753,P012,C0265,2026-03-25,5,M,183,63,small,색감이 고급스러워요.,color:pos
+R00754,P080,C0504,2026-01-21,5,FREE,164,58,large,포장이 꼼꼼했어요. 기장이 너무 길어요. 가격 대비 만족해요.,delivery:pos;size:neg;price:pos
+R00755,P073,C0435,2026-02-14,2,FREE,175,77,small,한 치수 크게 사야 해요.,size:neg
+R00756,P038,C0450,2026-04-09,3,M,181,75,small,색상이 사진보다 어두워요. 배송이 빨라요.,color:neg;delivery:pos
+R00757,P076,C0508,2026-02-24,5,FREE,174,67,true_to_size,사이즈가 딱 맞아요. 배송이 빨라요.,size:pos;delivery:pos
+R00758,P040,C0096,2026-01-19,3,S,168,60,small,한 치수 크게 사야 해요.,size:neg
+R00759,P055,C0299,2026-02-26,2,M,163,76,small,한 치수 크게 사야 해요.,size:neg
+R00760,P040,C0053,2026-01-20,5,L,161,49,large,가격 대비 만족해요.,price:pos
+R00761,P043,C0418,2026-01-19,4,S,168,74,small,포장이 꼼꼼했어요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00762,P019,C0259,2026-03-23,4,L,169,65,true_to_size,사이즈가 딱 맞아요. 소재가 얇고 비쳐요.,size:pos;material:neg
+R00763,P060,C0418,2026-03-16,4,S,167,47,small,원단이 고급스러워요. 색감이 고급스러워요.,material:pos;color:pos
+R00764,P037,C0335,2026-06-01,2,L,170,56,large,한 치수 크게 사야 해요. 원단이 뻣뻣해요.,size:neg;material:neg
+R00765,P001,C0274,2026-03-14,2,M,173,74,true_to_size,원단이 뻣뻣해요.,material:neg
+R00766,P013,C0001,2026-04-12,5,L,186,77,small,두께감이 적당해요.,material:pos
+R00767,P052,C0381,2026-05-13,5,M,166,58,true_to_size,원단이 고급스러워요.,material:pos
+R00768,P017,C0215,2026-03-05,4,L,157,58,large,포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R00769,P044,C0240,2026-03-22,5,M,172,47,true_to_size,색상이 화면과 똑같아요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R00770,P045,C0570,2026-04-26,5,M,157,67,true_to_size,사이즈가 딱 맞아요. 포장이 꼼꼼했어요. 소재가 부드럽고 촉감이 좋아요.,size:pos;delivery:pos;material:pos
+R00771,P064,C0479,2026-04-04,1,L,168,50,large,사이즈가 생각보다 작아요.,size:neg
+R00772,P036,C0213,2026-03-24,4,S,156,56,true_to_size,한 치수 크게 사야 해요. 배송이 빨라요.,size:neg;delivery:pos
+R00773,P027,C0258,2026-07-01,4,S,165,64,small,가격 대비 만족해요.,price:pos
+R00774,P004,C0325,2026-04-18,5,S,158,48,large,세일가에 잘 샀어요. 색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,price:pos;color:pos;delivery:pos
+R00775,P019,C0361,2026-02-01,3,M,167,56,true_to_size,배송이 빨라요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00776,P003,C0302,2026-05-04,5,L,170,51,large,세일가에 잘 샀어요.,price:pos
+R00777,P055,C0190,2026-05-08,5,S,168,51,small,사이즈가 생각보다 작아요. 두께감이 적당해요. 가격 대비 만족해요.,size:neg;material:pos;price:pos
+R00778,P037,C0572,2026-06-09,5,S,168,57,true_to_size,원단이 고급스러워요.,material:pos
+R00779,P069,C0271,2026-04-27,5,M,173,71,small,세일가에 잘 샀어요. 배송이 빨라요.,price:pos;delivery:pos
+R00780,P064,C0036,2026-03-24,5,S,160,66,true_to_size,배송이 빨라요.,delivery:pos
+R00781,P011,C0558,2026-06-30,3,XL,155,63,large,기장이 너무 길어요. 소재가 부드럽고 촉감이 좋아요.,size:neg;material:pos
+R00782,P038,C0018,2026-02-23,3,L,166,68,large,두께감이 적당해요. 배송이 일주일 넘게 걸렸어요. 한 치수 크게 사야 해요.,material:pos;delivery:neg;size:neg
+R00783,P052,C0299,2026-03-06,3,L,177,43,large,가격 대비 만족해요. 배송이 일주일 넘게 걸렸어요.,price:pos;delivery:neg
+R00784,P028,C0100,2026-04-25,5,M,172,55,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00785,P061,C0350,2026-04-02,5,S,166,47,true_to_size,이 가격이면 다른 데가 나아요. 정사이즈라 고민 없이 골랐어요. 원단이 고급스러워요.,price:neg;size:pos;material:pos
+R00786,P061,C0418,2026-05-25,5,M,180,69,small,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R00787,P017,C0188,2026-03-19,3,S,173,74,small,원단이 뻣뻣해요. 사이즈가 생각보다 작아요.,material:neg;size:neg
+R00788,P056,C0121,2026-05-28,1,S,154,63,small,한 치수 크게 사야 해요.,size:neg
+R00789,P055,C0455,2026-06-13,4,M,168,72,true_to_size,가격 대비 만족해요. 사이즈가 생각보다 작아요. 소재가 부드럽고 촉감이 좋아요.,price:pos;size:neg;material:pos
+R00790,P016,C0397,2026-03-26,3,M,167,54,true_to_size,한 치수 크게 사야 해요. 포장이 꼼꼼했어요.,size:neg;delivery:pos
+R00791,P049,C0361,2026-06-27,1,M,166,40,large,보풀이 금방 생겨요. 배송이 일주일 넘게 걸렸어요.,material:neg;delivery:neg
+R00792,P008,C0567,2026-02-17,2,M,177,83,small,이 가격이면 다른 데가 나아요. 기장이 너무 길어요.,price:neg;size:neg
+R00793,P021,C0482,2026-02-14,2,M,170,42,large,기장이 너무 길어요.,size:neg
+R00794,P045,C0182,2026-04-07,5,M,172,62,true_to_size,배송이 빨라요.,delivery:pos
+R00795,P076,C0259,2026-03-11,1,FREE,164,47,large,한 치수 크게 사야 해요.,size:neg
+R00796,P017,C0174,2026-03-01,4,M,156,57,large,원단이 고급스러워요. 배송이 빨라요. 색상이 사진보다 어두워요.,material:pos;delivery:pos;color:neg
+R00797,P008,C0444,2026-05-25,5,L,179,80,true_to_size,색감이 고급스러워요.,color:pos
+R00798,P019,C0151,2026-04-28,5,M,161,62,true_to_size,배송이 빨라요.,delivery:pos
+R00799,P049,C0357,2026-05-12,5,XL,162,76,large,가격 대비 만족해요. 배송이 빨라요.,price:pos;delivery:pos
+R00800,P055,C0146,2026-03-31,5,M,159,54,large,세일가에 잘 샀어요.,price:pos
+R00801,P057,C0360,2026-01-23,5,M,151,56,large,색감이 고급스러워요.,color:pos
+R00802,P046,C0052,2026-01-18,2,M,159,53,large,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00803,P009,C0481,2026-02-20,5,M,168,67,true_to_size,세일가에 잘 샀어요.,price:pos
+R00804,P044,C0275,2026-04-22,5,M,165,51,true_to_size,세일가에 잘 샀어요.,price:pos
+R00805,P055,C0051,2026-06-17,4,L,183,68,true_to_size,화면과 색이 달라요. 포장이 꼼꼼했어요.,color:neg;delivery:pos
+R00806,P064,C0093,2026-01-22,4,L,165,66,large,가격 대비 만족해요. 화면과 색이 달라요.,price:pos;color:neg
+R00807,P078,C0258,2026-03-30,4,FREE,168,55,true_to_size,사이즈가 딱 맞아요.,size:pos
+R00808,P042,C0496,2026-07-16,3,L,174,63,true_to_size,세일가에 잘 샀어요. 배송이 일주일 넘게 걸렸어요.,price:pos;delivery:neg
+R00809,P040,C0349,2026-04-01,5,M,176,66,small,색감이 고급스러워요.,color:pos
+R00810,P019,C0121,2026-07-02,4,S,156,70,small,세일가에 잘 샀어요. 배송이 일주일 넘게 걸렸어요.,price:pos;delivery:neg
+R00811,P055,C0068,2026-02-08,5,M,174,64,true_to_size,가격 대비 만족해요. 포장이 꼼꼼했어요.,price:pos;delivery:pos
+R00812,P044,C0112,2026-05-20,3,XL,160,57,large,색상이 사진보다 어두워요. 기장이 너무 길어요. 배송이 빨라요.,color:neg;size:neg;delivery:pos
+R00813,P028,C0335,2026-02-04,3,S,164,55,small,배송이 빨라요. 기장이 너무 길어요.,delivery:pos;size:neg
+R00814,P028,C0174,2026-06-07,4,M,171,52,true_to_size,배송이 빨라요. 핏이 예쁘게 떨어져요. 가격 대비 만족해요.,delivery:pos;size:pos;price:pos
+R00815,P006,C0582,2026-03-30,4,XL,163,41,large,기장이 너무 길어요. 색감이 고급스러워요. 가격 대비 만족해요.,size:neg;color:pos;price:pos
+R00816,P064,C0089,2026-05-25,3,S,157,54,true_to_size,가격에 비해 아쉬워요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R00817,P024,C0397,2026-03-03,4,S,159,60,true_to_size,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R00818,P019,C0110,2026-04-29,3,M,167,59,large,색상이 사진보다 어두워요. 기장이 너무 길어요. 원단이 고급스러워요.,color:neg;size:neg;material:pos
+R00819,P062,C0003,2026-04-17,4,L,168,82,true_to_size,원단이 고급스러워요.,material:pos
+R00820,P017,C0385,2026-03-25,5,S,164,63,small,배송이 빨라요.,delivery:pos
+R00821,P040,C0560,2026-04-29,5,S,166,65,small,세일가에 잘 샀어요. 두께감이 적당해요.,price:pos;material:pos
+R00822,P032,C0011,2026-04-29,3,M,181,85,small,색감이 고급스러워요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R00823,P064,C0275,2026-01-13,1,S,167,53,true_to_size,보풀이 금방 생겨요.,material:neg
+R00824,P019,C0010,2026-06-28,3,M,161,54,true_to_size,이 가격이면 다른 데가 나아요. 화면과 색이 달라요.,price:neg;color:neg
+R00825,P026,C0312,2026-05-07,5,M,173,76,small,가격 대비 만족해요.,price:pos
+R00826,P033,C0496,2026-04-25,5,S,166,45,true_to_size,가격 대비 만족해요.,price:pos
+R00827,P063,C0493,2026-03-26,5,L,167,51,large,색감이 고급스러워요.,color:pos
+R00828,P064,C0033,2026-02-01,5,M,177,56,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00829,P080,C0570,2026-03-09,4,FREE,151,55,large,색감이 고급스러워요. 두께감이 적당해요. 배송이 일주일 넘게 걸렸어요.,color:pos;material:pos;delivery:neg
+R00830,P027,C0335,2026-06-29,2,L,151,68,true_to_size,화면과 색이 달라요.,color:neg
+R00831,P002,C0209,2026-03-21,2,S,164,56,small,화면과 색이 달라요.,color:neg
+R00832,P006,C0383,2026-03-18,5,XL,174,49,large,세일가에 잘 샀어요.,price:pos
+R00833,P001,C0489,2026-04-03,5,M,154,64,large,색감이 고급스러워요.,color:pos
+R00834,P040,C0159,2026-06-28,5,XL,166,40,large,세일가에 잘 샀어요.,price:pos
+R00835,P064,C0451,2026-01-18,3,L,175,73,true_to_size,원단이 뻣뻣해요. 배송이 일주일 넘게 걸렸어요.,material:neg;delivery:neg
+R00836,P008,C0582,2026-03-15,3,XL,163,51,large,원단이 뻣뻣해요.,material:neg
+R00837,P011,C0321,2026-02-15,5,M,163,48,large,포장이 꼼꼼했어요.,delivery:pos
+R00838,P043,C0357,2026-06-08,1,S,166,68,small,보풀이 금방 생겨요.,material:neg
+R00839,P001,C0282,2026-04-25,5,M,157,73,true_to_size,원단이 고급스러워요. 색감이 고급스러워요. 포장이 꼼꼼했어요.,material:pos;color:pos;delivery:pos
+R00840,P040,C0441,2026-01-22,5,M,184,72,small,색감이 고급스러워요.,color:pos
+R00841,P027,C0113,2026-04-16,5,M,171,40,large,포장이 꼼꼼했어요. 원단이 고급스러워요.,delivery:pos;material:pos
+R00842,P017,C0335,2026-02-17,4,M,163,64,true_to_size,세일가에 잘 샀어요.,price:pos
+R00843,P023,C0213,2026-04-28,5,S,160,51,true_to_size,소재가 부드럽고 촉감이 좋아요. 배송이 빨라요.,material:pos;delivery:pos
+R00844,P011,C0221,2026-05-01,4,XL,162,44,large,세일가에 잘 샀어요. 박스가 찌그러져 왔어요.,price:pos;delivery:neg
+R00845,P007,C0279,2026-04-12,4,M,149,44,large,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R00846,P006,C0249,2026-02-13,4,S,172,76,small,사이즈가 생각보다 작아요. 세일가에 잘 샀어요. 두께감이 적당해요.,size:neg;price:pos;material:pos
+R00847,P064,C0042,2026-05-25,5,XL,154,54,large,세일가에 잘 샀어요.,price:pos
+R00848,P017,C0130,2026-02-28,3,S,172,62,small,배송이 빨라요. 화면과 색이 달라요.,delivery:pos;color:neg
+R00849,P055,C0283,2026-06-15,4,M,156,49,true_to_size,박스가 찌그러져 왔어요. 두께감이 적당해요.,delivery:neg;material:pos
+R00850,P014,C0493,2026-04-04,5,L,167,54,true_to_size,정사이즈라 고민 없이 골랐어요. 색감이 고급스러워요.,size:pos;color:pos
+R00851,P056,C0403,2026-05-11,4,L,165,54,large,가격 대비 만족해요. 화면과 색이 달라요.,price:pos;color:neg
+R00852,P045,C0250,2026-06-13,5,M,165,58,true_to_size,포장이 꼼꼼했어요. 색상이 화면과 똑같아요. 두께감이 적당해요.,delivery:pos;color:pos;material:pos
+R00853,P057,C0570,2026-06-30,4,S,157,62,small,색상이 화면과 똑같아요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R00854,P028,C0570,2026-03-30,4,S,152,44,true_to_size,가격 대비 만족해요.,price:pos
+R00855,P040,C0521,2026-05-09,2,S,172,59,small,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00856,P006,C0033,2026-02-13,3,M,173,67,small,보풀이 금방 생겨요. 세일가에 잘 샀어요. 한 치수 크게 사야 해요.,material:neg;price:pos;size:neg
+R00857,P017,C0566,2026-01-25,5,L,168,61,large,포장이 꼼꼼했어요.,delivery:pos
+R00858,P049,C0123,2026-07-14,4,M,175,48,large,보풀이 금방 생겨요. 가격 대비 만족해요.,material:neg;price:pos
+R00859,P040,C0186,2026-05-04,5,L,161,49,large,세일가에 잘 샀어요. 소재가 부드럽고 촉감이 좋아요.,price:pos;material:pos
+R00860,P043,C0435,2026-02-24,4,L,164,75,large,포장이 꼼꼼했어요. 한 치수 크게 사야 해요.,delivery:pos;size:neg
+R00861,P017,C0186,2026-01-28,4,S,163,57,small,원단이 고급스러워요. 세일가에 잘 샀어요. 색상이 사진보다 어두워요.,material:pos;price:pos;color:neg
+R00862,P052,C0185,2026-03-07,5,L,165,46,large,원단이 고급스러워요. 가격 대비 만족해요.,material:pos;price:pos
+R00863,P052,C0001,2026-06-25,5,L,178,72,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00864,P011,C0592,2026-02-24,4,L,161,47,large,가격 대비 만족해요.,price:pos
+R00865,P005,C0321,2026-03-16,3,M,164,63,true_to_size,핏이 예쁘게 떨어져요. 박스가 찌그러져 왔어요.,size:pos;delivery:neg
+R00866,P027,C0018,2026-02-14,5,XL,165,62,large,세일가에 잘 샀어요. 두께감이 적당해요.,price:pos;material:pos
+R00867,P011,C0117,2026-02-04,3,M,165,61,large,가격 대비 만족해요. 기장이 너무 길어요. 소재가 얇고 비쳐요.,price:pos;size:neg;material:neg
+R00868,P074,C0051,2026-05-28,5,FREE,176,72,true_to_size,배송이 빨라요.,delivery:pos
+R00869,P032,C0589,2026-02-17,5,M,159,45,large,원단이 고급스러워요.,material:pos
+R00870,P042,C0350,2026-06-19,5,S,160,64,small,세일가에 잘 샀어요.,price:pos
+R00871,P014,C0350,2026-05-23,2,S,157,68,small,배송이 일주일 넘게 걸렸어요. 사이즈가 생각보다 작아요.,delivery:neg;size:neg
+R00872,P005,C0085,2026-05-30,2,XL,167,72,large,한 치수 크게 사야 해요.,size:neg
+R00873,P064,C0325,2026-05-12,2,XL,160,58,large,소재가 얇고 비쳐요. 색상이 사진보다 어두워요.,material:neg;color:neg
+R00874,P043,C0136,2026-01-25,4,L,168,95,true_to_size,두께감이 적당해요.,material:pos
+R00875,P055,C0540,2026-02-21,2,M,164,40,large,박스가 찌그러져 왔어요.,delivery:neg
+R00876,P048,C0595,2026-04-22,5,L,170,69,true_to_size,색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00877,P076,C0089,2026-01-21,5,FREE,168,69,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00878,P042,C0463,2026-03-03,2,M,163,50,true_to_size,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00879,P042,C0566,2026-01-14,2,M,168,51,true_to_size,소재가 얇고 비쳐요. 가격에 비해 아쉬워요.,material:neg;price:neg
+R00880,P073,C0131,2026-05-16,5,FREE,181,61,small,소재가 부드럽고 촉감이 좋아요. 세일가에 잘 샀어요.,material:pos;price:pos
+R00881,P043,C0283,2026-04-06,5,M,150,61,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00882,P038,C0240,2026-04-17,1,XL,172,63,large,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R00883,P076,C0463,2026-04-09,4,FREE,155,63,large,색상이 화면과 똑같아요. 배송이 빨라요. 세일가에 잘 샀어요.,color:pos;delivery:pos;price:pos
+R00884,P017,C0206,2026-06-03,2,S,169,81,small,화면과 색이 달라요. 기장이 너무 길어요.,color:neg;size:neg
+R00885,P001,C0186,2026-04-29,4,M,167,47,large,배송이 빨라요. 색감이 고급스러워요.,delivery:pos;color:pos
+R00886,P043,C0259,2026-07-09,3,L,170,55,large,소재가 부드럽고 촉감이 좋아요. 기장이 너무 길어요. 색감이 고급스러워요.,material:pos;size:neg;color:pos
+R00887,P001,C0400,2026-01-20,4,S,173,64,small,소재가 부드럽고 촉감이 좋아요. 배송이 일주일 넘게 걸렸어요.,material:pos;delivery:neg
+R00888,P062,C0089,2026-01-30,5,S,160,42,large,색상이 화면과 똑같아요.,color:pos
+R00889,P008,C0206,2026-02-21,5,M,169,62,true_to_size,두께감이 적당해요.,material:pos
+R00890,P050,C0335,2026-04-11,3,S,167,72,small,색상이 사진보다 어두워요. 박스가 찌그러져 왔어요.,color:neg;delivery:neg
+R00891,P016,C0113,2026-02-06,3,XL,168,42,large,한 치수 크게 사야 해요. 박스가 찌그러져 왔어요.,size:neg;delivery:neg
+R00892,P062,C0325,2026-01-20,5,S,169,55,small,기장이 너무 길어요. 가격 대비 만족해요.,size:neg;price:pos
+R00893,P047,C0114,2026-02-17,5,L,161,59,large,포장이 꼼꼼했어요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R00894,P042,C0283,2026-05-24,5,S,160,74,small,포장이 꼼꼼했어요.,delivery:pos
+R00895,P053,C0164,2026-04-27,3,M,171,46,true_to_size,세일가에 잘 샀어요. 화면과 색이 달라요.,price:pos;color:neg
+R00896,P066,C0429,2026-02-10,5,M,155,54,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00897,P037,C0061,2026-03-23,4,S,156,53,true_to_size,색상이 사진보다 어두워요. 사이즈가 딱 맞아요.,color:neg;size:pos
+R00898,P040,C0123,2026-03-23,2,S,179,71,small,기장이 너무 길어요.,size:neg
+R00899,P008,C0321,2026-03-08,4,S,161,43,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00900,P075,C0171,2026-04-26,5,FREE,157,61,true_to_size,핏이 예쁘게 떨어져요. 두께감이 적당해요. 가격 대비 만족해요.,size:pos;material:pos;price:pos
+R00901,P073,C0479,2026-05-14,3,FREE,164,52,large,한 치수 크게 사야 해요. 색감이 고급스러워요. 이 가격이면 다른 데가 나아요.,size:neg;color:pos;price:neg
+R00902,P021,C0496,2026-07-02,2,L,166,56,large,색상이 화면과 똑같아요. 한 치수 크게 사야 해요. 이 가격이면 다른 데가 나아요.,color:pos;size:neg;price:neg
+R00903,P008,C0499,2026-06-20,3,S,169,73,small,화면과 색이 달라요.,color:neg
+R00904,P058,C0469,2026-02-02,4,L,168,51,large,기장이 너무 길어요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00905,P062,C0190,2026-06-20,3,L,166,58,large,원단이 고급스러워요. 한 치수 크게 사야 해요.,material:pos;size:neg
+R00906,P050,C0240,2026-02-14,3,L,167,57,large,색상이 사진보다 어두워요. 소재가 부드럽고 촉감이 좋아요.,color:neg;material:pos
+R00907,P040,C0215,2026-01-13,5,M,176,43,true_to_size,가격 대비 만족해요.,price:pos
+R00908,P042,C0188,2026-01-16,4,M,178,77,small,원단이 고급스러워요. 배송이 일주일 넘게 걸렸어요. 세일가에 잘 샀어요.,material:pos;delivery:neg;price:pos
+R00909,P037,C0570,2026-04-20,1,XL,161,69,large,사이즈가 생각보다 작아요. 이 가격이면 다른 데가 나아요.,size:neg;price:neg
+R00910,P015,C0212,2026-02-19,5,L,151,59,large,세일가에 잘 샀어요.,price:pos
+R00911,P055,C0299,2026-05-25,2,L,165,40,large,색상이 사진보다 어두워요.,color:neg
+R00912,P056,C0240,2026-07-01,2,M,168,40,large,사이즈가 생각보다 작아요. 박스가 찌그러져 왔어요.,size:neg;delivery:neg
+R00913,P008,C0146,2026-02-06,2,M,165,55,large,사이즈가 생각보다 작아요. 색감이 고급스러워요.,size:neg;color:pos
+R00914,P051,C0051,2026-05-16,3,L,183,79,small,한 치수 크게 사야 해요. 배송이 빨라요.,size:neg;delivery:pos
+R00915,P058,C0335,2026-01-21,3,L,154,43,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00916,P040,C0545,2026-04-05,2,L,185,67,small,사이즈가 생각보다 작아요.,size:neg
+R00917,P021,C0196,2026-06-07,4,S,161,55,true_to_size,색상이 화면과 똑같아요. 한 치수 크게 사야 해요.,color:pos;size:neg
+R00918,P016,C0214,2026-01-22,3,XL,157,61,large,색상이 사진보다 어두워요. 가격 대비 만족해요.,color:neg;price:pos
+R00919,P055,C0423,2026-07-05,4,L,173,79,true_to_size,배송이 빨라요. 이 가격이면 다른 데가 나아요. 소재가 부드럽고 촉감이 좋아요.,delivery:pos;price:neg;material:pos
+R00920,P052,C0146,2026-03-13,1,M,164,42,large,사이즈가 생각보다 작아요.,size:neg
+R00921,P040,C0044,2026-05-09,5,S,164,54,true_to_size,세일가에 잘 샀어요. 색감이 고급스러워요. 포장이 꼼꼼했어요.,price:pos;color:pos;delivery:pos
+R00922,P059,C0252,2026-01-21,5,M,158,55,large,두께감이 적당해요.,material:pos
+R00923,P056,C0124,2026-04-29,4,M,173,65,small,색상이 화면과 똑같아요. 두께감이 적당해요.,color:pos;material:pos
+R00924,P001,C0206,2026-07-04,4,M,176,75,small,배송이 일주일 넘게 걸렸어요. 두께감이 적당해요.,delivery:neg;material:pos
+R00925,P064,C0451,2026-02-28,3,XL,175,79,large,두께감이 적당해요. 배송이 일주일 넘게 걸렸어요. 사이즈가 생각보다 작아요.,material:pos;delivery:neg;size:neg
+R00926,P053,C0234,2026-05-17,5,XL,174,65,large,색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00927,P073,C0504,2026-03-06,3,FREE,156,51,true_to_size,색감이 고급스러워요. 가격에 비해 아쉬워요.,color:pos;price:neg
+R00928,P073,C0199,2026-06-10,5,FREE,166,76,small,원단이 고급스러워요.,material:pos
+R00929,P052,C0545,2026-02-26,5,M,185,60,true_to_size,포장이 꼼꼼했어요. 정사이즈라 고민 없이 골랐어요. 색감이 고급스러워요.,delivery:pos;size:pos;color:pos
+R00930,P016,C0477,2026-03-20,4,S,152,52,small,화면과 색이 달라요. 가격 대비 만족해요.,color:neg;price:pos
+R00931,P057,C0089,2026-06-02,5,L,163,52,large,두께감이 적당해요.,material:pos
+R00932,P050,C0571,2026-03-24,5,S,156,50,large,색상이 화면과 똑같아요. 포장이 꼼꼼했어요.,color:pos;delivery:pos
+R00933,P059,C0582,2026-06-23,4,M,165,49,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00934,P008,C0261,2026-02-27,2,S,155,67,small,한 치수 크게 사야 해요. 박스가 찌그러져 왔어요. 가격 대비 만족해요.,size:neg;delivery:neg;price:pos
+R00935,P017,C0123,2026-02-18,2,M,175,72,small,이 가격이면 다른 데가 나아요. 기장이 너무 길어요.,price:neg;size:neg
+R00936,P049,C0429,2026-02-02,3,S,159,49,large,배송이 일주일 넘게 걸렸어요. 소재가 부드럽고 촉감이 좋아요.,delivery:neg;material:pos
+R00937,P040,C0058,2026-01-30,3,M,152,60,true_to_size,배송이 일주일 넘게 걸렸어요. 세일가에 잘 샀어요.,delivery:neg;price:pos
+R00938,P013,C0380,2026-02-22,3,L,161,54,large,원단이 뻣뻣해요. 포장이 꼼꼼했어요.,material:neg;delivery:pos
+R00939,P011,C0477,2026-02-25,5,M,169,49,large,배송이 빨라요. 색감이 고급스러워요.,delivery:pos;color:pos
+R00940,P013,C0386,2026-06-07,5,M,169,67,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00941,P078,C0129,2026-04-16,5,FREE,171,62,small,색감이 고급스러워요. 배송이 빨라요.,color:pos;delivery:pos
+R00942,P001,C0113,2026-05-03,5,L,158,50,large,가격 대비 만족해요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R00943,P040,C0209,2026-02-05,5,L,161,55,large,원단이 고급스러워요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R00944,P030,C0058,2026-06-03,5,M,166,66,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00945,P073,C0278,2026-07-05,2,FREE,155,54,true_to_size,이 가격이면 다른 데가 나아요. 한 치수 크게 사야 해요.,price:neg;size:neg
+R00946,P045,C0353,2026-01-13,5,M,162,56,true_to_size,색감이 고급스러워요.,color:pos
+R00947,P055,C0220,2026-04-09,5,M,162,52,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R00948,P077,C0303,2026-02-21,5,FREE,172,58,true_to_size,색감이 고급스러워요. 세일가에 잘 샀어요. 사이즈가 생각보다 작아요.,color:pos;price:pos;size:neg
+R00949,P045,C0545,2026-05-17,5,L,180,63,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00950,P030,C0158,2026-06-21,5,S,166,56,true_to_size,두께감이 적당해요.,material:pos
+R00951,P040,C0213,2026-05-22,3,L,160,67,true_to_size,화면과 색이 달라요.,color:neg
+R00952,P033,C0005,2026-01-31,5,S,155,50,true_to_size,색감이 고급스러워요. 세일가에 잘 샀어요. 소재가 부드럽고 촉감이 좋아요.,color:pos;price:pos;material:pos
+R00953,P037,C0526,2026-05-18,2,M,148,49,large,사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,size:neg;price:pos
+R00954,P040,C0430,2026-06-02,3,M,164,62,true_to_size,색상이 화면과 똑같아요. 이 가격이면 다른 데가 나아요.,color:pos;price:neg
+R00955,P021,C0421,2026-04-06,2,M,167,56,true_to_size,가격에 비해 아쉬워요.,price:neg
+R00956,P029,C0252,2026-04-10,3,L,166,69,true_to_size,핏이 예쁘게 떨어져요. 화면과 색이 달라요.,size:pos;color:neg
+R00957,P055,C0477,2026-06-24,5,M,164,47,true_to_size,사이즈가 딱 맞아요. 배송이 빨라요.,size:pos;delivery:pos
+R00958,P008,C0246,2026-02-10,2,M,158,56,true_to_size,이 가격이면 다른 데가 나아요. 원단이 뻣뻣해요.,price:neg;material:neg
+R00959,P076,C0429,2026-04-02,2,FREE,169,49,true_to_size,색상이 사진보다 어두워요.,color:neg
+R00960,P043,C0110,2026-07-08,4,M,170,55,true_to_size,가격 대비 만족해요. 사이즈가 생각보다 작아요.,price:pos;size:neg
+R00961,P072,C0350,2026-03-05,4,S,162,61,small,배송이 빨라요. 기장이 너무 길어요.,delivery:pos;size:neg
+R00962,P064,C0146,2026-05-20,1,M,158,56,large,기장이 너무 길어요.,size:neg
+R00963,P063,C0279,2026-05-05,5,M,165,55,true_to_size,색감이 고급스러워요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R00964,P061,C0325,2026-04-12,5,L,170,48,large,세일가에 잘 샀어요.,price:pos
+R00965,P055,C0171,2026-07-03,4,M,159,63,true_to_size,배송이 일주일 넘게 걸렸어요. 원단이 고급스러워요.,delivery:neg;material:pos
+R00966,P040,C0213,2026-05-01,5,M,162,77,true_to_size,사이즈가 딱 맞아요. 배송이 빨라요.,size:pos;delivery:pos
+R00967,P017,C0335,2026-01-25,5,M,153,59,true_to_size,원단이 고급스러워요.,material:pos
+R00968,P037,C0477,2026-04-16,5,S,163,56,true_to_size,세일가에 잘 샀어요. 두께감이 적당해요.,price:pos;material:pos
+R00969,P040,C0044,2026-06-25,4,M,155,63,true_to_size,색감이 고급스러워요.,color:pos
+R00970,P028,C0335,2026-01-21,4,M,165,52,large,배송이 빨라요.,delivery:pos
+R00971,P074,C0182,2026-05-04,5,FREE,176,70,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R00972,P053,C0333,2026-07-01,5,M,156,45,large,배송이 빨라요.,delivery:pos
+R00973,P021,C0393,2026-03-15,4,S,166,53,small,색상이 화면과 똑같아요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R00974,P027,C0335,2026-02-03,2,S,151,62,true_to_size,원단이 뻣뻣해요.,material:neg
+R00975,P002,C0515,2026-05-22,4,L,169,43,large,배송이 빨라요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R00976,P020,C0123,2026-06-22,1,M,180,86,small,원단이 뻣뻣해요.,material:neg
+R00977,P069,C0451,2026-03-17,3,L,167,74,true_to_size,색상이 사진보다 어두워요. 정사이즈라 고민 없이 골랐어요.,color:neg;size:pos
+R00978,P026,C0520,2026-02-12,5,M,175,71,small,색상이 화면과 똑같아요. 배송이 빨라요.,color:pos;delivery:pos
+R00979,P074,C0504,2026-02-07,5,FREE,163,52,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R00980,P042,C0379,2026-05-04,5,S,173,66,small,소재가 부드럽고 촉감이 좋아요. 색상이 화면과 똑같아요.,material:pos;color:pos
+R00981,P033,C0172,2026-02-18,4,S,162,52,true_to_size,원단이 뻣뻣해요. 핏이 예쁘게 떨어져요.,material:neg;size:pos
+R00982,P015,C0192,2026-03-26,5,XL,164,52,large,가격 대비 만족해요. 포장이 꼼꼼했어요.,price:pos;delivery:pos
+R00983,P001,C0335,2026-04-01,4,XL,151,44,large,색상이 사진보다 어두워요. 두께감이 적당해요.,color:neg;material:pos
+R00984,P066,C0353,2026-04-04,3,L,168,51,large,한 치수 크게 사야 해요. 색감이 고급스러워요.,size:neg;color:pos
+R00985,P027,C0184,2026-03-07,3,S,156,47,true_to_size,소재가 얇고 비쳐요. 정사이즈라 고민 없이 골랐어요.,material:neg;size:pos
+R00986,P055,C0096,2026-04-26,2,S,173,58,small,소재가 얇고 비쳐요. 한 치수 크게 사야 해요.,material:neg;size:neg
+R00987,P040,C0494,2026-01-07,4,M,184,88,small,박스가 찌그러져 왔어요. 색상이 사진보다 어두워요. 소재가 부드럽고 촉감이 좋아요.,delivery:neg;color:neg;material:pos
+R00988,P063,C0052,2026-04-26,3,S,167,73,small,포장이 꼼꼼했어요. 원단이 뻣뻣해요.,delivery:pos;material:neg
+R00989,P045,C0146,2026-01-21,5,S,160,55,true_to_size,세일가에 잘 샀어요.,price:pos
+R00990,P008,C0279,2026-05-11,5,M,164,58,true_to_size,색상이 화면과 똑같아요.,color:pos
+R00991,P017,C0174,2026-05-19,5,L,164,60,large,원단이 고급스러워요.,material:pos
+R00992,P055,C0072,2026-07-09,5,M,165,56,large,가격 대비 만족해요.,price:pos
+R00993,P011,C0564,2026-03-26,4,M,160,58,true_to_size,가격 대비 만족해요. 화면과 색이 달라요.,price:pos;color:neg
+R00994,P043,C0155,2026-05-14,4,XL,171,56,large,세일가에 잘 샀어요. 원단이 고급스러워요.,price:pos;material:pos
+R00995,P008,C0098,2026-01-13,4,S,163,62,true_to_size,두께감이 적당해요.,material:pos
+R00996,P040,C0001,2026-06-25,4,L,166,82,true_to_size,색감이 고급스러워요. 가격 대비 만족해요. 정사이즈라 고민 없이 골랐어요.,color:pos;price:pos;size:pos
+R00997,P034,C0595,2026-06-27,5,S,154,52,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R00998,P039,C0167,2026-06-30,2,S,174,77,small,기장이 너무 길어요.,size:neg
+R00999,P076,C0424,2026-06-16,5,FREE,156,56,large,배송이 빨라요.,delivery:pos
+R01000,P040,C0294,2026-02-13,2,S,162,60,small,기장이 너무 길어요.,size:neg
+R01001,P073,C0534,2026-05-22,2,FREE,163,51,large,박스가 찌그러져 왔어요. 화면과 색이 달라요.,delivery:neg;color:neg
+R01002,P042,C0509,2026-02-08,5,M,181,70,small,가격 대비 만족해요.,price:pos
+R01003,P008,C0463,2026-05-15,3,L,166,59,large,배송이 빨라요. 이 가격이면 다른 데가 나아요.,delivery:pos;price:neg
+R01004,P023,C0057,2026-05-27,3,M,183,79,small,색감이 고급스러워요. 이 가격이면 다른 데가 나아요.,color:pos;price:neg
+R01005,P048,C0110,2026-04-17,1,M,164,43,true_to_size,원단이 뻣뻣해요.,material:neg
+R01006,P013,C0521,2026-07-10,4,S,165,52,small,색상이 화면과 똑같아요. 보풀이 금방 생겨요.,color:pos;material:neg
+R01007,P028,C0220,2026-01-22,1,M,165,50,true_to_size,화면과 색이 달라요.,color:neg
+R01008,P040,C0397,2026-06-17,4,M,161,49,true_to_size,원단이 뻣뻣해요. 가격 대비 만족해요.,material:neg;price:pos
+R01009,P028,C0421,2026-06-11,5,XL,151,50,large,포장이 꼼꼼했어요. 원단이 고급스러워요. 가격 대비 만족해요.,delivery:pos;material:pos;price:pos
+R01010,P008,C0482,2026-06-17,5,M,158,66,true_to_size,원단이 고급스러워요.,material:pos
+R01011,P001,C0213,2026-02-06,5,XL,156,53,large,색상이 화면과 똑같아요.,color:pos
+R01012,P017,C0192,2026-03-11,3,L,155,54,large,화면과 색이 달라요. 박스가 찌그러져 왔어요.,color:neg;delivery:neg
+R01013,P043,C0171,2026-06-28,5,M,165,66,true_to_size,색상이 화면과 똑같아요.,color:pos
+R01014,P044,C0068,2026-06-14,4,M,176,77,small,박스가 찌그러져 왔어요. 색감이 고급스러워요. 소재가 얇고 비쳐요.,delivery:neg;color:pos;material:neg
+R01015,P001,C0515,2026-06-06,5,S,155,52,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01016,P013,C0057,2026-01-24,3,M,174,72,small,원단이 뻣뻣해요. 배송이 일주일 넘게 걸렸어요.,material:neg;delivery:neg
+R01017,P078,C0479,2026-06-30,5,FREE,163,45,large,원단이 고급스러워요.,material:pos
+R01018,P042,C0051,2026-04-19,5,M,177,62,small,색상이 화면과 똑같아요. 배송이 빨라요.,color:pos;delivery:pos
+R01019,P001,C0214,2026-03-05,5,S,159,40,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01020,P061,C0052,2026-01-12,4,S,164,61,small,색감이 고급스러워요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R01021,P049,C0156,2026-02-08,4,M,166,65,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R01022,P056,C0430,2026-05-07,4,M,161,50,large,세일가에 잘 샀어요. 색상이 사진보다 어두워요.,price:pos;color:neg
+R01023,P055,C0153,2026-05-30,5,L,173,70,true_to_size,가격 대비 만족해요.,price:pos
+R01024,P037,C0335,2026-03-04,5,M,165,40,large,두께감이 적당해요.,material:pos
+R01025,P017,C0274,2026-05-18,5,XL,171,77,true_to_size,배송이 빨라요.,delivery:pos
+R01026,P030,C0153,2026-02-15,4,L,167,66,true_to_size,색상이 화면과 똑같아요. 원단이 고급스러워요. 가격에 비해 아쉬워요.,color:pos;material:pos;price:neg
+R01027,P008,C0005,2026-06-29,2,M,166,53,true_to_size,가격에 비해 아쉬워요.,price:neg
+R01028,P007,C0450,2026-04-19,4,L,170,76,true_to_size,색상이 사진보다 어두워요. 세일가에 잘 샀어요.,color:neg;price:pos
+R01029,P069,C0033,2026-06-01,2,M,179,89,small,화면과 색이 달라요. 가격에 비해 아쉬워요. 한 치수 크게 사야 해요.,color:neg;price:neg;size:neg
+R01030,P058,C0249,2026-06-06,4,M,164,84,small,사이즈가 생각보다 작아요. 세일가에 잘 샀어요. 색감이 고급스러워요.,size:neg;price:pos;color:pos
+R01031,P017,C0582,2026-04-29,2,M,164,58,true_to_size,기장이 너무 길어요.,size:neg
+R01032,P056,C0068,2026-02-21,1,S,179,80,small,사이즈가 생각보다 작아요.,size:neg
+R01033,P001,C0300,2026-01-27,2,S,167,62,true_to_size,기장이 너무 길어요. 이 가격이면 다른 데가 나아요.,size:neg;price:neg
+R01034,P009,C0077,2026-03-05,4,M,154,57,large,포장이 꼼꼼했어요. 화면과 색이 달라요.,delivery:pos;color:neg
+R01035,P055,C0275,2026-01-16,5,M,165,52,true_to_size,핏이 예쁘게 떨어져요. 가격 대비 만족해요.,size:pos;price:pos
+R01036,P008,C0018,2026-03-10,4,S,166,62,small,배송이 빨라요. 기장이 너무 길어요. 가격 대비 만족해요.,delivery:pos;size:neg;price:pos
+R01037,P026,C0566,2026-07-05,4,XL,156,60,large,배송이 빨라요.,delivery:pos
+R01038,P055,C0214,2026-03-01,5,M,167,58,true_to_size,포장이 꼼꼼했어요. 정사이즈라 고민 없이 골랐어요. 두께감이 적당해요.,delivery:pos;size:pos;material:pos
+R01039,P040,C0123,2026-06-06,2,M,173,83,small,박스가 찌그러져 왔어요.,delivery:neg
+R01040,P068,C0277,2026-05-31,1,L,162,46,large,이 가격이면 다른 데가 나아요.,price:neg
+R01041,P022,C0033,2026-04-26,4,S,172,66,true_to_size,배송이 일주일 넘게 걸렸어요. 정사이즈라 고민 없이 골랐어요. 소재가 부드럽고 촉감이 좋아요.,delivery:neg;size:pos;material:pos
+R01042,P010,C0567,2026-04-27,3,M,179,75,small,이 가격이면 다른 데가 나아요. 두께감이 적당해요. 기장이 너무 길어요.,price:neg;material:pos;size:neg
+R01043,P001,C0430,2026-03-08,5,S,159,47,true_to_size,색상이 화면과 똑같아요.,color:pos
+R01044,P034,C0071,2026-04-30,5,L,170,55,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01045,P021,C0294,2026-07-07,5,S,155,64,true_to_size,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R01046,P011,C0250,2026-03-13,4,M,170,54,true_to_size,핏이 예쁘게 떨어져요. 박스가 찌그러져 왔어요.,size:pos;delivery:neg
+R01047,P066,C0350,2026-04-04,5,M,172,60,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01048,P007,C0130,2026-02-03,5,S,177,73,small,포장이 꼼꼼했어요.,delivery:pos
+R01049,P017,C0123,2026-02-19,5,L,174,75,small,배송이 빨라요.,delivery:pos
+R01050,P062,C0515,2026-03-30,2,L,166,57,large,박스가 찌그러져 왔어요.,delivery:neg
+R01051,P076,C0272,2026-02-23,5,FREE,155,50,large,포장이 꼼꼼했어요. 두께감이 적당해요.,delivery:pos;material:pos
+R01052,P008,C0244,2026-01-29,4,M,159,48,large,원단이 고급스러워요.,material:pos
+R01053,P042,C0426,2026-06-04,4,L,161,66,large,색감이 고급스러워요.,color:pos
+R01054,P027,C0041,2026-01-14,2,M,165,55,true_to_size,화면과 색이 달라요.,color:neg
+R01055,P033,C0406,2026-06-24,5,M,166,63,true_to_size,가격 대비 만족해요. 배송이 빨라요. 두께감이 적당해요.,price:pos;delivery:pos;material:pos
+R01056,P015,C0122,2026-07-04,5,M,150,54,large,포장이 꼼꼼했어요. 두께감이 적당해요. 기장이 너무 길어요.,delivery:pos;material:pos;size:neg
+R01057,P043,C0570,2026-02-07,4,S,164,54,true_to_size,색감이 고급스러워요.,color:pos
+R01058,P078,C0515,2026-04-05,5,FREE,168,64,small,두께감이 적당해요.,material:pos
+R01059,P066,C0277,2026-05-23,3,L,155,55,large,배송이 빨라요. 가격 대비 만족해요. 기장이 너무 길어요.,delivery:pos;price:pos;size:neg
+R01060,P061,C0240,2026-03-04,5,M,157,43,true_to_size,사이즈가 딱 맞아요.,size:pos
+R01061,P008,C0129,2026-02-15,5,L,177,71,true_to_size,포장이 꼼꼼했어요. 가격 대비 만족해요.,delivery:pos;price:pos
+R01062,P040,C0438,2026-06-28,4,S,162,40,true_to_size,색상이 사진보다 어두워요. 원단이 고급스러워요. 배송이 빨라요.,color:neg;material:pos;delivery:pos
+R01063,P006,C0100,2026-05-01,3,L,156,62,large,사이즈가 생각보다 작아요.,size:neg
+R01064,P061,C0479,2026-04-02,3,M,159,65,true_to_size,세일가에 잘 샀어요. 원단이 뻣뻣해요.,price:pos;material:neg
+R01065,P080,C0504,2026-03-27,5,FREE,151,58,large,세일가에 잘 샀어요.,price:pos
+R01066,P020,C0520,2026-05-10,5,M,184,65,small,소재가 부드럽고 촉감이 좋아요. 색상이 화면과 똑같아요. 배송이 빨라요.,material:pos;color:pos;delivery:pos
+R01067,P001,C0262,2026-02-12,4,S,161,45,true_to_size,원단이 고급스러워요. 사이즈가 딱 맞아요.,material:pos;size:pos
+R01068,P010,C0515,2026-05-04,5,M,162,56,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01069,P055,C0383,2026-06-18,5,L,158,55,true_to_size,색상이 화면과 똑같아요.,color:pos
+R01070,P040,C0153,2026-02-13,3,S,172,68,small,기장이 너무 길어요. 색상이 사진보다 어두워요. 가격 대비 만족해요.,size:neg;color:neg;price:pos
+R01071,P001,C0570,2026-03-04,5,M,168,44,large,원단이 고급스러워요. 색상이 화면과 똑같아요.,material:pos;color:pos
+R01072,P040,C0130,2026-06-02,4,L,178,66,small,색상이 화면과 똑같아요. 사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,color:pos;size:neg;price:pos
+R01073,P013,C0496,2026-04-29,2,L,155,53,large,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R01074,P021,C0100,2026-04-29,4,S,163,54,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01075,P040,C0096,2026-03-19,4,XL,171,72,true_to_size,원단이 고급스러워요. 기장이 너무 길어요. 포장이 꼼꼼했어요.,material:pos;size:neg;delivery:pos
+R01076,P023,C0005,2026-05-10,5,S,173,55,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01077,P013,C0131,2026-02-05,2,XL,174,73,large,박스가 찌그러져 왔어요. 사이즈가 생각보다 작아요.,delivery:neg;size:neg
+R01078,P016,C0455,2026-02-08,3,M,180,86,small,소재가 부드럽고 촉감이 좋아요. 기장이 너무 길어요.,material:pos;size:neg
+R01079,P040,C0047,2026-01-13,1,M,169,52,true_to_size,사이즈가 생각보다 작아요.,size:neg
+R01080,P055,C0283,2026-07-04,2,XL,162,52,large,가격에 비해 아쉬워요.,price:neg
+R01081,P078,C0566,2026-03-26,5,FREE,165,64,true_to_size,배송이 빨라요. 색감이 고급스러워요.,delivery:pos;color:pos
+R01082,P070,C0325,2026-02-17,5,M,156,59,true_to_size,원단이 고급스러워요.,material:pos
+R01083,P073,C0351,2026-03-14,5,FREE,167,55,true_to_size,원단이 고급스러워요. 세일가에 잘 샀어요.,material:pos;price:pos
+R01084,P050,C0499,2026-04-09,4,M,180,67,true_to_size,세일가에 잘 샀어요.,price:pos
+R01085,P010,C0438,2026-03-13,3,M,164,42,large,사이즈가 생각보다 작아요.,size:neg
+R01086,P016,C0495,2026-04-24,5,S,169,63,small,포장이 꼼꼼했어요.,delivery:pos
+R01087,P064,C0153,2026-04-12,5,L,174,67,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01088,P059,C0171,2026-01-10,5,S,168,60,small,배송이 빨라요.,delivery:pos
+R01089,P049,C0068,2026-01-28,4,S,169,83,small,색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,color:pos;delivery:neg
+R01090,P040,C0272,2026-05-02,5,L,157,53,true_to_size,배송이 빨라요.,delivery:pos
+R01091,P009,C0206,2026-06-28,2,M,167,71,true_to_size,소재가 얇고 비쳐요.,material:neg
+R01092,P075,C0333,2026-05-13,1,FREE,170,56,true_to_size,가격에 비해 아쉬워요. 배송이 일주일 넘게 걸렸어요.,price:neg;delivery:neg
+R01093,P055,C0361,2026-06-13,5,M,167,54,true_to_size,두께감이 적당해요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R01094,P040,C0033,2026-05-22,2,S,167,63,small,사이즈가 생각보다 작아요.,size:neg
+R01095,P066,C0382,2026-02-19,2,S,169,65,small,보풀이 금방 생겨요. 사이즈가 생각보다 작아요.,material:neg;size:neg
+R01096,P043,C0068,2026-03-09,5,S,180,64,small,배송이 빨라요. 세일가에 잘 샀어요. 소재가 얇고 비쳐요.,delivery:pos;price:pos;material:neg
+R01097,P075,C0443,2026-06-16,5,FREE,167,48,large,색상이 화면과 똑같아요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R01098,P049,C0182,2026-04-20,3,M,183,78,small,배송이 빨라요. 색상이 사진보다 어두워요.,delivery:pos;color:neg
+R01099,P028,C0123,2026-01-14,5,M,171,61,true_to_size,포장이 꼼꼼했어요. 사이즈가 딱 맞아요.,delivery:pos;size:pos
+R01100,P019,C0209,2026-02-23,4,M,161,53,large,소재가 부드럽고 촉감이 좋아요. 한 치수 크게 사야 해요.,material:pos;size:neg
+R01101,P055,C0455,2026-04-01,4,M,179,71,small,포장이 꼼꼼했어요. 기장이 너무 길어요.,delivery:pos;size:neg
+R01102,P038,C0209,2026-02-15,5,S,166,51,true_to_size,가격 대비 만족해요. 핏이 예쁘게 떨어져요.,price:pos;size:pos
+R01103,P001,C0126,2026-02-16,4,XL,165,54,large,소재가 얇고 비쳐요. 세일가에 잘 샀어요.,material:neg;price:pos
+R01104,P011,C0321,2026-07-04,2,L,166,64,large,박스가 찌그러져 왔어요. 한 치수 크게 사야 해요.,delivery:neg;size:neg
+R01105,P040,C0573,2026-07-05,5,L,159,48,large,색상이 화면과 똑같아요.,color:pos
+R01106,P064,C0451,2026-02-07,3,L,178,76,true_to_size,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R01107,P017,C0577,2026-03-22,3,S,170,65,small,색상이 사진보다 어두워요.,color:neg
+R01108,P043,C0355,2026-05-05,5,L,164,60,large,가격 대비 만족해요. 포장이 꼼꼼했어요.,price:pos;delivery:pos
+R01109,P017,C0190,2026-04-10,3,M,165,55,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R01110,P040,C0018,2026-07-03,2,M,157,52,large,한 치수 크게 사야 해요.,size:neg
+R01111,P075,C0124,2026-06-29,5,FREE,176,65,small,가격 대비 만족해요.,price:pos
+R01112,P026,C0429,2026-05-04,4,L,167,50,large,기장이 너무 길어요. 세일가에 잘 샀어요.,size:neg;price:pos
+R01113,P040,C0283,2026-02-09,4,M,172,57,true_to_size,색감이 고급스러워요. 박스가 찌그러져 왔어요.,color:pos;delivery:neg
+R01114,P059,C0453,2026-07-02,5,L,181,71,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R01115,P009,C0005,2026-05-30,3,M,182,52,true_to_size,이 가격이면 다른 데가 나아요.,price:neg
+R01116,P058,C0450,2026-05-07,4,S,169,65,small,색감이 고급스러워요.,color:pos
+R01117,P042,C0136,2026-04-10,5,M,178,63,small,배송이 빨라요.,delivery:pos
+R01118,P016,C0156,2026-03-23,2,S,164,56,small,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R01119,P015,C0562,2026-01-14,2,S,173,76,small,소재가 얇고 비쳐요. 한 치수 크게 사야 해요.,material:neg;size:neg
+R01120,P073,C0355,2026-06-13,5,FREE,158,55,large,배송이 빨라요.,delivery:pos
+R01121,P046,C0220,2026-06-23,4,M,165,62,true_to_size,화면과 색이 달라요. 정사이즈라 고민 없이 골랐어요. 세일가에 잘 샀어요.,color:neg;size:pos;price:pos
+R01122,P052,C0393,2026-03-20,3,L,167,65,large,사이즈가 생각보다 작아요. 가격 대비 만족해요.,size:neg;price:pos
+R01123,P064,C0113,2026-05-23,2,L,168,50,large,화면과 색이 달라요.,color:neg
+R01124,P051,C0408,2026-02-20,2,L,164,65,large,한 치수 크게 사야 해요.,size:neg
+R01125,P017,C0579,2026-02-08,4,S,161,64,true_to_size,색상이 화면과 똑같아요. 원단이 뻣뻣해요.,color:pos;material:neg
+R01126,P045,C0353,2026-01-28,2,XL,165,40,large,색상이 화면과 똑같아요. 보풀이 금방 생겨요. 한 치수 크게 사야 해요.,color:pos;material:neg;size:neg
+R01127,P049,C0110,2026-06-30,4,S,163,43,large,두께감이 적당해요. 가격 대비 만족해요. 화면과 색이 달라요.,material:pos;price:pos;color:neg
+R01128,P029,C0392,2026-03-29,2,L,166,44,large,원단이 뻣뻣해요.,material:neg
+R01129,P040,C0469,2026-01-27,5,M,160,48,true_to_size,원단이 고급스러워요.,material:pos
+R01130,P020,C0044,2026-04-18,5,M,165,52,large,포장이 꼼꼼했어요.,delivery:pos
+R01131,P052,C0411,2026-02-06,4,M,165,55,large,세일가에 잘 샀어요. 한 치수 크게 사야 해요. 포장이 꼼꼼했어요.,price:pos;size:neg;delivery:pos
+R01132,P051,C0057,2026-05-02,5,S,166,60,true_to_size,세일가에 잘 샀어요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R01133,P040,C0209,2026-07-03,5,S,167,55,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R01134,P069,C0596,2026-05-24,3,L,182,68,small,배송이 빨라요. 한 치수 크게 사야 해요.,delivery:pos;size:neg
+R01135,P055,C0477,2026-07-10,5,S,160,52,true_to_size,세일가에 잘 샀어요. 정사이즈라 고민 없이 골랐어요.,price:pos;size:pos
+R01136,P012,C0220,2026-04-10,2,L,166,66,true_to_size,색상이 사진보다 어두워요.,color:neg
+R01137,P049,C0277,2026-06-28,2,M,166,69,true_to_size,소재가 얇고 비쳐요. 색상이 사진보다 어두워요.,material:neg;color:neg
+R01138,P009,C0502,2026-06-29,3,L,156,40,large,보풀이 금방 생겨요. 포장이 꼼꼼했어요. 색상이 사진보다 어두워요.,material:neg;delivery:pos;color:neg
+R01139,P006,C0051,2026-07-06,5,M,172,67,small,가격 대비 만족해요.,price:pos
+R01140,P010,C0001,2026-03-10,5,M,170,60,true_to_size,색상이 화면과 똑같아요. 핏이 예쁘게 떨어져요.,color:pos;size:pos
+R01141,P040,C0227,2026-03-02,3,L,173,62,true_to_size,이 가격이면 다른 데가 나아요. 보풀이 금방 생겨요.,price:neg;material:neg
+R01142,P001,C0155,2026-03-17,3,L,171,52,large,포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R01143,P062,C0583,2026-03-16,3,M,161,43,large,원단이 뻣뻣해요. 색감이 고급스러워요.,material:neg;color:pos
+R01144,P017,C0403,2026-04-04,5,L,164,59,large,색감이 고급스러워요.,color:pos
+R01145,P040,C0346,2026-06-20,2,S,162,73,small,한 치수 크게 사야 해요.,size:neg
+R01146,P037,C0100,2026-03-02,5,L,159,57,large,두께감이 적당해요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R01147,P052,C0240,2026-01-29,4,S,166,55,small,세일가에 잘 샀어요. 포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,price:pos;delivery:pos;size:neg
+R01148,P027,C0367,2026-04-16,2,S,158,45,large,이 가격이면 다른 데가 나아요. 기장이 너무 길어요.,price:neg;size:neg
+R01149,P040,C0123,2026-06-06,5,S,186,64,small,포장이 꼼꼼했어요. 세일가에 잘 샀어요.,delivery:pos;price:pos
+R01150,P043,C0325,2026-03-16,4,XL,166,55,large,포장이 꼼꼼했어요. 사이즈가 생각보다 작아요.,delivery:pos;size:neg
+R01151,P055,C0570,2026-05-13,5,M,167,54,true_to_size,원단이 고급스러워요. 가격 대비 만족해요. 포장이 꼼꼼했어요.,material:pos;price:pos;delivery:pos
+R01152,P055,C0279,2026-03-14,2,L,160,56,large,한 치수 크게 사야 해요. 배송이 일주일 넘게 걸렸어요.,size:neg;delivery:neg
+R01153,P065,C0313,2026-06-22,5,L,163,72,large,색상이 화면과 똑같아요.,color:pos
+R01154,P043,C0450,2026-07-11,1,L,177,75,true_to_size,박스가 찌그러져 왔어요.,delivery:neg
+R01155,P045,C0089,2026-03-06,5,L,156,61,large,포장이 꼼꼼했어요.,delivery:pos
+R01156,P034,C0406,2026-04-05,4,S,170,64,small,소재가 부드럽고 촉감이 좋아요. 한 치수 크게 사야 해요. 포장이 꼼꼼했어요.,material:pos;size:neg;delivery:pos
+R01157,P055,C0130,2026-07-07,5,S,174,67,small,색감이 고급스러워요.,color:pos
+R01158,P008,C0489,2026-06-19,2,M,159,49,large,사이즈가 생각보다 작아요. 색상이 사진보다 어두워요.,size:neg;color:neg
+R01159,P055,C0136,2026-03-02,3,XL,163,63,large,색상이 사진보다 어두워요.,color:neg
+R01160,P055,C0403,2026-06-29,5,M,164,51,large,두께감이 적당해요.,material:pos
+R01161,P073,C0233,2026-05-15,5,FREE,151,40,large,배송이 빨라요. 세일가에 잘 샀어요.,delivery:pos;price:pos
+R01162,P008,C0160,2026-01-14,4,M,179,53,true_to_size,정사이즈라 고민 없이 골랐어요. 세일가에 잘 샀어요.,size:pos;price:pos
+R01163,P059,C0077,2026-04-09,3,M,164,63,true_to_size,가격 대비 만족해요. 보풀이 금방 생겨요.,price:pos;material:neg
+R01164,P007,C0164,2026-04-16,2,M,168,52,true_to_size,사이즈가 딱 맞아요. 원단이 뻣뻣해요.,size:pos;material:neg
+R01165,P011,C0312,2026-03-13,2,M,174,76,small,기장이 너무 길어요.,size:neg
+R01166,P043,C0589,2026-01-07,5,XL,166,48,large,색상이 화면과 똑같아요. 원단이 고급스러워요.,color:pos;material:pos
+R01167,P053,C0274,2026-06-02,5,L,182,68,true_to_size,배송이 빨라요.,delivery:pos
+R01168,P056,C0033,2026-06-11,5,M,168,79,true_to_size,가격 대비 만족해요.,price:pos
+R01169,P040,C0496,2026-07-04,2,S,156,49,small,가격에 비해 아쉬워요.,price:neg
+R01170,P052,C0592,2026-02-18,3,S,157,59,true_to_size,배송이 빨라요. 원단이 뻣뻣해요.,delivery:pos;material:neg
+R01171,P039,C0164,2026-05-16,5,M,166,44,true_to_size,핏이 예쁘게 떨어져요. 색감이 고급스러워요.,size:pos;color:pos
+R01172,P064,C0140,2026-03-30,5,M,163,49,large,가격 대비 만족해요. 색상이 화면과 똑같아요.,price:pos;color:pos
+R01173,P040,C0096,2026-01-23,5,M,179,72,small,색상이 화면과 똑같아요.,color:pos
+R01174,P026,C0044,2026-06-17,5,XL,164,60,large,색감이 고급스러워요.,color:pos
+R01175,P016,C0459,2026-01-26,3,XL,163,49,large,한 치수 크게 사야 해요. 포장이 꼼꼼했어요.,size:neg;delivery:pos
+R01176,P027,C0164,2026-06-16,2,M,162,52,true_to_size,이 가격이면 다른 데가 나아요. 두께감이 적당해요. 색상이 사진보다 어두워요.,price:neg;material:pos;color:neg
+R01177,P073,C0099,2026-01-13,3,FREE,160,58,large,한 치수 크게 사야 해요. 색감이 고급스러워요.,size:neg;color:pos
+R01178,P016,C0589,2026-03-01,3,M,163,56,true_to_size,소재가 부드럽고 촉감이 좋아요. 이 가격이면 다른 데가 나아요. 화면과 색이 달라요.,material:pos;price:neg;color:neg
+R01179,P012,C0582,2026-03-24,4,S,166,54,small,사이즈가 생각보다 작아요. 두께감이 적당해요.,size:neg;material:pos
+R01180,P008,C0244,2026-05-01,5,L,164,54,large,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R01181,P030,C0163,2026-03-23,3,M,169,53,true_to_size,색상이 화면과 똑같아요. 가격에 비해 아쉬워요.,color:pos;price:neg
+R01182,P040,C0132,2026-05-28,5,XL,160,56,large,원단이 고급스러워요.,material:pos
+R01183,P019,C0089,2026-06-12,5,M,157,53,true_to_size,가격 대비 만족해요. 핏이 예쁘게 떨어져요.,price:pos;size:pos
+R01184,P040,C0173,2026-06-11,4,M,172,61,small,포장이 꼼꼼했어요. 가격에 비해 아쉬워요.,delivery:pos;price:neg
+R01185,P021,C0570,2026-01-28,4,M,156,56,large,가격에 비해 아쉬워요. 포장이 꼼꼼했어요.,price:neg;delivery:pos
+R01186,P014,C0430,2026-01-23,2,L,162,61,true_to_size,기장이 너무 길어요.,size:neg
+R01187,P056,C0186,2026-05-08,3,M,156,60,large,색상이 사진보다 어두워요.,color:neg
+R01188,P056,C0171,2026-03-12,5,S,152,45,large,세일가에 잘 샀어요.,price:pos
+R01189,P034,C0011,2026-04-19,2,M,176,73,small,사이즈가 생각보다 작아요. 이 가격이면 다른 데가 나아요.,size:neg;price:neg
+R01190,P038,C0127,2026-04-05,5,L,160,53,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01191,P008,C0099,2026-01-16,5,S,160,43,true_to_size,소재가 부드럽고 촉감이 좋아요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R01192,P006,C0571,2026-03-28,5,S,168,40,true_to_size,색감이 고급스러워요.,color:pos
+R01193,P079,C0504,2026-06-28,4,FREE,154,52,large,두께감이 적당해요.,material:pos
+R01194,P017,C0403,2026-07-02,5,XL,167,58,large,세일가에 잘 샀어요.,price:pos
+R01195,P021,C0265,2026-01-10,5,M,175,63,small,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01196,P028,C0130,2026-05-27,4,XL,177,68,large,색감이 고급스러워요.,color:pos
+R01197,P061,C0136,2026-07-01,3,M,171,70,small,화면과 색이 달라요. 소재가 얇고 비쳐요. 배송이 빨라요.,color:neg;material:neg;delivery:pos
+R01198,P073,C0346,2026-01-21,2,FREE,174,50,large,사이즈가 생각보다 작아요.,size:neg
+R01199,P028,C0171,2026-04-26,5,XL,163,70,large,원단이 고급스러워요.,material:pos
+R01200,P042,C0089,2026-06-18,2,M,158,51,true_to_size,색상이 사진보다 어두워요. 사이즈가 생각보다 작아요. 원단이 고급스러워요.,color:neg;size:neg;material:pos
+R01201,P043,C0418,2026-05-23,4,M,161,72,true_to_size,한 치수 크게 사야 해요. 소재가 부드럽고 촉감이 좋아요.,size:neg;material:pos
+R01202,P040,C0230,2026-03-31,3,L,186,80,small,박스가 찌그러져 왔어요. 색상이 화면과 똑같아요. 사이즈가 생각보다 작아요.,delivery:neg;color:pos;size:neg
+R01203,P021,C0494,2026-02-25,5,S,172,82,small,배송이 빨라요.,delivery:pos
+R01204,P021,C0307,2026-04-29,2,L,161,73,true_to_size,보풀이 금방 생겨요.,material:neg
+R01205,P073,C0249,2026-06-20,3,FREE,168,72,small,박스가 찌그러져 왔어요. 색감이 고급스러워요. 기장이 너무 길어요.,delivery:neg;color:pos;size:neg
+R01206,P069,C0058,2026-01-15,4,XL,150,54,large,원단이 고급스러워요. 색감이 고급스러워요. 배송이 일주일 넘게 걸렸어요.,material:pos;color:pos;delivery:neg
+R01207,P040,C0127,2026-04-02,5,M,158,51,true_to_size,색상이 화면과 똑같아요. 소재가 부드럽고 촉감이 좋아요.,color:pos;material:pos
+R01208,P051,C0368,2026-02-11,5,L,175,51,large,원단이 고급스러워요. 포장이 꼼꼼했어요. 가격 대비 만족해요.,material:pos;delivery:pos;price:pos
+R01209,P010,C0130,2026-02-27,3,L,175,71,true_to_size,배송이 일주일 넘게 걸렸어요. 세일가에 잘 샀어요.,delivery:neg;price:pos
+R01210,P040,C0400,2026-05-07,4,L,183,56,small,소재가 부드럽고 촉감이 좋아요. 사이즈가 생각보다 작아요. 세일가에 잘 샀어요.,material:pos;size:neg;price:pos
+R01211,P017,C0182,2026-03-26,2,L,169,72,true_to_size,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R01212,P017,C0058,2026-04-27,5,S,161,60,true_to_size,정사이즈라 고민 없이 골랐어요. 가격 대비 만족해요.,size:pos;price:pos
+R01213,P019,C0596,2026-04-02,5,M,169,61,true_to_size,정사이즈라 고민 없이 골랐어요.,size:pos
+R01214,P023,C0505,2026-02-06,4,L,157,59,large,색감이 고급스러워요. 기장이 너무 길어요. 두께감이 적당해요.,color:pos;size:neg;material:pos
+R01215,P026,C0526,2026-03-14,4,L,168,56,true_to_size,색감이 고급스러워요.,color:pos
+R01216,P027,C0335,2026-03-03,5,M,160,64,true_to_size,세일가에 잘 샀어요.,price:pos
+R01217,P048,C0283,2026-01-22,2,M,163,53,true_to_size,보풀이 금방 생겨요.,material:neg
+R01218,P030,C0325,2026-07-15,3,M,152,54,large,색상이 화면과 똑같아요. 이 가격이면 다른 데가 나아요. 박스가 찌그러져 왔어요.,color:pos;price:neg;delivery:neg
+R01219,P077,C0545,2026-03-23,4,FREE,175,67,true_to_size,정사이즈라 고민 없이 골랐어요. 배송이 일주일 넘게 걸렸어요. 색감이 고급스러워요.,size:pos;delivery:neg;color:pos
+R01220,P008,C0188,2026-02-28,2,L,166,63,large,사이즈가 생각보다 작아요.,size:neg
+R01221,P008,C0417,2026-01-27,5,M,170,57,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R01222,P040,C0010,2026-01-29,5,M,154,57,true_to_size,세일가에 잘 샀어요.,price:pos
+R01223,P038,C0068,2026-05-23,5,L,173,74,true_to_size,두께감이 적당해요.,material:pos
+R01224,P006,C0025,2026-01-27,5,XL,157,47,large,색감이 고급스러워요. 배송이 빨라요.,color:pos;delivery:pos
+R01225,P042,C0214,2026-05-07,5,L,170,61,large,배송이 빨라요.,delivery:pos
+R01226,P001,C0479,2026-04-03,5,M,168,64,true_to_size,색감이 고급스러워요. 원단이 고급스러워요.,color:pos;material:pos
+R01227,P055,C0564,2026-05-27,5,L,157,41,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01228,P001,C0566,2026-03-25,5,L,160,61,large,두께감이 적당해요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R01229,P080,C0430,2026-07-02,5,FREE,166,69,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R01230,P049,C0563,2026-05-05,5,S,164,46,true_to_size,세일가에 잘 샀어요.,price:pos
+R01231,P056,C0351,2026-05-30,5,M,168,44,large,가격 대비 만족해요.,price:pos
+R01232,P045,C0130,2026-03-15,3,M,184,76,small,색상이 화면과 똑같아요. 기장이 너무 길어요.,color:pos;size:neg
+R01233,P063,C0390,2026-05-16,2,S,170,55,true_to_size,화면과 색이 달라요.,color:neg
+R01234,P017,C0124,2026-03-04,2,M,167,62,small,원단이 뻣뻣해요. 화면과 색이 달라요.,material:neg;color:neg
+R01235,P043,C0031,2026-02-04,5,S,163,52,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01236,P078,C0196,2026-03-24,5,FREE,169,73,true_to_size,색감이 고급스러워요. 사이즈가 딱 맞아요. 소재가 부드럽고 촉감이 좋아요.,color:pos;size:pos;material:pos
+R01237,P076,C0515,2026-03-16,4,FREE,163,56,large,가격 대비 만족해요. 한 치수 크게 사야 해요. 색상이 화면과 똑같아요.,price:pos;size:neg;color:pos
+R01238,P042,C0089,2026-01-14,4,M,163,40,true_to_size,가격에 비해 아쉬워요. 원단이 고급스러워요. 사이즈가 딱 맞아요.,price:neg;material:pos;size:pos
+R01239,P074,C0302,2026-02-12,2,FREE,156,59,true_to_size,소재가 얇고 비쳐요.,material:neg
+R01240,P014,C0556,2026-05-14,3,L,165,53,large,한 치수 크게 사야 해요. 배송이 빨라요.,size:neg;delivery:pos
+R01241,P001,C0221,2026-06-15,5,S,161,62,true_to_size,세일가에 잘 샀어요. 배송이 빨라요.,price:pos;delivery:pos
+R01242,P008,C0130,2026-03-04,5,S,175,67,small,원단이 고급스러워요.,material:pos
+R01243,P078,C0140,2026-06-04,5,FREE,162,64,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01244,P021,C0469,2026-04-03,5,L,154,56,large,가격 대비 만족해요. 배송이 빨라요.,price:pos;delivery:pos
+R01245,P001,C0221,2026-03-02,4,M,160,48,large,가격 대비 만족해요. 소재가 부드럽고 촉감이 좋아요. 박스가 찌그러져 왔어요.,price:pos;material:pos;delivery:neg
+R01246,P011,C0587,2026-01-31,4,L,156,54,large,색감이 고급스러워요.,color:pos
+R01247,P059,C0214,2026-02-25,3,M,155,62,small,색감이 고급스러워요. 한 치수 크게 사야 해요.,color:pos;size:neg
+R01248,P028,C0196,2026-05-10,4,S,154,61,small,이 가격이면 다른 데가 나아요. 색감이 고급스러워요.,price:neg;color:pos
+R01249,P078,C0504,2026-01-11,4,FREE,165,50,true_to_size,색감이 고급스러워요.,color:pos
+R01250,P017,C0283,2026-06-30,5,M,159,61,true_to_size,사이즈가 딱 맞아요.,size:pos
+R01251,P043,C0164,2026-03-12,4,M,162,50,large,배송이 빨라요. 세일가에 잘 샀어요. 색상이 사진보다 어두워요.,delivery:pos;price:pos;color:neg
+R01252,P026,C0110,2026-03-11,4,S,162,60,small,두께감이 적당해요.,material:pos
+R01253,P027,C0595,2026-05-26,5,M,164,56,true_to_size,배송이 빨라요. 가격 대비 만족해요.,delivery:pos;price:pos
+R01254,P016,C0265,2026-06-26,5,M,175,81,small,포장이 꼼꼼했어요.,delivery:pos
+R01255,P060,C0346,2026-05-02,4,M,169,61,small,포장이 꼼꼼했어요.,delivery:pos
+R01256,P001,C0493,2026-06-16,4,M,164,42,large,사이즈가 생각보다 작아요. 배송이 빨라요.,size:neg;delivery:pos
+R01257,P057,C0155,2026-06-11,5,M,169,47,large,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01258,P080,C0221,2026-03-04,2,FREE,161,56,large,원단이 뻣뻣해요. 사이즈가 생각보다 작아요. 색상이 사진보다 어두워요.,material:neg;size:neg;color:neg
+R01259,P008,C0450,2026-03-11,2,M,173,78,small,기장이 너무 길어요.,size:neg
+R01260,P040,C0153,2026-04-03,1,L,182,72,small,사이즈가 생각보다 작아요. 이 가격이면 다른 데가 나아요.,size:neg;price:neg
+R01261,P027,C0167,2026-03-28,4,M,173,66,small,세일가에 잘 샀어요. 배송이 빨라요. 원단이 고급스러워요.,price:pos;delivery:pos;material:pos
+R01262,P040,C0526,2026-02-06,3,S,160,50,true_to_size,보풀이 금방 생겨요. 사이즈가 딱 맞아요.,material:neg;size:pos
+R01263,P052,C0215,2026-04-16,5,L,168,42,large,세일가에 잘 샀어요.,price:pos
+R01264,P006,C0341,2026-03-06,3,L,179,81,small,기장이 너무 길어요. 색상이 화면과 똑같아요.,size:neg;color:pos
+R01265,P043,C0110,2026-03-24,5,M,166,60,true_to_size,사이즈가 딱 맞아요.,size:pos
+R01266,P055,C0477,2026-06-25,4,S,164,48,true_to_size,가격 대비 만족해요. 배송이 일주일 넘게 걸렸어요.,price:pos;delivery:neg
+R01267,P001,C0005,2026-02-12,5,M,168,47,large,원단이 고급스러워요.,material:pos
+R01268,P070,C0479,2026-05-21,5,L,173,43,large,사이즈가 생각보다 작아요. 소재가 부드럽고 촉감이 좋아요.,size:neg;material:pos
+R01269,P055,C0321,2026-06-03,5,M,160,57,true_to_size,소재가 부드럽고 촉감이 좋아요.,material:pos
+R01270,P040,C0300,2026-04-19,2,L,150,50,large,사이즈가 생각보다 작아요.,size:neg
+R01271,P061,C0127,2026-06-03,3,L,175,59,true_to_size,가격에 비해 아쉬워요. 색상이 화면과 똑같아요. 기장이 너무 길어요.,price:neg;color:pos;size:neg
+R01272,P040,C0347,2026-05-07,2,M,173,72,small,박스가 찌그러져 왔어요.,delivery:neg
+R01273,P014,C0489,2026-04-22,5,S,154,47,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R01274,P055,C0528,2026-06-09,5,M,171,49,true_to_size,사이즈가 딱 맞아요.,size:pos
+R01275,P013,C0418,2026-01-23,2,XL,157,68,large,사이즈가 생각보다 작아요.,size:neg
+R01276,P001,C0333,2026-03-05,5,L,173,62,true_to_size,사이즈가 딱 맞아요. 원단이 고급스러워요.,size:pos;material:pos
+R01277,P055,C0146,2026-05-02,4,L,173,47,large,원단이 고급스러워요.,material:pos
+R01278,P075,C0249,2026-01-24,5,FREE,178,67,small,색상이 화면과 똑같아요.,color:pos
+R01279,P076,C0365,2026-04-11,2,FREE,172,74,true_to_size,박스가 찌그러져 왔어요.,delivery:neg
+R01280,P040,C0115,2026-03-19,2,L,164,53,large,가격에 비해 아쉬워요.,price:neg
+R01281,P028,C0479,2026-02-27,2,L,177,54,large,이 가격이면 다른 데가 나아요. 색감이 고급스러워요. 사이즈가 생각보다 작아요.,price:neg;color:pos;size:neg
+R01282,P056,C0275,2026-05-05,4,S,162,65,small,보풀이 금방 생겨요. 배송이 빨라요.,material:neg;delivery:pos
+R01283,P040,C0220,2026-06-12,5,L,161,60,large,색상이 화면과 똑같아요.,color:pos
+R01284,P004,C0114,2026-04-08,3,L,161,55,large,보풀이 금방 생겨요. 포장이 꼼꼼했어요. 색상이 사진보다 어두워요.,material:neg;delivery:pos;color:neg
+R01285,P076,C0246,2026-07-09,5,FREE,150,50,large,색상이 화면과 똑같아요.,color:pos
+R01286,P005,C0192,2026-01-19,4,M,164,51,true_to_size,가격에 비해 아쉬워요. 소재가 부드럽고 촉감이 좋아요.,price:neg;material:pos
+R01287,P048,C0019,2026-01-22,3,L,160,53,large,한 치수 크게 사야 해요. 가격 대비 만족해요.,size:neg;price:pos
+R01288,P017,C0099,2026-05-16,5,S,161,41,true_to_size,두께감이 적당해요. 색상이 화면과 똑같아요.,material:pos;color:pos
+R01289,P040,C0589,2026-03-09,5,M,177,61,small,가격 대비 만족해요. 배송이 빨라요.,price:pos;delivery:pos
+R01290,P055,C0033,2026-04-15,2,M,158,54,true_to_size,박스가 찌그러져 왔어요.,delivery:neg
+R01291,P030,C0504,2026-02-25,5,S,165,49,true_to_size,포장이 꼼꼼했어요. 두께감이 적당해요.,delivery:pos;material:pos
+R01292,P035,C0481,2026-07-06,2,M,158,40,large,화면과 색이 달라요.,color:neg
+R01293,P053,C0483,2026-03-16,5,L,172,66,true_to_size,색상이 화면과 똑같아요.,color:pos
+R01294,P019,C0271,2026-06-03,5,XL,181,77,large,색상이 화면과 똑같아요.,color:pos
+R01295,P040,C0453,2026-01-25,5,L,175,80,true_to_size,배송이 빨라요.,delivery:pos
+R01296,P068,C0129,2026-05-10,4,S,174,69,small,소재가 부드럽고 촉감이 좋아요. 포장이 꼼꼼했어요.,material:pos;delivery:pos
+R01297,P030,C0325,2026-03-06,5,L,159,48,large,세일가에 잘 샀어요.,price:pos
+R01298,P043,C0357,2026-05-08,1,L,159,42,large,한 치수 크게 사야 해요.,size:neg
+R01299,P006,C0005,2026-03-02,5,M,166,56,true_to_size,원단이 고급스러워요. 색감이 고급스러워요.,material:pos;color:pos
+R01300,P020,C0418,2026-01-28,2,M,169,43,large,화면과 색이 달라요.,color:neg
+R01301,P015,C0493,2026-03-23,4,L,165,40,large,두께감이 적당해요. 기장이 너무 길어요.,material:pos;size:neg
+R01302,P009,C0346,2026-04-24,2,XL,161,46,large,사이즈가 생각보다 작아요.,size:neg
+R01303,P068,C0181,2026-04-12,5,M,158,51,large,색감이 고급스러워요.,color:pos
+R01304,P008,C0246,2026-05-11,3,M,163,51,true_to_size,소재가 부드럽고 촉감이 좋아요. 화면과 색이 달라요.,material:pos;color:neg
+R01305,P017,C0418,2026-06-17,4,L,164,67,large,포장이 꼼꼼했어요. 보풀이 금방 생겨요. 사이즈가 생각보다 작아요.,delivery:pos;material:neg;size:neg
+R01306,P078,C0167,2026-03-06,3,FREE,170,68,true_to_size,가격에 비해 아쉬워요. 두께감이 적당해요.,price:neg;material:pos
+R01307,P015,C0127,2026-06-13,4,S,164,54,true_to_size,화면과 색이 달라요. 소재가 부드럽고 촉감이 좋아요.,color:neg;material:pos
+R01308,P068,C0397,2026-01-20,5,L,167,46,large,색상이 화면과 똑같아요.,color:pos
+R01309,P028,C0018,2026-04-17,4,L,168,72,true_to_size,배송이 빨라요. 세일가에 잘 샀어요. 사이즈가 딱 맞아요.,delivery:pos;price:pos;size:pos
+R01310,P017,C0206,2026-05-31,5,L,182,69,small,세일가에 잘 샀어요.,price:pos
+R01311,P045,C0110,2026-03-15,3,L,172,48,large,사이즈가 생각보다 작아요.,size:neg
+R01312,P074,C0295,2026-05-08,1,FREE,156,46,large,사이즈가 생각보다 작아요.,size:neg
+R01313,P076,C0096,2026-01-28,5,FREE,167,74,true_to_size,색상이 화면과 똑같아요.,color:pos
+R01314,P064,C0181,2026-03-14,5,M,160,57,true_to_size,포장이 꼼꼼했어요.,delivery:pos
+R01315,P021,C0130,2026-06-06,5,XL,178,83,true_to_size,세일가에 잘 샀어요.,price:pos
+R01316,P037,C0429,2026-01-24,5,M,163,41,large,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R01317,P011,C0053,2026-04-02,5,S,165,45,true_to_size,가격 대비 만족해요.,price:pos
+R01318,P016,C0052,2026-02-13,3,M,165,53,true_to_size,화면과 색이 달라요. 핏이 예쁘게 떨어져요.,color:neg;size:pos
+R01319,P055,C0248,2026-07-11,4,L,170,57,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01320,P043,C0106,2026-06-08,2,M,158,61,true_to_size,핏이 예쁘게 떨어져요. 이 가격이면 다른 데가 나아요.,size:pos;price:neg
+R01321,P028,C0153,2026-03-22,5,M,179,78,small,세일가에 잘 샀어요. 배송이 빨라요.,price:pos;delivery:pos
+R01322,P042,C0283,2026-05-25,2,M,169,40,large,박스가 찌그러져 왔어요. 원단이 뻣뻣해요.,delivery:neg;material:neg
+R01323,P008,C0502,2026-01-31,4,L,154,61,large,한 치수 크게 사야 해요. 색감이 고급스러워요.,size:neg;color:pos
+R01324,P040,C0325,2026-05-30,4,S,158,55,large,사이즈가 생각보다 작아요. 색감이 고급스러워요.,size:neg;color:pos
+R01325,P008,C0358,2026-01-26,3,M,163,51,true_to_size,가격에 비해 아쉬워요. 소재가 부드럽고 촉감이 좋아요.,price:neg;material:pos
+R01326,P040,C0294,2026-05-14,5,S,157,58,small,세일가에 잘 샀어요.,price:pos
+R01327,P027,C0109,2026-02-11,3,L,174,71,true_to_size,보풀이 금방 생겨요. 핏이 예쁘게 떨어져요.,material:neg;size:pos
+R01328,P040,C0271,2026-06-20,1,S,175,69,small,이 가격이면 다른 데가 나아요.,price:neg
+R01329,P066,C0112,2026-04-26,3,S,163,65,small,두께감이 적당해요. 배송이 일주일 넘게 걸렸어요.,material:pos;delivery:neg
+R01330,P044,C0317,2026-03-27,4,M,167,56,true_to_size,보풀이 금방 생겨요. 색감이 고급스러워요. 포장이 꼼꼼했어요.,material:neg;color:pos;delivery:pos
+R01331,P040,C0268,2026-03-11,5,L,159,55,large,포장이 꼼꼼했어요. 세일가에 잘 샀어요.,delivery:pos;price:pos
+R01332,P001,C0447,2026-01-30,3,L,170,61,true_to_size,가격에 비해 아쉬워요. 소재가 부드럽고 촉감이 좋아요.,price:neg;material:pos
+R01333,P038,C0481,2026-06-06,4,M,172,51,true_to_size,색감이 고급스러워요. 가격에 비해 아쉬워요.,color:pos;price:neg
+R01334,P049,C0110,2026-04-03,4,L,159,66,large,포장이 꼼꼼했어요. 원단이 고급스러워요.,delivery:pos;material:pos
+R01335,P080,C0171,2026-06-22,2,FREE,159,45,large,기장이 너무 길어요.,size:neg
+R01336,P028,C0153,2026-01-31,3,M,175,65,small,배송이 빨라요. 보풀이 금방 생겨요. 한 치수 크게 사야 해요.,delivery:pos;material:neg;size:neg
+R01337,P027,C0153,2026-04-30,4,S,183,59,small,색감이 고급스러워요.,color:pos
+R01338,P017,C0206,2026-02-27,4,S,177,86,small,원단이 고급스러워요. 가격에 비해 아쉬워요.,material:pos;price:neg
+R01339,P053,C0077,2026-04-28,4,S,164,49,true_to_size,핏이 예쁘게 떨어져요. 가격 대비 만족해요.,size:pos;price:pos
+R01340,P017,C0544,2026-01-28,2,L,159,68,large,소재가 얇고 비쳐요.,material:neg
+R01341,P066,C0190,2026-05-16,2,M,152,50,large,색상이 사진보다 어두워요.,color:neg
+R01342,P006,C0450,2026-03-22,5,S,177,70,small,소재가 부드럽고 촉감이 좋아요. 색감이 고급스러워요.,material:pos;color:pos
+R01343,P040,C0596,2026-05-19,3,M,169,68,small,색감이 고급스러워요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R01344,P066,C0033,2026-04-26,4,M,181,74,small,가격에 비해 아쉬워요. 배송이 빨라요.,price:neg;delivery:pos
+R01345,P059,C0299,2026-06-30,1,M,165,54,true_to_size,한 치수 크게 사야 해요. 가격에 비해 아쉬워요.,size:neg;price:neg
+R01346,P021,C0567,2026-03-11,4,M,181,70,small,가격 대비 만족해요. 한 치수 크게 사야 해요. 배송이 빨라요.,price:pos;size:neg;delivery:pos
+R01347,P077,C0262,2026-02-23,3,FREE,156,50,large,포장이 꼼꼼했어요. 기장이 너무 길어요.,delivery:pos;size:neg
+R01348,P072,C0467,2026-02-13,3,S,157,54,true_to_size,보풀이 금방 생겨요. 색감이 고급스러워요. 배송이 빨라요.,material:neg;color:pos;delivery:pos
+R01349,P023,C0388,2026-02-02,5,M,156,73,small,원단이 고급스러워요. 배송이 빨라요.,material:pos;delivery:pos
+R01350,P008,C0416,2026-01-26,2,L,166,57,true_to_size,소재가 얇고 비쳐요. 가격에 비해 아쉬워요.,material:neg;price:neg
+R01351,P001,C0052,2026-05-09,5,S,165,54,true_to_size,핏이 예쁘게 떨어져요. 색상이 화면과 똑같아요. 가격 대비 만족해요.,size:pos;color:pos;price:pos
+R01352,P008,C0033,2026-05-07,5,L,178,68,true_to_size,가격 대비 만족해요. 색감이 고급스러워요.,price:pos;color:pos
+R01353,P063,C0268,2026-03-24,5,M,173,70,true_to_size,세일가에 잘 샀어요.,price:pos
+R01354,P063,C0240,2026-06-05,5,M,158,63,true_to_size,세일가에 잘 샀어요.,price:pos
+R01355,P040,C0213,2026-04-25,2,S,162,61,true_to_size,원단이 뻣뻣해요.,material:neg
+R01356,P066,C0526,2026-04-13,2,L,161,57,large,화면과 색이 달라요. 한 치수 크게 사야 해요.,color:neg;size:neg
+R01357,P008,C0293,2026-06-19,3,M,161,50,large,두께감이 적당해요. 배송이 일주일 넘게 걸렸어요.,material:pos;delivery:neg
+R01358,P064,C0350,2026-04-08,4,L,149,53,large,색감이 고급스러워요.,color:pos
+R01359,P066,C0436,2026-07-17,2,S,159,58,small,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R01360,P055,C0123,2026-03-23,5,M,168,87,small,색상이 화면과 똑같아요. 가격 대비 만족해요.,color:pos;price:pos
+R01361,P061,C0595,2026-04-16,2,S,167,53,small,기장이 너무 길어요.,size:neg
+R01362,P017,C0523,2026-01-31,5,M,164,50,true_to_size,가격 대비 만족해요. 사이즈가 딱 맞아요. 원단이 고급스러워요.,price:pos;size:pos;material:pos
+R01363,P003,C0259,2026-02-14,3,S,154,46,true_to_size,색상이 화면과 똑같아요. 이 가격이면 다른 데가 나아요.,color:pos;price:neg
+R01364,P030,C0496,2026-05-29,5,L,165,44,large,배송이 빨라요. 색상이 화면과 똑같아요.,delivery:pos;color:pos
+R01365,P008,C0001,2026-02-06,4,L,164,76,true_to_size,두께감이 적당해요.,material:pos
+R01366,P028,C0526,2026-06-12,5,M,161,67,true_to_size,색감이 고급스러워요. 세일가에 잘 샀어요. 정사이즈라 고민 없이 골랐어요.,color:pos;price:pos;size:pos
+R01367,P045,C0283,2026-06-18,5,XL,162,59,large,포장이 꼼꼼했어요.,delivery:pos
+R01368,P010,C0113,2026-07-13,4,S,153,43,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01369,P061,C0469,2026-04-05,2,L,150,57,large,이 가격이면 다른 데가 나아요.,price:neg
+R01370,P021,C0473,2026-04-09,3,L,165,65,large,원단이 뻣뻣해요. 배송이 일주일 넘게 걸렸어요. 가격 대비 만족해요.,material:neg;delivery:neg;price:pos
+R01371,P040,C0312,2026-02-24,4,M,180,66,small,색감이 고급스러워요.,color:pos
+R01372,P002,C0321,2026-01-13,2,L,162,62,large,한 치수 크게 사야 해요. 화면과 색이 달라요. 원단이 뻣뻣해요.,size:neg;color:neg;material:neg
+R01373,P025,C0277,2026-04-17,4,L,161,65,large,한 치수 크게 사야 해요. 포장이 꼼꼼했어요.,size:neg;delivery:pos
+R01374,P042,C0190,2026-04-04,2,L,161,52,large,박스가 찌그러져 왔어요.,delivery:neg
+R01375,P040,C0515,2026-05-18,5,M,169,49,true_to_size,가격 대비 만족해요.,price:pos
+R01376,P057,C0283,2026-02-02,3,M,156,70,true_to_size,소재가 얇고 비쳐요. 배송이 빨라요.,material:neg;delivery:pos
+R01377,P030,C0080,2026-01-24,5,M,160,67,true_to_size,포장이 꼼꼼했어요. 원단이 고급스러워요. 가격 대비 만족해요.,delivery:pos;material:pos;price:pos
+R01378,P006,C0583,2026-02-12,5,M,169,50,true_to_size,핏이 예쁘게 떨어져요.,size:pos
+R01379,P061,C0479,2026-04-10,5,M,161,54,true_to_size,색상이 화면과 똑같아요.,color:pos
+R01380,P045,C0361,2026-03-14,2,L,165,47,large,배송이 일주일 넘게 걸렸어요.,delivery:neg
+R01381,P004,C0447,2026-04-12,5,M,152,47,large,색상이 화면과 똑같아요.,color:pos
+R01382,P055,C0110,2026-02-18,2,M,168,59,true_to_size,박스가 찌그러져 왔어요. 색상이 사진보다 어두워요.,delivery:neg;color:neg
+R01383,P044,C0577,2026-07-08,4,M,175,73,small,보풀이 금방 생겨요. 배송이 빨라요.,material:neg;delivery:pos
+R01384,P016,C0579,2026-02-10,3,L,168,40,large,세일가에 잘 샀어요. 색상이 사진보다 어두워요. 배송이 일주일 넘게 걸렸어요.,price:pos;color:neg;delivery:neg
+R01385,P007,C0418,2026-04-12,3,S,167,60,small,색감이 고급스러워요. 박스가 찌그러져 왔어요. 사이즈가 생각보다 작아요.,color:pos;delivery:neg;size:neg
+R01386,P036,C0479,2026-04-27,4,L,158,51,large,가격 대비 만족해요. 배송이 빨라요.,price:pos;delivery:pos
+R01387,P008,C0357,2026-03-24,4,L,153,56,large,보풀이 금방 생겨요. 색상이 화면과 똑같아요.,material:neg;color:pos
+R01388,P006,C0320,2026-01-26,4,S,161,49,true_to_size,사이즈가 딱 맞아요.,size:pos
+R01389,P059,C0146,2026-03-05,2,M,168,65,small,이 가격이면 다른 데가 나아요.,price:neg
+R01390,P055,C0182,2026-04-02,3,XL,179,83,true_to_size,화면과 색이 달라요. 정사이즈라 고민 없이 골랐어요.,color:neg;size:pos
+R01391,P045,C0577,2026-05-13,5,S,177,65,small,배송이 빨라요.,delivery:pos
+R01392,P059,C0068,2026-06-17,5,S,180,67,small,포장이 꼼꼼했어요. 세일가에 잘 샀어요. 색상이 화면과 똑같아요.,delivery:pos;price:pos;color:pos
+R01393,P061,C0564,2026-03-23,3,S,163,47,true_to_size,소재가 부드럽고 촉감이 좋아요. 색상이 사진보다 어두워요.,material:pos;color:neg
+R01394,P028,C0572,2026-03-05,3,L,161,58,large,화면과 색이 달라요. 두께감이 적당해요. 박스가 찌그러져 왔어요.,color:neg;material:pos;delivery:neg
+R01395,P008,C0218,2026-01-31,5,S,160,50,small,가격 대비 만족해요.,price:pos
+R01396,P080,C0504,2026-05-11,4,FREE,160,45,large,색상이 화면과 똑같아요. 사이즈가 생각보다 작아요.,color:pos;size:neg
+R01397,P040,C0127,2026-02-01,5,L,163,50,large,가격 대비 만족해요.,price:pos
+R01398,P051,C0001,2026-06-08,5,M,177,75,small,원단이 고급스러워요.,material:pos
+R01399,P050,C0033,2026-01-26,5,M,175,59,true_to_size,핏이 예쁘게 떨어져요. 색감이 고급스러워요. 소재가 부드럽고 촉감이 좋아요.,size:pos;color:pos;material:pos
+R01400,P055,C0140,2026-03-31,4,L,166,48,large,한 치수 크게 사야 해요. 세일가에 잘 샀어요.,size:neg;price:pos
